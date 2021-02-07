@@ -1,0 +1,11 @@
+C:\Users\79205\RiderProjects\Tasks\RemoveDigitFromNumber\RemoveDigitFromNumber\bin\Debug\netcoreapp3.1\RemoveDigitFromNumber.exe
+C:\Users\79205\RiderProjects\Tasks\RemoveDigitFromNumber\RemoveDigitFromNumber\bin\Debug\netcoreapp3.1\RemoveDigitFromNumber.deps.json
+C:\Users\79205\RiderProjects\Tasks\RemoveDigitFromNumber\RemoveDigitFromNumber\bin\Debug\netcoreapp3.1\RemoveDigitFromNumber.runtimeconfig.json
+C:\Users\79205\RiderProjects\Tasks\RemoveDigitFromNumber\RemoveDigitFromNumber\bin\Debug\netcoreapp3.1\RemoveDigitFromNumber.runtimeconfig.dev.json
+C:\Users\79205\RiderProjects\Tasks\RemoveDigitFromNumber\RemoveDigitFromNumber\bin\Debug\netcoreapp3.1\RemoveDigitFromNumber.dll
+C:\Users\79205\RiderProjects\Tasks\RemoveDigitFromNumber\RemoveDigitFromNumber\bin\Debug\netcoreapp3.1\RemoveDigitFromNumber.pdb
+C:\Users\79205\RiderProjects\Tasks\RemoveDigitFromNumber\RemoveDigitFromNumber\obj\Debug\netcoreapp3.1\RemoveDigitFromNumber.csprojAssemblyReference.cache
+C:\Users\79205\RiderProjects\Tasks\RemoveDigitFromNumber\RemoveDigitFromNumber\obj\Debug\netcoreapp3.1\RemoveDigitFromNumber.AssemblyInfoInputs.cache
+C:\Users\79205\RiderProjects\Tasks\RemoveDigitFromNumber\RemoveDigitFromNumber\obj\Debug\netcoreapp3.1\RemoveDigitFromNumber.AssemblyInfo.cs
+C:\Users\79205\RiderProjects\Tasks\RemoveDigitFromNumber\RemoveDigitFromNumber\obj\Debug\netcoreapp3.1\RemoveDigitFromNumber.dll
+C:\Users\79205\RiderProjects\Tasks\RemoveDigitFromNumber\RemoveDigitFromNumber\obj\Debug\netcoreapp3.1\RemoveDigitFromNumber.pdb
