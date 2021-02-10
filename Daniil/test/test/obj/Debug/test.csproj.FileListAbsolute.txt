@@ -1,0 +1,7 @@
+D:\gitbs\Tasks\Daniil\test\test\bin\Debug\test.exe.config
+D:\gitbs\Tasks\Daniil\test\test\bin\Debug\test.exe
+D:\gitbs\Tasks\Daniil\test\test\bin\Debug\test.pdb
+D:\gitbs\Tasks\Daniil\test\test\obj\Debug\test.csprojAssemblyReference.cache
+D:\gitbs\Tasks\Daniil\test\test\obj\Debug\test.csproj.CoreCompileInputs.cache
+D:\gitbs\Tasks\Daniil\test\test\obj\Debug\test.exe
+D:\gitbs\Tasks\Daniil\test\test\obj\Debug\test.pdb
