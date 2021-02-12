@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace allinall
 {
-    class easyDifficultyLevel
+    class EasyDifficultyLevel
     {
-        public static void taskSelectionEZ()
+        public static void TaskSelectionEZ()
         {
             string userСhoice;
             Console.WriteLine("Вы выбрали Легкую сложность для выбора задачи напишите: Условия, Циклы, Массивы, Функции, для выхода напиши ВЫХОД");
@@ -19,14 +19,14 @@ namespace allinall
                 if (userСhoice == "Условия")
                 {
                     Console.WriteLine("Из двух случайных чисел, одно из которых четное, а другое нечетное, определить и вывести на экран нечетное число.");//вызов класса
-                    determinesParityOfNum();
+                    DeterminesParityOfNum();
                 }
                 else if (userСhoice == "Циклы")
                 {
                     Console.WriteLine("Вывести на экран ряд чисел Фибоначчи, состоящий из n элементов." +
                                             "Числа Фибоначчи – это элементы числовой последовательности" +
                                             "0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, …, в которой каждое последующее число равно сумме двух предыдущих.");//вызов класса
-                    listOfFibonacci();
+                    ListOfFibonacci();
                 }
                 else if (userСhoice == "Массивы")
                 {
@@ -41,7 +41,7 @@ namespace allinall
                     int result = 0;
                     int firstNum = int.Parse(Console.ReadLine());
                     int secondNum = int.Parse(Console.ReadLine());
-                    multiplicationWithRecursion(firstNum, secondNum, result);
+                    MultiplicationWithRecursion(firstNum, secondNum, result);
                     Console.WriteLine("Вы выбрали Легкую сложность для выбора задачи напишите: Условия, Циклы, Массивы, Функции, для выхода напиши ВЫХОД");
                 }
                 else if (userСhoice == "ВЫХОД")
@@ -62,7 +62,7 @@ namespace allinall
 
 
 
-        public static void determinesParityOfNum() 
+        public static void DeterminesParityOfNum() 
         {
             Console.WriteLine("Вы выбрали задачу на УСЛОВИЯ.");
             Console.WriteLine("Введите два числа");
@@ -80,7 +80,7 @@ namespace allinall
         }
 
 
-        public static void listOfFibonacci()
+        public static void ListOfFibonacci()
         {
             Console.WriteLine("Вы выбрали задачу на ЦИКЛЫ.");
             int fibonachiNum = int.Parse(Console.ReadLine());
@@ -101,13 +101,13 @@ namespace allinall
         }
 
 
-        public static void multiplicationWithRecursion(int firstNum, int secondNum, int result)
+        public static void MultiplicationWithRecursion(int firstNum, int secondNum, int result)
         {
             result = result + firstNum;
             secondNum--;
             if (secondNum != 0)
             {
-                multiplicationWithRecursion(firstNum, secondNum, result);
+                MultiplicationWithRecursion(firstNum, secondNum, result);
             }
             else { Console.WriteLine($"{result}"); }
         }

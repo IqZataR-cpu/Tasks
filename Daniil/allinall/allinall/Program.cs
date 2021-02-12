@@ -23,7 +23,7 @@ namespace allinall
 
                 if (userСhoice == "Легкий")
                 {
-                    easyDifficultyLevel.taskSelectionEZ();//вызов класса
+                    EasyDifficultyLevel.TaskSelectionEZ();//вызов класса
                 }
                 else if (userСhoice == "Тяжелый")
                 {

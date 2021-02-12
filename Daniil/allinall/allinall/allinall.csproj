@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="easyDifficultyLevel.cs">
+    <Compile Include="EasyDifficultyLevel.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="hardDifficultyLevel.cs" />
-    <Compile Include="normalDifficultyLevel.cs" />
+    <Compile Include="HardDifficultyLevel.cs" />
+    <Compile Include="NormalDifficultyLevel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

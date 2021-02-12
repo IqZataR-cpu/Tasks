@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace allinall
 {
-    class hardDifficultyLevel
+    class HardDifficultyLevel
     {
     }
 }
