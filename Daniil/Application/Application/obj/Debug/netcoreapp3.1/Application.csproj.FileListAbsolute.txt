@@ -1,0 +1,11 @@
+C:\Users\79205\RiderProjects\Tasks\Daniil\Application\Application\bin\Debug\netcoreapp3.1\Application.exe
+C:\Users\79205\RiderProjects\Tasks\Daniil\Application\Application\bin\Debug\netcoreapp3.1\Application.deps.json
+C:\Users\79205\RiderProjects\Tasks\Daniil\Application\Application\bin\Debug\netcoreapp3.1\Application.runtimeconfig.json
+C:\Users\79205\RiderProjects\Tasks\Daniil\Application\Application\bin\Debug\netcoreapp3.1\Application.runtimeconfig.dev.json
+C:\Users\79205\RiderProjects\Tasks\Daniil\Application\Application\bin\Debug\netcoreapp3.1\Application.dll
+C:\Users\79205\RiderProjects\Tasks\Daniil\Application\Application\bin\Debug\netcoreapp3.1\Application.pdb
+C:\Users\79205\RiderProjects\Tasks\Daniil\Application\Application\obj\Debug\netcoreapp3.1\Application.csprojAssemblyReference.cache
+C:\Users\79205\RiderProjects\Tasks\Daniil\Application\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfoInputs.cache
+C:\Users\79205\RiderProjects\Tasks\Daniil\Application\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfo.cs
+C:\Users\79205\RiderProjects\Tasks\Daniil\Application\Application\obj\Debug\netcoreapp3.1\Application.dll
+C:\Users\79205\RiderProjects\Tasks\Daniil\Application\Application\obj\Debug\netcoreapp3.1\Application.pdb
