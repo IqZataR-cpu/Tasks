@@ -6,3 +6,10 @@ C:\Users\danii\source\repos\allinall\allinall\obj\Debug\allinall.csproj.CoreComp
 C:\Users\danii\source\repos\allinall\allinall\obj\Debug\allinall.exe
 C:\Users\danii\source\repos\allinall\allinall\obj\Debug\allinall.pdb
 C:\Users\danii\source\repos\allinall\allinall\bin\Debug\easyDifficultyLevel.cs
+C:\Users\79205\RiderProjects\Tasks\Daniil\allinall\allinall\bin\Debug\EasyDifficultyLevel.cs
+C:\Users\79205\RiderProjects\Tasks\Daniil\allinall\allinall\bin\Debug\allinall.exe.config
+C:\Users\79205\RiderProjects\Tasks\Daniil\allinall\allinall\bin\Debug\allinall.exe
+C:\Users\79205\RiderProjects\Tasks\Daniil\allinall\allinall\bin\Debug\allinall.pdb
+C:\Users\79205\RiderProjects\Tasks\Daniil\allinall\allinall\obj\Debug\allinall.csprojAssemblyReference.cache
+C:\Users\79205\RiderProjects\Tasks\Daniil\allinall\allinall\obj\Debug\allinall.exe
+C:\Users\79205\RiderProjects\Tasks\Daniil\allinall\allinall\obj\Debug\allinall.pdb
