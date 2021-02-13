@@ -1,0 +1,11 @@
+C:\Users\79205\RiderProjects\Tasks\Evgenii\AssociationsWithNumbers\AssociationsWithNumbers\bin\Debug\netcoreapp3.1\AssociationsWithNumbers.exe
+C:\Users\79205\RiderProjects\Tasks\Evgenii\AssociationsWithNumbers\AssociationsWithNumbers\bin\Debug\netcoreapp3.1\AssociationsWithNumbers.deps.json
+C:\Users\79205\RiderProjects\Tasks\Evgenii\AssociationsWithNumbers\AssociationsWithNumbers\bin\Debug\netcoreapp3.1\AssociationsWithNumbers.runtimeconfig.json
+C:\Users\79205\RiderProjects\Tasks\Evgenii\AssociationsWithNumbers\AssociationsWithNumbers\bin\Debug\netcoreapp3.1\AssociationsWithNumbers.runtimeconfig.dev.json
+C:\Users\79205\RiderProjects\Tasks\Evgenii\AssociationsWithNumbers\AssociationsWithNumbers\bin\Debug\netcoreapp3.1\AssociationsWithNumbers.dll
+C:\Users\79205\RiderProjects\Tasks\Evgenii\AssociationsWithNumbers\AssociationsWithNumbers\bin\Debug\netcoreapp3.1\AssociationsWithNumbers.pdb
+C:\Users\79205\RiderProjects\Tasks\Evgenii\AssociationsWithNumbers\AssociationsWithNumbers\obj\Debug\netcoreapp3.1\AssociationsWithNumbers.csprojAssemblyReference.cache
+C:\Users\79205\RiderProjects\Tasks\Evgenii\AssociationsWithNumbers\AssociationsWithNumbers\obj\Debug\netcoreapp3.1\AssociationsWithNumbers.AssemblyInfoInputs.cache
+C:\Users\79205\RiderProjects\Tasks\Evgenii\AssociationsWithNumbers\AssociationsWithNumbers\obj\Debug\netcoreapp3.1\AssociationsWithNumbers.AssemblyInfo.cs
+C:\Users\79205\RiderProjects\Tasks\Evgenii\AssociationsWithNumbers\AssociationsWithNumbers\obj\Debug\netcoreapp3.1\AssociationsWithNumbers.dll
+C:\Users\79205\RiderProjects\Tasks\Evgenii\AssociationsWithNumbers\AssociationsWithNumbers\obj\Debug\netcoreapp3.1\AssociationsWithNumbers.pdb
