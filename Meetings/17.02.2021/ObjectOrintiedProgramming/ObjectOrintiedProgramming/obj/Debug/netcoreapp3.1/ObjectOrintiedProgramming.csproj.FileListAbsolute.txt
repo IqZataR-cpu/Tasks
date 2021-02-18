@@ -1,0 +1,11 @@
+C:\Users\79205\RiderProjects\Tasks\Meetings\17.02.2021\ObjectOrintiedProgramming\ObjectOrintiedProgramming\bin\Debug\netcoreapp3.1\ObjectOrintiedProgramming.exe
+C:\Users\79205\RiderProjects\Tasks\Meetings\17.02.2021\ObjectOrintiedProgramming\ObjectOrintiedProgramming\bin\Debug\netcoreapp3.1\ObjectOrintiedProgramming.deps.json
+C:\Users\79205\RiderProjects\Tasks\Meetings\17.02.2021\ObjectOrintiedProgramming\ObjectOrintiedProgramming\bin\Debug\netcoreapp3.1\ObjectOrintiedProgramming.runtimeconfig.json
+C:\Users\79205\RiderProjects\Tasks\Meetings\17.02.2021\ObjectOrintiedProgramming\ObjectOrintiedProgramming\bin\Debug\netcoreapp3.1\ObjectOrintiedProgramming.runtimeconfig.dev.json
+C:\Users\79205\RiderProjects\Tasks\Meetings\17.02.2021\ObjectOrintiedProgramming\ObjectOrintiedProgramming\bin\Debug\netcoreapp3.1\ObjectOrintiedProgramming.dll
+C:\Users\79205\RiderProjects\Tasks\Meetings\17.02.2021\ObjectOrintiedProgramming\ObjectOrintiedProgramming\bin\Debug\netcoreapp3.1\ObjectOrintiedProgramming.pdb
+C:\Users\79205\RiderProjects\Tasks\Meetings\17.02.2021\ObjectOrintiedProgramming\ObjectOrintiedProgramming\obj\Debug\netcoreapp3.1\ObjectOrintiedProgramming.csprojAssemblyReference.cache
+C:\Users\79205\RiderProjects\Tasks\Meetings\17.02.2021\ObjectOrintiedProgramming\ObjectOrintiedProgramming\obj\Debug\netcoreapp3.1\ObjectOrintiedProgramming.AssemblyInfoInputs.cache
+C:\Users\79205\RiderProjects\Tasks\Meetings\17.02.2021\ObjectOrintiedProgramming\ObjectOrintiedProgramming\obj\Debug\netcoreapp3.1\ObjectOrintiedProgramming.AssemblyInfo.cs
+C:\Users\79205\RiderProjects\Tasks\Meetings\17.02.2021\ObjectOrintiedProgramming\ObjectOrintiedProgramming\obj\Debug\netcoreapp3.1\ObjectOrintiedProgramming.dll
+C:\Users\79205\RiderProjects\Tasks\Meetings\17.02.2021\ObjectOrintiedProgramming\ObjectOrintiedProgramming\obj\Debug\netcoreapp3.1\ObjectOrintiedProgramming.pdb
