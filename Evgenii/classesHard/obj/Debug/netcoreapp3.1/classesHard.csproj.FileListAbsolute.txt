@@ -1,0 +1,13 @@
+C:\Users\Kerolline\Desktop\C#\classesHard\bin\Debug\netcoreapp3.1\classesHard.exe
+C:\Users\Kerolline\Desktop\C#\classesHard\bin\Debug\netcoreapp3.1\classesHard.deps.json
+C:\Users\Kerolline\Desktop\C#\classesHard\bin\Debug\netcoreapp3.1\classesHard.runtimeconfig.json
+C:\Users\Kerolline\Desktop\C#\classesHard\bin\Debug\netcoreapp3.1\classesHard.runtimeconfig.dev.json
+C:\Users\Kerolline\Desktop\C#\classesHard\bin\Debug\netcoreapp3.1\classesHard.dll
+C:\Users\Kerolline\Desktop\C#\classesHard\bin\Debug\netcoreapp3.1\classesHard.pdb
+C:\Users\Kerolline\Desktop\C#\classesHard\obj\Debug\netcoreapp3.1\classesHard.csprojAssemblyReference.cache
+C:\Users\Kerolline\Desktop\C#\classesHard\obj\Debug\netcoreapp3.1\classesHard.AssemblyInfoInputs.cache
+C:\Users\Kerolline\Desktop\C#\classesHard\obj\Debug\netcoreapp3.1\classesHard.AssemblyInfo.cs
+C:\Users\Kerolline\Desktop\C#\classesHard\obj\Debug\netcoreapp3.1\classesHard.csproj.CoreCompileInputs.cache
+C:\Users\Kerolline\Desktop\C#\classesHard\obj\Debug\netcoreapp3.1\classesHard.dll
+C:\Users\Kerolline\Desktop\C#\classesHard\obj\Debug\netcoreapp3.1\classesHard.pdb
+C:\Users\Kerolline\Desktop\C#\classesHard\obj\Debug\netcoreapp3.1\classesHard.genruntimeconfig.cache

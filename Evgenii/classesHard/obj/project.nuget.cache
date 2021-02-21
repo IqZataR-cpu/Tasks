@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "II2J4qecNqH5Wfbh+qubQMPrXEVOg5gbNiy6irr9+HGVEKF1WNX0RPGWePpKDZ+zaqvf/5deGzFsu+EpVsEABQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Kerolline\\Desktop\\C#\\classesHard\\classesHard.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kerolline\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.12\\microsoft.netcore.app.host.win-x64.3.1.12.nupkg.sha512"
+  ],
+  "logs": []
+}
