@@ -11,3 +11,16 @@ C:\Users\Kerolline\Desktop\C#\Functions(hard)\obj\Debug\netcoreapp3.1\Functions(
 C:\Users\Kerolline\Desktop\C#\Functions(hard)\obj\Debug\netcoreapp3.1\Functions(hard).dll
 C:\Users\Kerolline\Desktop\C#\Functions(hard)\obj\Debug\netcoreapp3.1\Functions(hard).pdb
 C:\Users\Kerolline\Desktop\C#\Functions(hard)\obj\Debug\netcoreapp3.1\Functions(hard).genruntimeconfig.cache
+C:\Users\Kerolline\Desktop\C#\Tasks\Evgenii\Functions(hard)\bin\Debug\netcoreapp3.1\Functions(hard).exe
+C:\Users\Kerolline\Desktop\C#\Tasks\Evgenii\Functions(hard)\bin\Debug\netcoreapp3.1\Functions(hard).deps.json
+C:\Users\Kerolline\Desktop\C#\Tasks\Evgenii\Functions(hard)\bin\Debug\netcoreapp3.1\Functions(hard).runtimeconfig.json
+C:\Users\Kerolline\Desktop\C#\Tasks\Evgenii\Functions(hard)\bin\Debug\netcoreapp3.1\Functions(hard).runtimeconfig.dev.json
+C:\Users\Kerolline\Desktop\C#\Tasks\Evgenii\Functions(hard)\bin\Debug\netcoreapp3.1\Functions(hard).dll
+C:\Users\Kerolline\Desktop\C#\Tasks\Evgenii\Functions(hard)\bin\Debug\netcoreapp3.1\Functions(hard).pdb
+C:\Users\Kerolline\Desktop\C#\Tasks\Evgenii\Functions(hard)\obj\Debug\netcoreapp3.1\Functions(hard).csprojAssemblyReference.cache
+C:\Users\Kerolline\Desktop\C#\Tasks\Evgenii\Functions(hard)\obj\Debug\netcoreapp3.1\Functions(hard).AssemblyInfoInputs.cache
+C:\Users\Kerolline\Desktop\C#\Tasks\Evgenii\Functions(hard)\obj\Debug\netcoreapp3.1\Functions(hard).AssemblyInfo.cs
+C:\Users\Kerolline\Desktop\C#\Tasks\Evgenii\Functions(hard)\obj\Debug\netcoreapp3.1\Functions(hard).csproj.CoreCompileInputs.cache
+C:\Users\Kerolline\Desktop\C#\Tasks\Evgenii\Functions(hard)\obj\Debug\netcoreapp3.1\Functions(hard).dll
+C:\Users\Kerolline\Desktop\C#\Tasks\Evgenii\Functions(hard)\obj\Debug\netcoreapp3.1\Functions(hard).pdb
+C:\Users\Kerolline\Desktop\C#\Tasks\Evgenii\Functions(hard)\obj\Debug\netcoreapp3.1\Functions(hard).genruntimeconfig.cache

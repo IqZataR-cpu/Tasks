@@ -15,7 +15,6 @@ namespace Functions_hard_
             enteredValue = int.Parse(Console.ReadLine());
 
             index = searchIndex(enteredValue);
-
             if (index == null)
             {
                 Console.WriteLine("Значения не существует");
@@ -33,8 +32,7 @@ namespace Functions_hard_
             int? index;
             index = null;
 
-            Console.WriteLine(array.Length);
-            while ((middleOfArray >= 0 && counter < array.Length) ||
+            while ((middleOfArray >= 0 && counter < array.Length) &&
                    (middleOfArray <= array.Length && counter < array.Length))
             {
                 counter = counter * 2;
@@ -44,14 +42,14 @@ namespace Functions_hard_
                     index = middleOfArray;
                     break;
                 }
-                if (array[middleOfArray] > value)
+
+                else if (array[middleOfArray] > value)
                 {
                     middleOfArray = middleOfArray - array.Length / counter;
+                    continue;
                 }
-                if (array[middleOfArray] < value)
-                {
+
                     middleOfArray = middleOfArray + array.Length / counter;
-                }
             }
 
             return index;
