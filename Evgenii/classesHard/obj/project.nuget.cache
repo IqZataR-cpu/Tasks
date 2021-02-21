@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "II2J4qecNqH5Wfbh+qubQMPrXEVOg5gbNiy6irr9+HGVEKF1WNX0RPGWePpKDZ+zaqvf/5deGzFsu+EpVsEABQ==",
+  "dgSpecHash": "uekNLQB/SQWypWziUaHdOE69quj9btc2u5uU/9NF5MXNzZB/gRR9l3qbpqjTcRjYoev2/3ouaHT9+ua+crxJag==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kerolline\\Desktop\\C#\\classesHard\\classesHard.csproj",
+  "projectFilePath": "C:\\Users\\Kerolline\\Desktop\\C#\\Tasks\\Evgenii\\classesHard\\classesHard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kerolline\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.12\\microsoft.netcore.app.host.win-x64.3.1.12.nupkg.sha512"
   ],

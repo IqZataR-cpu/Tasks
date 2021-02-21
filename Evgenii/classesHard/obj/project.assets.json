@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kerolline\\Desktop\\C#\\classesHard\\classesHard.csproj",
+      "projectUniqueName": "C:\\Users\\Kerolline\\Desktop\\C#\\Tasks\\Evgenii\\classesHard\\classesHard.csproj",
       "projectName": "classesHard",
-      "projectPath": "C:\\Users\\Kerolline\\Desktop\\C#\\classesHard\\classesHard.csproj",
+      "projectPath": "C:\\Users\\Kerolline\\Desktop\\C#\\Tasks\\Evgenii\\classesHard\\classesHard.csproj",
       "packagesPath": "C:\\Users\\Kerolline\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kerolline\\Desktop\\C#\\classesHard\\obj\\",
+      "outputPath": "C:\\Users\\Kerolline\\Desktop\\C#\\Tasks\\Evgenii\\classesHard\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kerolline\\AppData\\Roaming\\NuGet\\NuGet.Config",
