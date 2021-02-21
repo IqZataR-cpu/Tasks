@@ -22,7 +22,7 @@ namespace Practice.Figures
 
         public abstract double Area2 { get; }
 
-        public abstract double Area();
+        protected abstract double Area();
 
         public virtual void Print()
         {

@@ -1,0 +1,11 @@
+C:\Users\79205\RiderProjects\Tasks\Meetings\21.02.2021\Practice\Practice\bin\Debug\netcoreapp3.1\Practice.exe
+C:\Users\79205\RiderProjects\Tasks\Meetings\21.02.2021\Practice\Practice\bin\Debug\netcoreapp3.1\Practice.deps.json
+C:\Users\79205\RiderProjects\Tasks\Meetings\21.02.2021\Practice\Practice\bin\Debug\netcoreapp3.1\Practice.runtimeconfig.json
+C:\Users\79205\RiderProjects\Tasks\Meetings\21.02.2021\Practice\Practice\bin\Debug\netcoreapp3.1\Practice.runtimeconfig.dev.json
+C:\Users\79205\RiderProjects\Tasks\Meetings\21.02.2021\Practice\Practice\bin\Debug\netcoreapp3.1\Practice.dll
+C:\Users\79205\RiderProjects\Tasks\Meetings\21.02.2021\Practice\Practice\bin\Debug\netcoreapp3.1\Practice.pdb
+C:\Users\79205\RiderProjects\Tasks\Meetings\21.02.2021\Practice\Practice\obj\Debug\netcoreapp3.1\Practice.csprojAssemblyReference.cache
+C:\Users\79205\RiderProjects\Tasks\Meetings\21.02.2021\Practice\Practice\obj\Debug\netcoreapp3.1\Practice.AssemblyInfoInputs.cache
+C:\Users\79205\RiderProjects\Tasks\Meetings\21.02.2021\Practice\Practice\obj\Debug\netcoreapp3.1\Practice.AssemblyInfo.cs
+C:\Users\79205\RiderProjects\Tasks\Meetings\21.02.2021\Practice\Practice\obj\Debug\netcoreapp3.1\Practice.dll
+C:\Users\79205\RiderProjects\Tasks\Meetings\21.02.2021\Practice\Practice\obj\Debug\netcoreapp3.1\Practice.pdb
