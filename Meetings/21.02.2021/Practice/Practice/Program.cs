@@ -14,7 +14,7 @@ namespace Practice
             tetragon.Print();
             
             Console.WriteLine($"Площадь треугольника:{triangle.Area2}");
-            Console.WriteLine($"Площадь квадрата:{triangle.Area2}");
+            Console.WriteLine($"Площадь четырехугольника:{tetragon.Area2}");
         }
     }
 }

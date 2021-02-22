@@ -4,12 +4,12 @@ namespace Practice.Figures
 {
     public class Tetragon : Figure
     {
-        private int AB;
-        private int BC;
-        private int CD;
-        private int DA;
+        private double AB;
+        private double BC;
+        private double CD;
+        private double DA;
         
-        public Tetragon(string name, int ab, int bc, int cd, int da) : base(name)
+        public Tetragon(string name, double ab, double bc, double cd, double da) : base(name)
         {
             AB = ab;
             BC = bc;
@@ -18,8 +18,8 @@ namespace Practice.Figures
         }
 
         public override double Area2 => Area();
-        public int Perimeter => (AB + BC + CD + DA);
-        public int SemiPerimeter => Perimeter / 2;
+        public double Perimeter => AB + BC + CD + DA;
+        public double SemiPerimeter => Perimeter / 2;
         protected override double Area()
         {
             return Math.Sqrt(
