@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\79205\\RiderProjects\\Tasks\\Meetings\\21.02.2021\\Practice\\Practice\\Practice.csproj": {}
+    "C:\\Users\\Kerolline\\Desktop\\C#\\Tasks\\Meetings\\21.02.2021\\Practice\\Practice\\Practice.csproj": {}
   },
   "projects": {
-    "C:\\Users\\79205\\RiderProjects\\Tasks\\Meetings\\21.02.2021\\Practice\\Practice\\Practice.csproj": {
+    "C:\\Users\\Kerolline\\Desktop\\C#\\Tasks\\Meetings\\21.02.2021\\Practice\\Practice\\Practice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\79205\\RiderProjects\\Tasks\\Meetings\\21.02.2021\\Practice\\Practice\\Practice.csproj",
+        "projectUniqueName": "C:\\Users\\Kerolline\\Desktop\\C#\\Tasks\\Meetings\\21.02.2021\\Practice\\Practice\\Practice.csproj",
         "projectName": "Practice",
-        "projectPath": "C:\\Users\\79205\\RiderProjects\\Tasks\\Meetings\\21.02.2021\\Practice\\Practice\\Practice.csproj",
-        "packagesPath": "C:\\Users\\79205\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\79205\\RiderProjects\\Tasks\\Meetings\\21.02.2021\\Practice\\Practice\\obj\\",
+        "projectPath": "C:\\Users\\Kerolline\\Desktop\\C#\\Tasks\\Meetings\\21.02.2021\\Practice\\Practice\\Practice.csproj",
+        "packagesPath": "C:\\Users\\Kerolline\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kerolline\\Desktop\\C#\\Tasks\\Meetings\\21.02.2021\\Practice\\Practice\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\79205\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kerolline\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -47,12 +49,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.12, 3.1.12]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

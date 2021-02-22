@@ -29,4 +29,9 @@ namespace Practice.Figures
             Console.WriteLine($"name = {Name}");
         }
     }
+
+    public class Tt : Figure
+    {
+
+    }
 }

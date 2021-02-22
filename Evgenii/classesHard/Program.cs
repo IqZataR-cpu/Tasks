@@ -62,8 +62,12 @@ namespace classesHard
             }
         }
 
-        public void SortDesc() //Мб удалить
+        public void SortDesc() 
         {
+            for (int i = 0; i < this.; i++)//Отредачить
+            {
+                
+            }
             foreach (var item in this)
             {
                 
