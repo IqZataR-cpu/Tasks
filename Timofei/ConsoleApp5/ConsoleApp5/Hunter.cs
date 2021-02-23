@@ -14,7 +14,7 @@ namespace ConsoleApp5
         {
         }
         
-
+ 
         public override void Idle()
         {
             Health += RESTORE_HEALTH;
