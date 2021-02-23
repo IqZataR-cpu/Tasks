@@ -21,9 +21,11 @@ namespace ConsoleApp5
             _position = position;
             _orcType = orcType;
         }
-
+        // Лишние пустые строки, то как ты относишься к написанию кода,
+        // показывает твое отношение ко всему, будь внимательнее всегда и это войдет в привычку!
       
 
+        // Свойства всегда располагаются над конструктором.
         public float Health
         {
             get => _health;
@@ -56,11 +58,16 @@ namespace ConsoleApp5
 
         public string OrcType => _orcType;
 
+        // Enter между объявлениями методов!
         public abstract void Idle();
         public abstract void PlusStamina();
         public abstract void MinusStamina();
         public abstract void Attack(Orc target);
         
+        // Мне кажется эти 3 метода лучше сделать виртуальными,
+        // если понял о чем я вчера говорил, здесь сделать базовую реализацию,
+        // а если тебе нужно конкретно другое условие нанесения урона,
+        // то реализовать в подклассах свой overriden метод с блекджеком и шлюпками
         public abstract void TryApplayDamage(int damage);
         public abstract void MoveForvard();
         public abstract void MoveBack();
