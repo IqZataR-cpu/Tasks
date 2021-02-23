@@ -9,8 +9,6 @@ namespace NumMassive
         {
             const int maxNumberValue = 999;
             const int minNumberValue = 100;
-            const int eleven = 11;
-            const int twenty = 20;
             int number, numberCategory;
             string numberInWord;
             bool isNumberManyOrSmall = false;
@@ -90,7 +88,7 @@ namespace NumMassive
                     numberCategory = number;
                 }
 
-                bool isSecondDecade = numberCategory < minNumberValue && numberCategory >= eleven && numberCategory < twenty;
+                bool isSecondDecade = numberCategory < minNumberValue && numberCategory >= 11 && numberCategory < 20;
 
                 if (isSecondDecade)
                 {
