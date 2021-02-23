@@ -1,0 +1,12 @@
+D:\RiderProjects\project_one\Timofei\ConsoleApp5\ConsoleApp5\obj\Debug\netcoreapp2.0\ConsoleApp5.csprojAssemblyReference.cache
+D:\RiderProjects\project_one\Timofei\ConsoleApp5\ConsoleApp5\obj\Debug\netcoreapp2.0\ConsoleApp5.AssemblyInfoInputs.cache
+D:\RiderProjects\project_one\Timofei\ConsoleApp5\ConsoleApp5\obj\Debug\netcoreapp2.0\ConsoleApp5.AssemblyInfo.cs
+D:\RiderProjects\project_one\Timofei\ConsoleApp5\ConsoleApp5\obj\Debug\netcoreapp2.0\ConsoleApp5.csproj.CoreCompileInputs.cache
+D:\RiderProjects\project_one\Timofei\ConsoleApp5\ConsoleApp5\bin\Debug\netcoreapp2.0\ConsoleApp5.deps.json
+D:\RiderProjects\project_one\Timofei\ConsoleApp5\ConsoleApp5\bin\Debug\netcoreapp2.0\ConsoleApp5.runtimeconfig.json
+D:\RiderProjects\project_one\Timofei\ConsoleApp5\ConsoleApp5\bin\Debug\netcoreapp2.0\ConsoleApp5.runtimeconfig.dev.json
+D:\RiderProjects\project_one\Timofei\ConsoleApp5\ConsoleApp5\bin\Debug\netcoreapp2.0\ConsoleApp5.dll
+D:\RiderProjects\project_one\Timofei\ConsoleApp5\ConsoleApp5\bin\Debug\netcoreapp2.0\ConsoleApp5.pdb
+D:\RiderProjects\project_one\Timofei\ConsoleApp5\ConsoleApp5\obj\Debug\netcoreapp2.0\ConsoleApp5.dll
+D:\RiderProjects\project_one\Timofei\ConsoleApp5\ConsoleApp5\obj\Debug\netcoreapp2.0\ConsoleApp5.pdb
+D:\RiderProjects\project_one\Timofei\ConsoleApp5\ConsoleApp5\obj\Debug\netcoreapp2.0\ConsoleApp5.genruntimeconfig.cache
