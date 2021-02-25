@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\RiderProjects\\project_one\\Timofei\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj": {}
+  },
+  "projects": {
+    "D:\\RiderProjects\\project_one\\Timofei\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\RiderProjects\\project_one\\Timofei\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj",
+        "projectName": "ConsoleApp3",
+        "projectPath": "D:\\RiderProjects\\project_one\\Timofei\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "D:\\RiderProjects\\project_one\\Timofei\\ConsoleApp3\\ConsoleApp3\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

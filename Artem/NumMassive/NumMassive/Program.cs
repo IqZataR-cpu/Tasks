@@ -3,33 +3,17 @@ using System.Collections.Generic;
 
 namespace NumMassive
 {
-    // В целом написано неплохо, но есть свои косяки,
-    // алгоритм явно не идеален и подлежит пересмотру.
-    // Поправь все комментарии и будет готово.
-    // Объектно ориентированная модель состояла бы из следующих объектов:
-    // Некий NumberTranslator в котором хранилась логика преобразования числа в строковый формат
-    // и При вызове метода translate(number) возвращалась бы строка в виде который делает твоя прога.
-    // Примерный код: 
-    // NumberTranslator translator = new NumberTranslator();
-    // string numberToString = translator.translate(Console.ReadLine());
-    // Console.WriteLine(numberToString);
     class Program
     {
         static void Main(string[] args)
-        { // Зачем здесь пустая строка перед инициализацией?
-
-            // Сокращения обычно приводят к ухудшению читабельности кода,
-            // поэтому стараемся писать полные названия
-            // Только если они обще принятые или ты их везде используешь по проекту
-            // В данном случае ошибка в isNumberManyOrSmall
-            // Названия переменных с маленькой буквы,
-            // с большой только если это очень важная сущность(класс)
-            int Num, NumCategory;
-            string NumInWord;
+        {
+            const int maxNumberValue = 999;
+            const int minNumberValue = 100;
+            int number, numberCategory;
+            string numberInWord;
             bool isNumberManyOrSmall = false;
 
-            // Не корректное название переменной ifNum не несет в себе смысла.
-            Dictionary<int, string> ifNum = new Dictionary<int, string>
+            Dictionary<int, string> arrayWordOfNumber = new Dictionary<int, string>
             {
                 {100, "cто "},
                 {200, "двести "},
@@ -71,80 +55,65 @@ namespace NumMassive
 
             do
             {
-                NumInWord = "";
+                numberInWord = "";
                 Console.WriteLine("Введите трехзначное число");
-                Num = int.Parse(Console.ReadLine());
-                // Я бы оставил здесь пустую строку разделив блок ввода и логический блок
-                if (Num < 0)
+                number = int.Parse(Console.ReadLine());
+              
+                if (number < 0)
                 {
-                    NumInWord = "минус ";
-                    // Эквивалентно Num = -Num; 
-                    Num *= -1;
+                    numberInWord = "минус ";
+                    number = -number;
                 }
-                // Магические числа в коде, лучше вынести в константы и пользоваться константами
-                // const MAX_NUMBER_VALUE = 999 MIN_NUMBER_VALUE = 100; 
-                isNumberManyOrSmall = Num > 999 || Num < 100;
+
+                isNumberManyOrSmall = number > maxNumberValue || number < minNumberValue;
 
                 if (isNumberManyOrSmall)
                 {
-                    // тоже ненавижу это слово "соответствует",
-                    // всегда когда его пишу прочитаваю вслух как дурак, чтобы не ошибиться
-                    Console.WriteLine("Число не соответсвует требованию, введите другое число");
+                    Console.WriteLine("Число не удовлетворяет требованию, введите другое число");
                 }
             }
             while (isNumberManyOrSmall);
 
 
-            NumCategory = (Num / 100) * 100;
-            // Если можем то сокращаем запись Num -= NumCategory
-            Num = Num - NumCategory;
+            numberCategory = (number / 100) * 100;
+            number -= numberCategory;
 
-            foreach (var NumStr in ifNum)
+            foreach (var numberString in arrayWordOfNumber)
             {
-                // второе условие не отражает название переменной
-                bool isNumMoreThanHudred = NumCategory > 99 && NumCategory == NumStr.Key;
-                if (isNumMoreThanHudred)
-                {
-                    // сокращаем где возможно NumInWord += NumStr.Value
-                    NumInWord = NumInWord + NumStr.Value;
-                    NumCategory = Num;
-                }
-                
-                // Мне кажется название firstDecade лучше отражает смысл - субьективно
-                bool isNumTens = NumCategory < 100 && NumCategory >= 11 && NumCategory < 20;
+                bool isFirstDecade = numberCategory >= minNumberValue && numberCategory == numberString.Key;
 
-                if (isNumTens)
+                if (isFirstDecade)
                 {
-                    if (NumCategory == NumStr.Key)
+                    numberInWord += numberString.Value;
+                    numberCategory = number;
+                }
+
+                bool isSecondDecade = numberCategory < minNumberValue && numberCategory >= 11 && numberCategory < 20;
+
+                if (isSecondDecade)
+                {
+                    if (numberCategory == numberString.Key)
                     {
-                        // сокращаем где возможно NumInWord += NumStr.Value
-                        NumInWord = NumInWord + NumStr.Value;
-                        Console.WriteLine(NumInWord);
+                        numberInWord += numberString.Value;
+                        Console.WriteLine(numberInWord);
                         return;
                     }
                 }
-                else if (NumCategory < 100)
+                else if (numberCategory < minNumberValue)
                 {
-                    NumCategory = (NumCategory / 10) * 10;
+                    numberCategory = (numberCategory / 10) * 10;
 
-                    // очень тяжело по условию понять, что это именно десятки,
-                    // хорошо что ты написал это в названии переменной,
-                    // иначе пришлось бы пол часа тратить только на то, чтобы понять это
-                    isNumTens = NumCategory == NumStr.Key || Num == NumStr.Key;
+                    bool isNumTens = numberCategory == numberString.Key || number == numberString.Key;
 
                     if (isNumTens)
                     {
-                        // сокращаем где возможно Num -= NumCategory
-                        Num = Num - NumCategory;
-                        // сокращаем где возможно NumInWord += NumStr.Value
-                        NumInWord = NumInWord + NumStr.Value;
+                        number -= numberCategory;
+                        numberInWord += numberString.Value;
                     }
                 }
             }
-
-            Console.WriteLine(NumInWord);
+            
+            Console.WriteLine(numberInWord);
         }
     }
 }
-// Твоя Ide подчеркивает некоторые косячные моменты,
-// наводись мышкой и читай, примеры там где сокращения строки 140, 138 и тд
