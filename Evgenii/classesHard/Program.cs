@@ -16,6 +16,8 @@ namespace classesHard
             OutputMinMax(numbers);            
             SearchIndex();
             SortList();
+            FlipArray();
+            PrintCountEvenOdd();
         }
 
         public static void OutputMinMax(ExtendedList numbers)
@@ -43,11 +45,22 @@ namespace classesHard
 
             Console.WriteLine("\nСортируем по убыванию");
 
-            numbers.SortDesc(); //Исправить сорт
+            numbers.SortDesc(); 
             numbers.Print();
         }
 
+        static void FlipArray()
+        {
+            Console.WriteLine("\nПереворачиваем массив");
+            numbers.Reverse();
+            numbers.Print();
+        } 
 
+        static void PrintCountEvenOdd()
+        {
+            Console.WriteLine($"\nЧисло чётных чисел в массиве: {numbers.CountEven()}");
+            Console.WriteLine($"\nЧисло нечётных чисел в массиве: {numbers.CountOdd()}");    
+        }
     }
 
     public class ExtendedList : List<int>
@@ -64,14 +77,45 @@ namespace classesHard
 
         public void SortDesc() 
         {
-            for (int i = 0; i < this.; i++)//Отредачить
+            int temp;
+            for (int i = 0; i < this.Count; i++)
             {
-                
+                for (int j = i + 1; j < this.Count; j++)
+                {
+                    if (this[i] < this[j])
+                    {
+                        temp = this[i];
+                        this[i] = this[j];
+                        this[j] = temp;
+                    }
+                }
             }
-            foreach (var item in this)
+        }
+        
+        public int CountEven()
+        {
+            int countEvenValues = 0;
+            for (int i = 0; i < this.Count; i++)
             {
-                
+                if (this[i] % 2 == 0)
+                {
+                    countEvenValues += 1;
+                }
             }
+            return countEvenValues;
+        }
+
+        public int CountOdd()
+        {
+            int countOddValues = 0;
+            for (int i = 0; i < this.Count; i++)
+            {
+                if (this[i] % 2 == 1)
+                {
+                    countOddValues += 1;
+                }
+            }
+            return countOddValues;
         }
     }
 }

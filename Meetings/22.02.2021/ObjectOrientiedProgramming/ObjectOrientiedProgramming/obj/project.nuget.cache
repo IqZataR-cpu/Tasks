@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "MN8eCjFc92jnwW+xDBTMtVPOOA5uxcpigyMed+cAfBCp39EkOJFJ8A8Ujo3tEFWpQ8vZVXJhuzjGsRu5ITw8Sg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Kerolline\\Desktop\\C#\\Tasks\\Meetings\\22.02.2021\\ObjectOrientiedProgramming\\ObjectOrientiedProgramming\\ObjectOrientiedProgramming.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kerolline\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.12\\microsoft.netcore.app.host.win-x64.3.1.12.nupkg.sha512"
+  ],
+  "logs": []
+}

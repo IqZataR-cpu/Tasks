@@ -3,7 +3,7 @@
 namespace Practice.Figures
 {
     // Задача на полиморфизм подтипов,
-    // Реализовать методы Print и Area(Площадь) и свойство Area2 - пример свойства - Name
+    // Реализовать методы Print и Area(Площадь) и свойство Area2, пример свойства - Name
     // для подтипов Triangle и Tetragon(четырехугольник)
     public abstract class Figure
     {
@@ -22,7 +22,7 @@ namespace Practice.Figures
 
         public abstract double Area2 { get; }
 
-        public abstract double Area();
+        protected abstract double Area();
 
         public virtual void Print()
         {
