@@ -19,7 +19,7 @@ namespace HardFunction
             Console.WriteLine("Введите число");
             inputNumber = int.Parse(Console.ReadLine());
 
-            numberOfElementArray = BinarySearching(numbers, inputNumber, leftBorderArray, rigthBorderArray) + 1;
+            numberOfElementArray = BinarySearching(numbers, inputNumber, leftBorderArray, rigthBorderArray);
 
             if (numberOfElementArray == 0)
             {
@@ -35,20 +35,19 @@ namespace HardFunction
         {
 
             const int NUMBERNOTFOUND = 0;
-            int middleArray = (leftBorderArray + rightBorderArray);
-            // Используется для поиска крайнего правого значение для передачи его правильного места в массиве
-            if (middleArray % 2 == 1)
+            int middleArray = (leftBorderArray + rightBorderArray)/2;
+           
+            if (middleArray == numbers.Length-2)
             {
-                middleArray /= 2;
                 middleArray += 1;
             }
 
             bool isFind = number == numbers[middleArray];
-            bool isNotFind = (leftBorderArray - middleArray == 0 && rightBorderArray - middleArray == 1);
-
+            bool isNotFind = (leftBorderArray - middleArray == 0 || rightBorderArray - middleArray == 1);
+            
             if (isFind)
             {
-                return middleArray;
+                return middleArray+1;
             }
 
             if (isNotFind)
