@@ -12,27 +12,33 @@ namespace Cycle_Hard
             int y = 0;
             int countTrys = 0;
 
-                while (y == 0)
-                {
-                    if (divisibleNumber == 2)
-                    {
-                        y++;
-                        countTrys++;
-                    }
-                    else if (divisibleNumber % 2 == 0)
-                    {
-                        divisibleNumber = divisibleNumber / 2;
-                        countTrys++;
-                    }
-                    else
-                    {
-                        divisibleNumber = (divisibleNumber * 3 + 1) / 2;
-                        countTrys++;
-                    }
-                }
-                
-                Console.WriteLine("Получилось!");
-                Console.WriteLine("Количество операций: {0}", countTrys);
-                }
+            if (divisibleNumber == 0)
+            {
+                Console.WriteLine("Нельзя преобразовать 0!");
+            }
+            else
+            {
+               while (y == 0)
+               {
+                   if (divisibleNumber == 2)
+                   {
+                       y++;
+                       countTrys++;
+                       Console.WriteLine("Получилось!");
+                       Console.WriteLine("Количество операций: {0}", countTrys);
+                   }
+                   else if (divisibleNumber % 2 == 0)
+                   {
+                       divisibleNumber = divisibleNumber / 2;
+                       countTrys++;
+                   }
+                   else
+                   {
+                       divisibleNumber = (divisibleNumber * 3 + 1) / 2;
+                       countTrys++;
+                   }
+               } 
+            }
+        }
         }
     }
