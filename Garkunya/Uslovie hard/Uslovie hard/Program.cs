@@ -15,27 +15,34 @@ namespace Uslovie_hard
             Console.Write("Введите 3 сторону треугольника: ");
             int c = int.Parse(Console.ReadLine());
 
-            if (((a + b) < c) || ((a + c) < b) || ((b + c) < a))
+            if ((a == 0) || (b == 0) || (c == 0))
             {
-                Console.WriteLine("Такого треугольника не существует!");
+                Console.Write("Сторона введена не корректно!");
             }
             else
             {
-                if ((a == b) && (a == c) && (b == c))
-                {
-                    Console.WriteLine("Треугольник равносторонний!");
-                }
-                else
-                {
-                    if ((a == b) || (a == c) || (b == c))
-                    {
-                        Console.WriteLine("Треугольник равнобедренный!");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Треугольник разносторонний!");
-                    }
-                }
+               if (((a + b) < c) || ((a + c) < b) || ((b + c) < a))
+                           {
+                               Console.WriteLine("Такого треугольника не существует!");
+                           }
+                           else
+                           {
+                               if ((a == b) && (a == c) && (b == c))
+                               {
+                                   Console.WriteLine("Треугольник равносторонний!");
+                               }
+                               else
+                               {
+                                   if ((a == b) || (a == c) || (b == c))
+                                   {
+                                       Console.WriteLine("Треугольник равнобедренный!");
+                                   }
+                                   else
+                                   {
+                                       Console.WriteLine("Треугольник разносторонний!");
+                                   }
+                               }
+                           } 
             }
         }
     }
