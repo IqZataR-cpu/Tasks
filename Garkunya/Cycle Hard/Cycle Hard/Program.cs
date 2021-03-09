@@ -37,8 +37,8 @@ namespace Cycle_Hard
                        divisibleNumber = (divisibleNumber * 3 + 1) / 2;
                        countTrys++;
                    }
-               } 
+               }
             }
         }
-        }
     }
+}
