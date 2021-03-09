@@ -6,58 +6,35 @@ namespace Uslovie_hard
     {
         static void Main(string[] args)
         {
-            //Название переменной должно соответствовать её предназначению.
-            //Например, вместо a, b, c, можно назвать переменные firstSide, secondSide и thirdSide. 
-            //Ты можешь посмотреть пример создания переменных в моём коде.
-            Console.Write("Введите 1 сторону треугольника: "); 
-            int a = int.Parse(Console.ReadLine());
+            Console.Write("Введите 1 сторону треугольника: ");
+            int firstSide = int.Parse(Console.ReadLine());
             
             Console.Write("Введите 2 сторону треугольника: ");
-            int b = int.Parse(Console.ReadLine());
+            int secondSide = int.Parse(Console.ReadLine());
             
             Console.Write("Введите 3 сторону треугольника: ");
-            int c = int.Parse(Console.ReadLine());
-            //Лишние скобки в условии. Между логическими операторами учитывается 
-            //всё выражение целиком, поэтому можно написать вот так: (a == 0 || b == 0 || c == 0)
-            if ((a == 0) || (b == 0) || (c == 0)) 
+            int thirdSide = int.Parse(Console.ReadLine());
+
+            if (firstSide == 0 || secondSide == 0 || thirdSide == 0)
             {
                 Console.Write("Сторона введена не корректно!");
             }
+            else if ((firstSide + secondSide) < thirdSide || (firstSide + thirdSide) < secondSide || (secondSide + thirdSide) < firstSide)
+            {
+                Console.WriteLine("Такого треугольника не существует!");
+            }
+            else if (firstSide == secondSide && firstSide == thirdSide && secondSide == thirdSide)
+            {
+                Console.WriteLine("Треугольник равносторонний!");
+            }
+            else if (firstSide == secondSide || firstSide == thirdSide || secondSide == thirdSide)
+            {
+                Console.WriteLine("Треугольник равнобедренный!");
+            }
             else
             {
-                //То же самое, что и выше
-                //Слишком много скобок ухудшает читабельность кода, так что лишние убери
-                //Так же сделан лишний пробел. Посмотри по пробелам, как у тебя сделано на строках 22-25
-                //Тут у тебя фигурная скобка на несколько табов впереди. Чтобы это быстро исправить, выдели кусок кода,
-                //который нужно перенести назад и нажми Shift + tab
-                if (((a + b) < c) || ((a + c) < b) || ((b + c) < a)). 
-                           {
-                               Console.WriteLine("Такого треугольника не существует!");
-                           }
-                           else
-                           {
-                               if ((a == b) && (a == c) && (b == c))
-                               {
-                                   Console.WriteLine("Треугольник равносторонний!");
-                               }
-                               else //Лишнее else. Тут можно использовать либо конструкцию else if (Дословно "в ином случае если"), либо просто новый if 
-                               {                
-                                   //То же самое, что и выше
-                                   if ((a == b) || (a == c) || (b == c)) 
-                                   {
-                                       Console.WriteLine("Треугольник равнобедренный!");
-                                   }
-                                   else
-                                   {
-                                       Console.WriteLine("Треугольник разносторонний!");
-                                   }
-                               }
-                           } 
+                Console.WriteLine("Треугольник разносторонний!");
             }
         }
-    }
+    } 
 }
-
-//Запомни, код нужно писать так, чтобы впоследствии люди только взглянув на него, могли понять что и для чего нужно
-//Классы, переменные, интерфейсы итд нужно называть так, чтобы было понятно для чего они используются. Работай не на скорость выполнения задачи,
-//А на реюзабельность твоего кода.
