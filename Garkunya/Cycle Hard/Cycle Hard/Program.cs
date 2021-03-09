@@ -39,6 +39,6 @@ namespace Cycle_Hard
                    }
                }
             }
-        }
+        } 
     }
 }
