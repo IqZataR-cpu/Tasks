@@ -9,7 +9,7 @@ namespace Cycle_Hard
             Console.Write("Введите любое натуральное число: ");
             
             int divisibleNumber = int.Parse(Console.ReadLine());
-            int y = 0;
+            int ready = 0;
             int countTrys = 0;
 
             if (divisibleNumber == 0)
@@ -18,11 +18,11 @@ namespace Cycle_Hard
             }
             else
             {
-               while (y == 0)
+               while (ready == 0)
                {
                    if (divisibleNumber == 2)
                    {
-                       y++;
+                       ready++;
                        countTrys++;
                        Console.WriteLine("Получилось!");
                        Console.WriteLine("Количество операций: {0}", countTrys);

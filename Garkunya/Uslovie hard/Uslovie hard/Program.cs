@@ -19,22 +19,22 @@ namespace Uslovie_hard
             {
                 Console.Write("Сторона введена не корректно!");
             }
-            else if ((firstSide + secondSide) < thirdSide || (firstSide + thirdSide) < secondSide || (secondSide + thirdSide) < firstSide)
-            {
-                Console.WriteLine("Такого треугольника не существует!");
-            }
-            else if (firstSide == secondSide && firstSide == thirdSide && secondSide == thirdSide)
-            {
-                Console.WriteLine("Треугольник равносторонний!");
-            }
-            else if (firstSide == secondSide || firstSide == thirdSide || secondSide == thirdSide)
-            {
-                Console.WriteLine("Треугольник равнобедренный!");
-            }
-            else
-            {
-                Console.WriteLine("Треугольник разносторонний!");
-            }
+                else if ((firstSide + secondSide) < thirdSide || (firstSide + thirdSide) < secondSide || (secondSide + thirdSide) < firstSide)
+                {
+                    Console.WriteLine("Такого треугольника не существует!");
+                }
+                    else if (firstSide == secondSide && firstSide == thirdSide && secondSide == thirdSide)
+                    {
+                        Console.WriteLine("Треугольник равносторонний!");
+                    }
+                        else if (firstSide == secondSide || firstSide == thirdSide || secondSide == thirdSide)
+                        {
+                            Console.WriteLine("Треугольник равнобедренный!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Треугольник разносторонний!");
+                        }
         }
     } 
 }
