@@ -5,8 +5,8 @@ namespace oopEasy
     public class Shaman : Orc
     {
         private int maxhealth = 300;
-        public Shaman(string name, int health, int stamina, int armor, int damage, int moveSpeed) :
-            base(name, health, stamina, armor, damage, moveSpeed)
+        public Shaman(string name) :
+            base(name)
         {
             _health = maxhealth;
             _stamina = 150;

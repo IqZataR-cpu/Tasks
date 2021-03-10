@@ -5,10 +5,9 @@ namespace oopEasy
     public class Hunter : Orc
     {
         private int maxhealth = 250;
-        protected Hunter(string name, int health, int stamina, int armor, int damage, int moveSpeed) :
-        base(name, health, stamina, armor, damage, moveSpeed)
+        public Hunter(string name) :
+        base(name)
         {
-            //_maxhealth = 300;
             _health = maxhealth;
             _stamina = 2000;
             _armor = 7;

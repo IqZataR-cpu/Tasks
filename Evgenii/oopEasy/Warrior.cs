@@ -5,8 +5,8 @@ namespace oopEasy
     public class Warrior : Orc
     {
         private int maxhealth = 450;
-        protected Warrior(string name, int health, int stamina, int armor, int damage, int moveSpeed) :
-        base(name, health, stamina, armor, damage, moveSpeed)
+        public Warrior(string name) :
+        base(name)
         {
             _health = maxhealth;
             _stamina = 100;
