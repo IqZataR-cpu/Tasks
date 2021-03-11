@@ -41,6 +41,7 @@ namespace oopEasy
             if (_health < maxhealth)
             {
                 _health += _health / 10;
+
                 if (_health > maxhealth)
                 {
                     _health = maxhealth;
