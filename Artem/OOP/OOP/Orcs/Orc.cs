@@ -12,7 +12,7 @@ namespace OOP.Orcs
         private int _position = 0;
         protected Orc(int health, int stamina, int armor, int damage, int movementSpeed)
         {
-            this.health = health;
+            this.health = health; //В C# использование this не обязательно. Более того, вроде как это является ошибкой
             this.stamina = stamina;
             this.armor = armor;
             this.damage = damage;
