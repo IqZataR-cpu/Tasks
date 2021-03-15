@@ -5,7 +5,7 @@ namespace ConsoleApp17
 {
     class Program
     {
-        public const int MAXSIZESRING = 3;
+        public const int MAXSIZESTRING = 3;
         public const int MAXCOLUMNS = 4;
 
         static void Main(string[] args)
@@ -28,7 +28,7 @@ namespace ConsoleApp17
         {
             int maxNumber = 0;
 
-            for (int i = 0; i < MAXSIZESRING; i++)
+            for (int i = 0; i < MAXSIZESTRING; i++)
             {
                 for (int j = 0; j < MAXCOLUMNS; j++)
                 {
@@ -36,6 +36,7 @@ namespace ConsoleApp17
                 }
                 Console.WriteLine();
             }
+            
             Console.WriteLine();
         }
         /// <summary>
@@ -48,7 +49,7 @@ namespace ConsoleApp17
         {
             double maxValue = 0;
             int indexArray = 0;
-            for (int i = 0; i < MAXSIZESRING; i++)
+            for (int i = 0; i < MAXSIZESTRING; i++)
             {
                 for (int j = 0; j < MAXCOLUMNS; j++)
                 {
@@ -71,29 +72,14 @@ namespace ConsoleApp17
         /// <param name="indexArray"></param>
         static void ReplacementArray(double[,] arrayOne, double[] arraySecond, int indexArray)
         {
-            for (int i = 0; i < MAXSIZESRING; i++)
+            for (int i = 0; i < MAXSIZESTRING; i++)
             {
                 arraySecond[i] = arrayOne[i, indexArray];
-            }
-
-            for (int i = 0; i < MAXSIZESRING; i++)
-            {
                 arrayOne[i, indexArray] = arrayOne[i,0];
-            }
-
-            for (int i = 0; i < MAXSIZESRING; i++)
-            {
                 arrayOne[i, 0] = arraySecond[i];
             }
-
-            for (int i = 0; i < MAXSIZESRING; i++)
-            {
-                for (int j = 0; j < MAXCOLUMNS; j++)
-                {
-                    Console.Write($"{arrayOne[i,j]}    ");
-                }
-                Console.WriteLine();
-            }
+            
+            ViewArray(arrayOne);
         }
     }
 }
