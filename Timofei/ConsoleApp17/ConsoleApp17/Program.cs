@@ -35,10 +35,8 @@ namespace ConsoleApp17
                 {
                     Console.Write($"{array[i, j]} ");
                 }
-
                 Console.WriteLine();
             }
-
             Console.WriteLine();
         }
         /// <summary>
@@ -58,7 +56,6 @@ namespace ConsoleApp17
                     if (array[i,j] > maxValue)
                     {
                         maxValue = array[i, j];
-
                         indexArray = j;
                     }
                 }
