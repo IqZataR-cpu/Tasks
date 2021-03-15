@@ -8,7 +8,7 @@ namespace ConsoleApp18
         {
             // А если я введу отрицательное значение, что будет 
             // Хмммм....
-            Console.WriteLine("Введите значения сторон треугольника:");
+            Console.WriteLine("Введите три отрезка:");
             Console.Write("A= ");
             int a = Convert.ToInt32(Console.ReadLine());
             Console.Write("B= ");
@@ -16,6 +16,8 @@ namespace ConsoleApp18
             Console.Write("C= ");
             int c = Convert.ToInt32(Console.ReadLine());
             
+            // Проверка на введение отрицательных чисел.
+            bool anTriangle = ((a > 0) & (c > 0) & (c > 0));
             // Проверка на существование треугольника.
             bool existenceTriangle = (((a + b) < c)) || ((a + c) < a) || ((b + c) < b);
             // Проверка является ли треугольник равносторонним.
@@ -27,17 +29,19 @@ namespace ConsoleApp18
                                       (b == c) && (b != a) && (c != a) || 
                                       (a == c) && (b != c) && (b != c) || 
                                       (b == c) && (b != a) && (c != a));
-            
-            if (existenceTriangle)
+            if (anTriangle)
             {
-                Console.WriteLine("Треугольник не существует.");
-            }
-             else
-            {
-                if (equilateralTriangle) Console.WriteLine("Равносторонний треугольник.");
-                if (versatileTriangle)   Console.WriteLine("Разносторонний треугольник.");
-                if (isoscelesTriangle)   Console.WriteLine("Равнобедренный треугольник.");
-            }
+                if (existenceTriangle)
+                {
+                    Console.WriteLine("Треугольник не существует.");
+                }
+                else
+                {
+                    if (equilateralTriangle) Console.WriteLine("Равносторонний треугольник.");
+                    if (versatileTriangle)   Console.WriteLine("Разносторонний треугольник.");
+                    if (isoscelesTriangle)   Console.WriteLine("Равнобедренный треугольник.");
+                }
+            }  else    Console.WriteLine("С данных отрезков треугольник не существует.");
         }
     }
 }
