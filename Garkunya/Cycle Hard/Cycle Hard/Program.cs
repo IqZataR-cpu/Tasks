@@ -10,7 +10,7 @@ namespace Cycle_Hard
             
             int divisibleNumber = int.Parse(Console.ReadLine());
             int ready = 0;
-            int countTrys = 0;
+            int countOperation = 0;
 
             if (divisibleNumber == 0)
             {
@@ -23,19 +23,19 @@ namespace Cycle_Hard
                    if (divisibleNumber == 2)
                    {
                        ready++;
-                       countTrys++;
+                       countOperation++;
                        Console.WriteLine("Получилось!");
-                       Console.WriteLine("Количество операций: {0}", countTrys);
+                       Console.WriteLine("Количество операций: {0}", countOperation);
                    }
                    else if (divisibleNumber % 2 == 0)
                    {
                        divisibleNumber = divisibleNumber / 2;
-                       countTrys++;
+                       countOperation++;
                    }
                    else
                    {
                        divisibleNumber = (divisibleNumber * 3 + 1) / 2;
-                       countTrys++;
+                       countOperation++;
                    }
                }
             }
