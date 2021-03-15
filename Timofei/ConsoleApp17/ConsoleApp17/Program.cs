@@ -18,7 +18,6 @@ namespace ConsoleApp17
             int indexArray = Convert.ToInt32(IndexArray(doubleArray));
 
             ReplacementArray(doubleArray, secondArray, indexArray);
-
         }
         
         /// <summary>
