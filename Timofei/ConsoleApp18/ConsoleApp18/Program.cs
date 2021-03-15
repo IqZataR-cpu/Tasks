@@ -6,6 +6,8 @@ namespace ConsoleApp18
     {
         static void Main(string[] args)
         {
+            // А если я введу отрицательное значение, что будет 
+            // Хмммм....
             Console.WriteLine("Введите значения сторон треугольника:");
             Console.Write("A= ");
             int a = Convert.ToInt32(Console.ReadLine());
