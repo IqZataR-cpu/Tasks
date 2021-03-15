@@ -5,6 +5,10 @@ namespace ConsoleApp17
 {
     class Program
     {
+        // Код действительно пприятно читать, очень понравилась
+        // Фича с тегами очень понравилась, классная идея
+        // За это бы я добавил ещё один бал, но решать не мне
+
         public const int MAXSIZESRING = 3;
         public const int MAXCOLUMNS = 4;
 
@@ -27,7 +31,7 @@ namespace ConsoleApp17
         static void ViewArray(double[,] array)
         {
             int maxNumber = 0;
-
+            // Не забывааем про пустую строку между действием и циклом
             for (int i = 0; i < MAXSIZESRING; i++)
             {
                 for (int j = 0; j < MAXCOLUMNS; j++)
@@ -59,7 +63,7 @@ namespace ConsoleApp17
                     }
                 }
             }
-
+           
             return indexArray;
         }
         
@@ -71,6 +75,8 @@ namespace ConsoleApp17
         /// <param name="indexArray"></param>
         static void ReplacementArray(double[,] arrayOne, double[] arraySecond, int indexArray)
         {
+            // Не понимаю, почему ты сделал три одинаковых цикла
+            // Все 3 действия можно под один цикл
             for (int i = 0; i < MAXSIZESRING; i++)
             {
                 arraySecond[i] = arrayOne[i, indexArray];
@@ -85,7 +91,8 @@ namespace ConsoleApp17
             {
                 arrayOne[i, 0] = arraySecond[i];
             }
-
+            // Для вывода у тебя уже есть метод, используй его
+            // Иначе у тебе получается переполнение ответственности у метода
             for (int i = 0; i < MAXSIZESRING; i++)
             {
                 for (int j = 0; j < MAXCOLUMNS; j++)
