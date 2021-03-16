@@ -6,8 +6,7 @@ namespace ConsoleApp18
     {
         static void Main(string[] args)
         {
-            // А если я введу отрицательное значение, что будет 
-            // Хмммм....
+            
             Console.WriteLine("Введите три отрезка:");
             Console.Write("A= ");
             int a = Convert.ToInt32(Console.ReadLine());
@@ -29,6 +28,7 @@ namespace ConsoleApp18
                                       (b == c) && (b != a) && (c != a) || 
                                       (a == c) && (b != c) && (b != c) || 
                                       (b == c) && (b != a) && (c != a));
+           
             if (anTriangle)
             {
                 if (existenceTriangle)
@@ -41,7 +41,11 @@ namespace ConsoleApp18
                     if (versatileTriangle)   Console.WriteLine("Разносторонний треугольник.");
                     if (isoscelesTriangle)   Console.WriteLine("Равнобедренный треугольник.");
                 }
-            }  else    Console.WriteLine("С данных отрезков треугольник не существует.");
+            }
+            else
+            {
+                Console.WriteLine("С данных отрезков треугольник не существует.");
+            }
         }
     }
 }
