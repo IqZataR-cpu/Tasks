@@ -16,7 +16,10 @@ namespace ConsoleApp19
                 // Не следует else после этого действия
 
                 // Четное число всегда будет равно 1.
-                if (naturalNumber % 2 == 0) naturalNumber = naturalNumber / 2;
+                if (naturalNumber % 2 == 0)
+                {
+                    naturalNumber = naturalNumber / 2;
+                }
                 else
                 {
                     // Необходимо преобразовать нечетное число в четное. 
