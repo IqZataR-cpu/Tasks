@@ -39,10 +39,13 @@ namespace OOP.Orcs
 
             return false;
         }
-        public override void Rest()
+        public override void Rest() 
         {
             health += 15;
             stamina += 15;
+            //Небольшая ошибка: ты можешь отдыхая набить себе хп и стамину до бесконечности. 
+            //Я бы сделал некий параметр maxHealth и maxStamina и делал проверку перед добавлением соответствующих параметров.
+            //Но это на усмотрение, просто мои мысли.
         }
         public override void Print()
         {

@@ -2,8 +2,10 @@
 
 namespace ObjectOrientiedProgramming
 {
+    
     public abstract class Human
     {
+        
         protected string _name;
         protected double _health;
         protected int _speed;
@@ -18,6 +20,7 @@ namespace ObjectOrientiedProgramming
         
         protected Human(string name, double health, int speed, double attackDamage, double armor)
         {
+            int[] array = new int[5] { 0, 1, 2, 3, 4};
             _name = name;
             _health = health;
             _speed = speed;
@@ -52,3 +55,6 @@ namespace ObjectOrientiedProgramming
         }
     }
 }
+
+
+
