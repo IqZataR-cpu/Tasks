@@ -15,8 +15,8 @@ namespace ConsoleApp18
             Console.Write("C= ");
             int c = Convert.ToInt32(Console.ReadLine());
             
-            // Проверка на введение отрицательных чисел.
-            bool anTriangle = ((a > 0) & (c > 0) & (c > 0));
+            // Проверка отрезков на допустимость.
+            bool anSnippet = ((a > 0) & (c > 0) & (c > 0));
             // Проверка на существование треугольника.
             bool existenceTriangle = (((a + b) < c)) || ((a + c) < a) || ((b + c) < b);
             // Проверка является ли треугольник равносторонним.
@@ -26,12 +26,11 @@ namespace ConsoleApp18
             // Проверка является ли треугольник равнобедренным.
             bool isoscelesTriangle = ((a == b) && (b != c) && (a != c) || 
                                       (b == c) && (b != a) && (c != a) || 
-                                      (a == c) && (b != c) && (b != c) || 
-                                      (b == c) && (b != a) && (c != a));
+                                      (a == c) && (b != c) && (b != c));
 
             // Зачем здесь дважды проверка на существования треугольника
             // Возможно ты имел ввиду отрезки не существуют???
-            if (anTriangle)
+            if (anSnippet)
             {
                 if (existenceTriangle)
                 {
@@ -46,7 +45,7 @@ namespace ConsoleApp18
             }
             else
             {
-                Console.WriteLine("С данных отрезков треугольник не существует.");
+                Console.WriteLine("Недопустимные отрезки.");
             }
         }
     }
