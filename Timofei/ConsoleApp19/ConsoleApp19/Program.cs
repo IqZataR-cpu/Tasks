@@ -22,6 +22,8 @@ namespace ConsoleApp19
                 }
                 else
                 {
+                    // Что же будет, если убрать отсюда этот цикл????
+                   
                     // Необходимо преобразовать нечетное число в четное. 
                     while (naturalNumber % 2 != 0)
                     {
@@ -29,6 +31,7 @@ namespace ConsoleApp19
                     } 
                 }
             }
+
             Console.WriteLine(naturalNumber);
         }
     }
