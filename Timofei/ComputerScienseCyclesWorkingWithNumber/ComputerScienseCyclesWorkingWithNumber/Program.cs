@@ -9,8 +9,8 @@ namespace ComputerScienseCyclesWorkingWithNumber
             //Написать программу, подсчитывающую количество четных и нечетных цифр в числе.
             
             string dataInput = Console.ReadLine();
-            int counterEvenNumbers = 0; // 
-            int counterOddNumbers = 0; // 
+            int counterEvenNumbers = 0;  
+            int counterOddNumbers = 0;  
 
             for (int i = 0; i < dataInput.Length; i++)
             {
