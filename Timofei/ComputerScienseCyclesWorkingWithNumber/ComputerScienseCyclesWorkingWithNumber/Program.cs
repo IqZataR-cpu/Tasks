@@ -6,6 +6,8 @@ namespace ComputerScienseCyclesWorkingWithNumber
     {
         static void Main(string[] args)
         {
+            //Написать программу, подсчитывающую количество четных и нечетных цифр в числе.
+            
             string dataInput = Console.ReadLine();
             int counterEvenNumbers = 0; // 
             int counterOddNumbers = 0; // 
