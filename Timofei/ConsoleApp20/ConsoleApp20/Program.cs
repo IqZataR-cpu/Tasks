@@ -4,7 +4,7 @@ namespace ConsoleApp20
 {
     class Program
     {
-        public const int MAXSIZEARRAY = 3;
+        public const int MAXSIZEARRAY = 3; //Что за капс-истерика Подправь на нормальное название переменной? 
         
         static void Main(string[] args)
         {
@@ -28,7 +28,7 @@ namespace ConsoleApp20
             int numberOne = array[2];
             int numberTwo = array[1];
             int numberThree = array[0];
-            bool trueNumberOne = numberOne != 0;
+            bool trueNumberOne = numberOne != 0; //Немного неправильно назвал переменную. Непонятно, её предназначение. В вк скину тебе гайдец по названию булевых переменных
          
             if (trueNumberOne)
             {
@@ -46,7 +46,7 @@ namespace ConsoleApp20
                     case 9: Console.Write("Девятьсот "); break;
                 }
 
-                if (numberTwo != 1)
+                if (numberTwo != 1) //Тоже можно сделать, как в первом if, записав в булевую переменную.
                 {
                     switch (numberTwo)
                     {

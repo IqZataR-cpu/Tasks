@@ -7,9 +7,9 @@ namespace ConsoleApp15
     {
         static void Main(string[] args)
         {
-            Animal Dogs = new Dogs("Собака","Бобик", 50, 100);
+            Animal Dogs = new Dogs("Собака","Бобик", 50, 100);//Непонятно, что за числа ты вводишь в конструктор класса. Вместо 50 и 100 ты мог бы созлать константы dogWeight и dogHealth
             Animal Cats = new Cats("Кот","Барсик", 50, 100);
-            Dogs.Print();
+            Dogs.Print();//Отделяй блок инициализации объектов и блок вызова методов энтером
             Dogs.Talk();
         }   
     }
@@ -27,7 +27,7 @@ namespace ConsoleApp15
 
         public int Weight => _weight;
 
-        public int Health => _health;
+        public int Health => _health; //Эти 4 параметра лучше не разделять Enter-ом, так как они логически связаны. А вообще, не могу понять смысл этого присваивания
         
         protected Animal(string type, string name, int weight, int health)
         {
@@ -45,17 +45,17 @@ namespace ConsoleApp15
             Console.WriteLine($"Здоровье - {_health}");
         }
         
-        public virtual void Talk()
+        public virtual void Talk() //Если внутри фигурных скобок у тебя ничего нет, ты можешь оформить так: ...Talk() {} 
         {
         }
     }
 
     public class Dogs : Animal
     {
-        public Dogs(string type, string name, int weight, int health) : base(type, name, weight, health)
+        public Dogs(string type, string name, int weight, int health) : base(type, name, weight, health) //Если внутри фигурных скобок у тебя ничего нет, ты можешь оформить так: ...health) {} 
         {
         }
-        public override void Talk()
+        public override void Talk() //Enter между методами
         {
             Console.WriteLine("ГАВ");
         }
@@ -63,10 +63,10 @@ namespace ConsoleApp15
 
     public class Cats : Animal
     {
-        public Cats(string type, string name, int weight, int health) : base(type, name, weight, health)
+        public Cats(string type, string name, int weight, int health) : base(type, name, weight, health) //Если внутри фигурных скобок у тебя ничего нет, ты можешь оформить так: ...health) {} 
         {
         }
-        public override void Talk()
+        public override void Talk() //Enter между методами
         {
             Console.WriteLine("Мяу");
         }
