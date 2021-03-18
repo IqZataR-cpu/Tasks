@@ -4,6 +4,10 @@ namespace ComputerScienseCyclesFlipNumber
 {
     class Program
     {
+        // Вводится число, преобразовать его в другое число, цифры которого будут следовать
+        // в обратном порядке по сравнению с введенным числом.
+        // Пример: Входные данные 123456. Ожидаемое значение 654321.
+        
         static void Main(string[] args)
         {
             int dataInput = Int32.Parse(Console.ReadLine());
