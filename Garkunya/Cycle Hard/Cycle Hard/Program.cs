@@ -6,39 +6,28 @@ namespace Cycle_Hard
     {
         static void Main(string[] args)
         {
-            Console.Write("Введите любое натуральное число: ");
-            
-            int divisibleNumber = int.Parse(Console.ReadLine());
-            int ready = 0; //Поменяй на bool значение
+            int yourNumber = 0;
             int countOperation = 0;
+            bool endOperation;
+            
+            Console.Write("Введите число: ");
+            yourNumber = int.Parse(Console.ReadLine());
+            
+            while (yourNumber != 1)
+            {
+                endOperation = yourNumber % 2 == 0;
+                countOperation++;
 
-            if (divisibleNumber == 0)
-            {
-                Console.WriteLine("Нельзя преобразовать 0!");
-            }
-            else 
-            {
-                while (ready == 0)
+                if (endOperation)
                 {
-                    if (divisibleNumber == 2) //Переделай архитектуру. 
-                    {
-                        ready++;
-                        countOperation++;
-                        Console.WriteLine("Получилось!");
-                        Console.WriteLine($"Количество операций: {0}", countOperation); // Console.WriteLine($"Ляляля {counter} ляляля");
-                    }
-                    else if (divisibleNumber % 2 == 0)
-                    {
-                        divisibleNumber = divisibleNumber / 2;
-                        countOperation++;
-                    }
-                    else
-                    {
-                        divisibleNumber = (divisibleNumber * 3 + 1) / 2;
-                        countOperation++;
-                    }
+                    yourNumber = yourNumber / 2;
+                    continue;
                 }
+
+                yourNumber = (yourNumber * 3 + 1) / 2;
             }
-        } 
-    }
+            Console.WriteLine($"Количество операций: {countOperation}");
+        }
+    } 
 }
+
