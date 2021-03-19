@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Decorator
+﻿namespace Decorator
 {
     // Описание:
     // У нас есть некие виджеты для графического представления объектов.
@@ -24,38 +22,30 @@ namespace Decorator
     // ВАЖНО: Тень и рамка не должны отрисовываться всегда,
     // только если мы условно выбрали это в редакторе, то есть при определенном условии.
     // Предусмотреть возможность установления двойной рамки.(не обязательно, но желательно)
-
     class Program
     {
         static void Main(string[] args)
         {
             Widget textBox = new TextBox();
-            Widget select = new Select();
+            WidgetFactory widgetFactory = new WidgetFactory();
             
+            textBox = widgetFactory.AddBorder(textBox, 4);
+            textBox = widgetFactory.AddBorder(textBox, 8);
+            textBox = widgetFactory.AddBorder(textBox, 8);
             textBox.Draw();
-            select.Draw();
         }
     }
 
-    public abstract class Widget
+    public class WidgetFactory
     {
-        public abstract void Draw();
-    }
-
-    public class TextBox : Widget
-    {
-        public override void Draw()
+        public Widget AddBorder(Widget widget, int borderSize)
         {
-            Console.WriteLine("Текст бокс нарисован");
-        }
-    }
-
-    public class Select : Widget
-    {
-        public override void Draw()
+            return new BorderedWidget(widget, borderSize);
+        }      
+        
+        public Widget AddShadow(Widget widget, int shadowSize)
         {
-            Console.WriteLine("Селект нарисован");
+            return new ShadowWidget(widget, shadowSize);
         }
     }
 }
-
