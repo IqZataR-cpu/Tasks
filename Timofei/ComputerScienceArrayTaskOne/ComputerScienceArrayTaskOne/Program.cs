@@ -13,7 +13,7 @@ namespace ComputerScienceArrayTaskOne
             for (int i = 1; i < arrayInput.Length; i++)
             {   
                 // забыл "-" с двух сторон запятыми выделить.
-                if (arrayInput[i-1] < arrayInput[i])
+                if (arrayInput[i - 1] < arrayInput[i])
                 { 
                     Console.Write($"{arrayInput[i]} "); ;
                 }
@@ -21,24 +21,3 @@ namespace ComputerScienceArrayTaskOne
         }
     }
 }
-// Зачем тут закомментированный код??? УДАЛИТЬ!!!
-
-
-// 
-// if (step != arrayInput.Length)
-// {
-//     if (arrayInput[i] < arrayInput[step])
-//     {
-//         arrayNumber[i] = arrayInput[step];
-//     }
-//     step++;
-// }
-// else
-// {
-//     step = arrayInput.Length;
-// }
-//
-// if (arrayNumber[i] != 0)
-// {
-//     Console.Write(arrayNumber[i]);
-// }
