@@ -1,0 +1,10 @@
+C:\Users\79205\RiderProjects\Tasks\Meetings\21.03.2021\TeamOne\TeamOne\bin\Debug\TeamOne.exe
+C:\Users\79205\RiderProjects\Tasks\Meetings\21.03.2021\TeamOne\TeamOne\bin\Debug\TeamOne.pdb
+C:\Users\79205\RiderProjects\Tasks\Meetings\21.03.2021\TeamOne\TeamOne\bin\Debug\JsonConverters.Collections.dll
+C:\Users\79205\RiderProjects\Tasks\Meetings\21.03.2021\TeamOne\TeamOne\bin\Debug\Newtonsoft.Json.dll
+C:\Users\79205\RiderProjects\Tasks\Meetings\21.03.2021\TeamOne\TeamOne\bin\Debug\JsonConverters.Collections.xml
+C:\Users\79205\RiderProjects\Tasks\Meetings\21.03.2021\TeamOne\TeamOne\bin\Debug\Newtonsoft.Json.xml
+C:\Users\79205\RiderProjects\Tasks\Meetings\21.03.2021\TeamOne\TeamOne\obj\Debug\TeamOne.csprojAssemblyReference.cache
+C:\Users\79205\RiderProjects\Tasks\Meetings\21.03.2021\TeamOne\TeamOne\obj\Debug\TeamOne.csproj.CopyComplete
+C:\Users\79205\RiderProjects\Tasks\Meetings\21.03.2021\TeamOne\TeamOne\obj\Debug\TeamOne.exe
+C:\Users\79205\RiderProjects\Tasks\Meetings\21.03.2021\TeamOne\TeamOne\obj\Debug\TeamOne.pdb

@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JsonConverters.Collections</name>
+    </assembly>
+    <members>
+        <member name="T:JsonConverters.Collections.EnumerableJsonConverter">
+            <summary>
+            Provides deserialization support of serialized arrays to any type that implements <see cref="T:System.Collections.Generic.IEnumerable`1"/>.
+            </summary>
+        </member>
+        <member name="M:JsonConverters.Collections.EnumerableJsonConverter.#ctor(System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:JsonConverters.Collections.EnumerableJsonConverter"/> class.
+            </summary>
+            <param name="itemType">The <see cref="T:System.Type"/> of the objects stored in the collection.</param>
+        </member>
+        <member name="P:JsonConverters.Collections.EnumerableJsonConverter.CanRead">
+            <inheritdoc/>
+        </member>
+        <member name="P:JsonConverters.Collections.EnumerableJsonConverter.CanWrite">
+            <inheritdoc/>
+        </member>
+        <member name="P:JsonConverters.Collections.EnumerableJsonConverter.ItemType">
+            <summary>
+            Gets the <see cref="T:System.Type"/> of objects stored in the collections to be deserialized.
+            </summary>
+        </member>
+        <member name="M:JsonConverters.Collections.EnumerableJsonConverter.CanConvert(System.Type)">
+            <inheritdoc/>
+        </member>
+        <member name="M:JsonConverters.Collections.EnumerableJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/>
+        </member>
+        <member name="M:JsonConverters.Collections.EnumerableJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/>
+        </member>
+        <member name="T:JsonConverters.Collections.Extensions.TypeExtensions">
+            <summary>
+            Extension methods that are to be used on <see cref="T:System.Type"/> objects.
+            </summary>
+        </member>
+        <member name="M:JsonConverters.Collections.Extensions.TypeExtensions.IsIEnumerable(System.Type)">
+            <summary>
+            Checks to see if a <see cref="T:System.Type"/> is an <see cref="T:System.Collections.Generic.IEnumerable`1"/>.
+            </summary>
+            <param name="type">The <see cref="T:System.Type"/> that is to be inspected.</param>
+            <returns>True if the specified <see cref="T:System.Type"/> is an <see cref="T:System.Collections.Generic.IEnumerable`1"/>; Otherwise, false.</returns>
+        </member>
+        <member name="M:JsonConverters.Collections.Extensions.TypeExtensions.GetEnumerablArgumentType(System.Type)">
+            <summary>
+            Gets the argument type of an <see cref="T:System.Collections.Generic.IEnumerable`1"/>.
+            </summary>
+            <param name="type">The <see cref="T:System.Type"/> to be inspected.</param>
+            <returns>The <see cref="T:System.Type"/> of the generic argument for the given <see cref="T:System.Collections.Generic.IEnumerable`1"/>.</returns>
+        </member>
+        <member name="T:JsonConverters.Collections.SingleOrArrayJsonConverter`1">
+            <summary>
+            Provides serialization support for collections that are serialized as an array when there are multiple
+            values, but when there is only one value only the value itself is serialized.
+            </summary>
+            <typeparam name="T">The type of values stored in the collection.</typeparam>
+        </member>
+        <member name="P:JsonConverters.Collections.SingleOrArrayJsonConverter`1.CanRead">
+            <inheritdoc/>
+        </member>
+        <member name="P:JsonConverters.Collections.SingleOrArrayJsonConverter`1.CanWrite">
+            <inheritdoc/>
+        </member>
+        <member name="M:JsonConverters.Collections.SingleOrArrayJsonConverter`1.CanConvert(System.Type)">
+            <inheritdoc/>
+        </member>
+        <member name="M:JsonConverters.Collections.SingleOrArrayJsonConverter`1.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/>
+        </member>
+        <member name="M:JsonConverters.Collections.SingleOrArrayJsonConverter`1.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>
