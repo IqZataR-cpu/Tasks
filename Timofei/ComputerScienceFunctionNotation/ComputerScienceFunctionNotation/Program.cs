@@ -22,7 +22,12 @@ namespace ComputerScienceFunctionNotation
                 numberInHexadecimalNotation += Convert.ToString(inputNumber % HEXADECIMAL_NOTATION);
                 inputNumber /= HEXADECIMAL_NOTATION;
             }
-            Console.WriteLine($"Число в шестнадцатеричной системе: {numberInHexadecimalNotation}");
+
+            for (int i = numberInHexadecimalNotation.Length; i != 0; i--)
+            {
+                Console.WriteLine($"Число в шестнадцатеричной системе: {Convert.ToChar(numberInHexadecimalNotation[i])}");
+            }
+           
         }
     }
 }
