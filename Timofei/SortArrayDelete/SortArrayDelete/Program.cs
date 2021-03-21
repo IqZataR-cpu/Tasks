@@ -10,6 +10,9 @@ namespace SortArrayDelete
             
             int[] arrayInput = new int[10];
             Random rnd = new Random();
+            // не корректное название переменной.
+            // Нет смысла указывать в названии что это число, лучше писать конкретное предназначение переменной.
+            // Ну и само название не соответствует использованию переменной. Логичнее было бы temp.
             int minNumber;
             
             for (int i = 0; i < arrayInput.Length; i++)
