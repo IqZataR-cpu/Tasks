@@ -13,7 +13,7 @@ namespace SortArrayDelete
             // не корректное название переменной.
             // Нет смысла указывать в названии что это число, лучше писать конкретное предназначение переменной.
             // Ну и само название не соответствует использованию переменной. Логичнее было бы temp.
-            int minNumber;
+            int temp;
             
             for (int i = 0; i < arrayInput.Length; i++)
             {
@@ -26,9 +26,9 @@ namespace SortArrayDelete
                 {
                     if (arrayInput[j] < arrayInput[i])
                     {
-                        minNumber = arrayInput[i];
+                        temp = arrayInput[i];
                         arrayInput[i] = arrayInput[j];
-                        arrayInput[j] = minNumber;
+                        arrayInput[j] = temp;
                     }
                 }
 
