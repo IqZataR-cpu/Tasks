@@ -11,18 +11,18 @@ namespace ComputerScienseCyclesFlipNumber
         static void Main(string[] args)
         {
             int dataInput = int.Parse(Console.ReadLine());
-        
+           
             FlipNumberMethodTwo(dataInput);
         }
     
         static void FlipNumberMethodTwo(int dataInput)
         { 
             // Проблема с табуляцией!!!
-          while (dataInput > 0)
-            {
-               Console.Write($"{dataInput % 10}");
+            while (dataInput > 0)
+            { 
+                Console.Write($"{dataInput % 10}");
                
-               dataInput /= 10;
+                dataInput /= 10;   
             }
         }
     }
