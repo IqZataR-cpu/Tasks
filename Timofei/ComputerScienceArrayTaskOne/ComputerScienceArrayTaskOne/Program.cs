@@ -8,7 +8,7 @@ namespace ComputerScienceArrayTaskOne
         {
             //Вывести элементы числового массива, которые больше, чем элементы, стоящие перед ними.
             
-            int[] arrayInput = new[] {3, 9, 8, 4, 5, 1, 5, 6};
+            int[] arrayInput = new int[] {3, 9, 8, 4, 5, 1, 5, 6};
 
             for (int i = 1; i < arrayInput.Length; i++)
             {   
