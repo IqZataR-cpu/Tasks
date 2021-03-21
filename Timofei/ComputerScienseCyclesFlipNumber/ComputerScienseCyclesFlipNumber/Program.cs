@@ -14,9 +14,10 @@ namespace ComputerScienseCyclesFlipNumber
         
             FlipNumberMethodTwo(dataInput);
         }
-   
+    
         static void FlipNumberMethodTwo(int dataInput)
-        {
+        { 
+            // Проблема с табуляцией!!!
           while (dataInput > 0)
             {
                Console.Write($"{dataInput % 10}");
