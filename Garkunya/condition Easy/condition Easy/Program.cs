@@ -7,9 +7,9 @@ namespace condition_Easy
         static void Main(string[] args)
         {
             Console.Write("Введите число = "); 
-            int n = int.Parse(Console.ReadLine()); //вводим переменную
+            int n = int.Parse(Console.ReadLine());
 
-            if (n==10) //сравниваем с условием и выводим в зависимости от результата
+            if (n == 10)
             {
                 Console.WriteLine("Верно");
             }
