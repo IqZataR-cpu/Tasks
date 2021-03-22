@@ -20,8 +20,6 @@ namespace Matrix_Medium_1
             string firstMatrixString = "";
             string secondMatrixString = "";
 
-            // Можно было два массива заполнить в одном цикле. КОПИПАСТА ВАНЛОВЕ!
-            // Сохранить в string их консольные представления и вывести после цикла.
             for (i = 0; i < column; i++)
             {
                 for (j = 0; j < row; j++)
@@ -38,7 +36,7 @@ namespace Matrix_Medium_1
             Console.WriteLine($"Первая матрица: \n{ firstMatrixString }");
             Console.WriteLine($"Вторая матрица: \n{ secondMatrixString }");
             
-            Console.WriteLine("Третий массив: ");
+            Console.WriteLine("Третья матрица: ");
             
             // Погугли как выполняется умножение матриц, там строка умножается на столбец, только если количество совпадает.
             for (i = 0; i < column; i++)
