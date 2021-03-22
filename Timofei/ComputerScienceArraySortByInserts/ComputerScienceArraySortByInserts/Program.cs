@@ -9,18 +9,21 @@ namespace ComputerScienceArraySortByInserts
             // Для чего здесь ты делаешь массив с данными, если
             // Если ты вызываешь метод, который заполнит массив заново
             // Другими значениями
-            int[] arrayNumber = new int[] {40, 30, 10, 70, 50, 20, 60};
+            int[] arrayNumberOne = new int[10];
             
-            InsertNumberByArray(arrayNumber);
-
+            int[] arrayNumberTwo = new int[10];
+            
+            InsertNumberByArray(arrayNumberOne);
+            InsertNumberByArray(arrayNumberTwo);
+            
             // Круто, что ты сделал две сортировки сразу, но
             // Когда вызывается сортировка вставками, ей если
             // Что передается уже отсортированный массив, так что
             // Суть сортировки пропадает, либо добавь ещё один массив
             // Либо по отдельности реализуй задачи
-            SortByBooble(arrayNumber);
+            SortByBooble(arrayNumberOne);
             Console.WriteLine();
-            SortByInsert(arrayNumber);
+            SortByInsert(arrayNumberTwo);
         }
 
         static int[] InsertNumberByArray(int[] array)
@@ -50,13 +53,7 @@ namespace ComputerScienceArraySortByInserts
                 }
                 arrayNumber[j] = step;
             }
-
-            // Для вывода сделай функцию или метод, чтобы не было
-            // Дубляжа кода и перполнение ответственности у методов
-            for (int i = 0; i < arrayNumber.Length; i++)
-            {
-                Console.Write($"{arrayNumber[i]} ");
-            }
+            PrintArray(arrayNumber);
         }
 
         // Метод сортировки пузырька реализован неверно,
@@ -67,26 +64,34 @@ namespace ComputerScienceArraySortByInserts
             Console.Write("Сортировка методом пузырька: ");
 
             // Название переменной не отражает суть испрользование переменной
-            int step = arrayNumber[0];
+            int temp = arrayNumber[0];
+            int k = 0;
             
             for (int i = 0; i < arrayNumber.Length; i++)
             {
-                for (int j = i + 1; j < arrayNumber.Length; j++)
+                k = 0;
+                
+                for (int j = 1; j < arrayNumber.Length; j++)
                 {
-                    if (arrayNumber[j] < arrayNumber[i])
+                    if (arrayNumber[j] < arrayNumber[k])
                     {
-                        step = arrayNumber[j];
-                        arrayNumber[j] = arrayNumber[i];
-                        arrayNumber[i] = step;
+                        temp = arrayNumber[j];
+                        arrayNumber[j] = arrayNumber[k];
+                        arrayNumber[k] = temp;
                     }
+
+                    k++;
                 }
             }
+            
+            PrintArray(arrayNumber);
+        }
 
-            // Для вывода сделай функцию или метод, чтобы не было
-            // Дубляжа кода и перполнение ответственности у методов
-            for (int i = 0; i < arrayNumber.Length; i++)
+        static void PrintArray(int[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
             {
-                Console.Write($"{arrayNumber[i]} ");
+                Console.Write($"{array[i]} ");
             }
         }
     }
