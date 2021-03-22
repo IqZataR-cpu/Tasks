@@ -8,7 +8,7 @@ namespace ComputerScienceArrayAverage
         {
             int[] arrayInput = new int[10];
 
-            InsertNumberInArray(arrayInput);
+            arrayInput = InsertNumberInArray(arrayInput);
             AverageNumbersArray(arrayInput);
         }
 
@@ -31,7 +31,7 @@ namespace ComputerScienceArrayAverage
         {
             // sumAverage лучше сделать типа double or float
             // Потому что оно может быть дробным
-            int sumAverage = 0;
+            double sumAverage = 0;
             int count = 0;
             // Не совсем корректная фраза здесь, потому что
             // Человек видит нечетные числа, а на выводе в итоге
@@ -40,7 +40,7 @@ namespace ComputerScienceArrayAverage
 
             for (int i = 0; i < arrayInput.Length; i++)
             {
-                if (i % 2 != 0 && arrayInput[i] % 2 == 0)
+                if (i % 2 != 0 && arrayInput[i] % 2 != 0)
                 {
                     Console.Write($"{arrayInput[i]} ");
                     sumAverage += arrayInput[i];
