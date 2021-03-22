@@ -18,6 +18,7 @@ namespace Massive_Medium_2
             for (int i = 0; i < myArray.Length; i++) //заполняем массив случайными числами от 0 до 100
             {
                 myArray[i] = rnd.Next(0, 100);
+                // Не выделил знак "+" пробелами
                 Console.Write(myArray[i]+" ");
             }
             
@@ -25,6 +26,9 @@ namespace Massive_Medium_2
 
             for (int i = 0; i < myArray.Length; i++) //проверяем число на условие
             {
+                // Не выделил знаки пробелами
+                // Нет смысла разбивать на 2 if,
+                // можно через && написать два условия в одном if
                 if (myArray[i]%2==0)
                 {
                     if (i%2 != 0)
@@ -34,7 +38,8 @@ namespace Massive_Medium_2
                     }
                 }
             }
-            
+            // Нет смысла в этой операции, 
+            // можно в консольный вывод сразу вывести sumNumber / countNumber
             sumNumber = sumNumber / countNumber;
             
             Console.WriteLine($"Среднее арифметическое {countNumber} чисел = {sumNumber}"); //выводим результат
