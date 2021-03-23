@@ -19,9 +19,10 @@ namespace Massive_Easy
             Console.Write("Введите количество элементов массива: ");
             int n = int.Parse(Console.ReadLine());
             int[] myArray= new int[n - 1];
-
+            // не выделил пробелами
             for (int i = 0; i<myArray.Length; i++) 
             {
+                // не выделил пробелами ","
                 myArray[i] = rand.Next(0,100);
                 Console.Write(myArray[i] + " ");
             }
