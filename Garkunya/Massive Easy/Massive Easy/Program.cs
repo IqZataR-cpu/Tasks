@@ -17,19 +17,19 @@ namespace Massive_Easy
             Random rand = new Random();
 
             Console.Write("Введите количество элементов массива: ");
-            int n = int.Parse(Console.ReadLine());
-            int[] myArray= new int[n - 1];
-            // не выделил пробелами
-            for (int i = 0; i<myArray.Length; i++) 
+            int inputValue = int.Parse(Console.ReadLine());
+            int[] myArray= new int[inputValue - 1];
+            
+            for (int i = 0; i < myArray.Length; i++) 
             {
-                // не выделил пробелами ","
-                myArray[i] = rand.Next(0,100);
+                myArray[i] = rand.Next(0, 100);
+                
                 Console.Write(myArray[i] + " ");
             }
             
             Console.WriteLine();
             
-           for (int i = 1; i < myArray.Length; i++)
+            for (int i = 1; i < myArray.Length; i++)
             {
                 if (myArray[i - 1] < myArray[i])
                 {
