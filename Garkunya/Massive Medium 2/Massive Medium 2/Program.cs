@@ -31,9 +31,8 @@ namespace Massive_Medium_2
                     countNumber++;
                 }
             }
-            
-            // не выделил пробелами "/"
-            Console.WriteLine($"Среднее арифметическое {countNumber} чисел = {sumNumber/countNumber}");
+
+            Console.WriteLine($"Среднее арифметическое {countNumber} чисел = {sumNumber / countNumber}");
         }
     }
 }
