@@ -8,46 +8,61 @@ namespace Matrix_Medium_1
         {
             Random rnd = new Random();
              
-            Console.Write("Введите количество столбцов в матрицах: ");
+            Console.Write("Введите количество столбцов в 1 матрице: ");
             int i = int.Parse(Console.ReadLine());
-            Console.Write("Введите количество строк в матрицах: ");
+            Console.Write("Введите количество строк в 1 матрице: ");
             int j = int.Parse(Console.ReadLine());
-            int column = i;
-            int row = j;
+            Console.Write("Введите количество столбцов во 2 матрице: ");
+            int m = int.Parse(Console.ReadLine());
+            Console.Write("Введите количество строк во 2 матрице: ");
+            int k = int.Parse(Console.ReadLine());
+            int columnFirstMatrix = i;
+            int rowFirstMatrix = j;
+            int columnSecondMatrix = m;
+            int rowSecondMatrix = k;
+            int columnThirdMatrix = j;
+            int rowThirdMatrix = m;
             int[,] firstMatrix = new int[i, j];
-            int[,] secondMatrix = new int[i, j];
-            int[,] thirdMatrix = new int[i, j];
+            int[,] secondMatrix = new int[m, k];
+            int[,] thirdMatrix = new int[j, m];
             string firstMatrixString = "";
             string secondMatrixString = "";
+            string thirdMatrixString = "";
 
-            for (i = 0; i < column; i++)
+            for (i = 0; i < columnFirstMatrix; i++)
             {
-                for (j = 0; j < row; j++)
+                for (j = 0; j < rowFirstMatrix; j++)
                 {
                     firstMatrix[i, j] = rnd.Next(0, 10);
-                    secondMatrix[i, j] = rnd.Next(0, 10);
                     firstMatrixString += firstMatrix[i, j].ToString() + " ";
-                    secondMatrixString += secondMatrix[i, j].ToString() + " ";
                 }
                 firstMatrixString += "\n";
+            }
+            
+            for (m = 0; m < columnSecondMatrix; m++)
+            {
+                for (k = 0; k < rowSecondMatrix; k++)
+                {
+                    secondMatrix[m, k] = rnd.Next(0, 10);
+                    secondMatrixString += secondMatrix[m, k].ToString() + " ";
+                }
                 secondMatrixString += "\n";
             }
 
             Console.WriteLine($"Первая матрица: \n{ firstMatrixString }");
             Console.WriteLine($"Вторая матрица: \n{ secondMatrixString }");
             
-            Console.WriteLine("Третья матрица: ");
-            
-            // Погугли как выполняется умножение матриц, там строка умножается на столбец, только если количество совпадает.
-            for (i = 0; i < column; i++)
+            for (j = 0, i = 0; j < columnThirdMatrix; j++, i++)
             {
-                for (j = 0; j < row; j++)
+                for (m = 0, k = 0; m < rowThirdMatrix; m++, k++)
                 {
-                    thirdMatrix[i, j] = firstMatrix[i, j] * secondMatrix[i, j];
-                    Console.Write(thirdMatrix[i,j]+ " ");
+                    thirdMatrix[j, m] = firstMatrix[i, j] * secondMatrix[m, k] +
+                                        firstMatrix[i, k] * secondMatrix[m, j];
+                    thirdMatrixString += thirdMatrix[j, m].ToString() + " ";
                 }
-                Console.WriteLine();
+                thirdMatrixString += "\n";
             }
+            Console.WriteLine($"Третья матрица: \n{ thirdMatrixString }");
         }
     }
 }
