@@ -40,6 +40,7 @@ namespace MultiplicationMatrix
 
         // Старайся делать названия параметров не под частный случай, а под все подобные случаи.
         // В целом слово number здесь не нужно, можно просто columnsMatrixA(или columnsFirstMatrix)...
+        // Можно даже просто columns и rows.
         static bool canMultiplicate (int numberOfColumnsMatrixA, int numberOfRowsMatrixB)
         {
             // Эта переменная здесь не нужна, смысл и так понятен.
