@@ -55,7 +55,6 @@ namespace MultiplicationMatrix
 
             for (int i = 0; i <= numberOfColumns - 1; i++)
             {
-                Console.WriteLine();
                 for (int j = 0; j <= numberOfColumns - 1; j++)
                 {
                     array[i, j] = randomNumber.Next(10);
@@ -83,7 +82,7 @@ namespace MultiplicationMatrix
 
         static void PrintMatrix (int[,] printedMatrix, int numberOfRows, int numberOfColumns)
         {
-            Console.WriteLine(" Матрица:");
+            Console.WriteLine("\n Матрица:");
 
             for (int i = 0; i <= numberOfRows - 1; i++)
             {
