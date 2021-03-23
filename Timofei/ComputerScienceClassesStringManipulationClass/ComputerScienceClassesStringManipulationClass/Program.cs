@@ -16,7 +16,8 @@ namespace ComputerScienceClassesStringManipulationClass
             string inputData = Console.ReadLine();
             
             Console.Write("Делаем первую букву заглавной: ");
-            StringHelper.UcWord(inputData);
+            inputData = StringHelper.UcFirst(inputData);
+            Console.WriteLine(inputData);
            
             Console.Write("Делаем первую букву каждого слова заглавной: ");
             StringHelper.UcWords(inputData);
@@ -30,25 +31,9 @@ namespace ComputerScienceClassesStringManipulationClass
 
     public abstract class StringHelper
     {
-        public static void UcWord(string inputData)
+        public static string UcFirst(string inputData)
         {
-            char[] arrayCharData = new char[inputData.Length];
-            
-            for (int i = 0; i < arrayCharData.Length; i++)
-            {
-                if (i == 0)
-                {
-                    arrayCharData[i] = char.ToUpper(inputData[0]);
-                }
-                else
-                {
-                    arrayCharData[i] = Convert.ToChar(inputData[i]);
-                }
-                
-                Console.Write(arrayCharData[i]);
-            }
-            
-            Console.WriteLine();
+            return char.ToUpper(inputData[0]) + inputData.Substring(1);
         }
 
         public static void UcWords(string inputData)
