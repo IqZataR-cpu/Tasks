@@ -11,26 +11,28 @@ namespace conditionsTask1
         static void Main(string[] args)
         {
             int min = -1;
-            bool check = true;
+            bool isTimeValid = true;
 
-            while (check)
+            while (isTimeValid)
             {
                 Console.WriteLine("Введите число");
                 min = Convert.ToInt32(Console.ReadLine());
 
-                if (min >= 0 && min <= 59) {check = false;}
+                if (min >= 0 && min <= 59)
+                {
+                    isTimeValid = false;
+                }
             }
 
-
-            if (min > 0 && min <= 15) 
+            if (min <= 15) 
             {
                 Console.WriteLine("Число входит в первую четверть часа"); 
             }
-            else if (min > 15 && min <= 30) 
+            else if (min <= 30) 
             {
                 Console.WriteLine("Число входит в вторую четверть часа"); 
             }
-            else if (min > 30 && min <= 45) 
+            else if (min <= 45) 
             {
                 Console.WriteLine("Число входит в третью четверть часа"); 
             }
@@ -40,7 +42,6 @@ namespace conditionsTask1
             }
 
             Console.ReadKey();
-
         }
     }
 }
