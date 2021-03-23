@@ -7,16 +7,15 @@ namespace ComputerScienseCyclesWorkingWithNumber
         static void Main(string[] args)
         {
             //Написать программу, подсчитывающую количество четных и нечетных цифр в числе.
-            
-            // Не обработал пользовательский ввод сообщением Console.Write("Введите число")
+
+            Console.Write("Введите число: ");
             string dataInput = Console.ReadLine();
             int counterEvenNumbers = 0;  
             int counterOddNumbers = 0;  
 
             for (int i = 0; i < dataInput.Length; i++)
             {
-                // Забыл пробел после ==
-                if (Convert.ToChar(dataInput[i]) % 2 ==0)
+                if (Convert.ToChar(dataInput[i]) % 2 == 0)
                 {
                     counterEvenNumbers++;
                 }
