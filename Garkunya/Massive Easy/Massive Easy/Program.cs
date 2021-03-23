@@ -19,7 +19,7 @@ namespace Massive_Easy
             Console.Write("Введите количество элементов массива: ");
             int inputValue = int.Parse(Console.ReadLine());
             int[] myArray= new int[inputValue - 1];
-            // тут лучше поставить enter
+            
             for (int i = 0; i < myArray.Length; i++) 
             {
                 myArray[i] = rand.Next(0, 100);
@@ -28,8 +28,8 @@ namespace Massive_Easy
             }
             
             Console.WriteLine();
-            // Ошибка табуляции. Python бы тебе такое не простил.
-           for (int i = 1; i < myArray.Length; i++)
+            
+            for (int i = 1; i < myArray.Length; i++)
             {
                 if (myArray[i - 1] < myArray[i])
                 {
