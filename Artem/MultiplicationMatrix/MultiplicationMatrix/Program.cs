@@ -15,8 +15,15 @@ namespace MultiplicationMatrix
             Console.WriteLine("Введите число столбцов в матрицы B : ");
             int numberOfColumnsMatrixB = Int32.Parse(Console.ReadLine());
 
+            // Нет смысла выделять память просто так, 
+            // поскольку ты потом прокидываешь результат рандомного заполнения сюда.
+            // Можно ее объявить без инициализации значения, просто поставив ";"
             int[,] matrixA = new int[numberOfRowsMatrixA, numberOfColumnsMatrixA];
             int[,] matrixB = new int[numberOfRowsMatrixB, numberOfColumnsMatrixB];
+            
+            // Нет смысла выделять память просто так, 
+            // поскольку ты потом прокидываешь результат умножения сюда.
+            // Можно ее объявить без инициализации значения, просто поставив ";"
             int[,] matrixC = new int[numberOfRowsMatrixA, numberOfColumnsMatrixB];
 
             if (canMultiplicate(numberOfColumnsMatrixA, numberOfRowsMatrixB))
@@ -26,7 +33,7 @@ namespace MultiplicationMatrix
 
                 matrixB = CompletionMatrix(numberOfRowsMatrixB, numberOfColumnsMatrixB);
                 PrintMatrix(matrixB);
-
+                // Лишний пробел
                 matrixC = MultiplicateMatrix( matrixA, matrixB);
                 PrintMatrix(matrixC);
             }
@@ -36,7 +43,8 @@ namespace MultiplicationMatrix
                          "матрицы А не равно количеству строк в матрице В");
             }          
         }
-
+        
+        // Лишний пробел
         static bool canMultiplicate (int ColumnsMatrixA, int RowsMatrixB)
         {
             return ColumnsMatrixA == RowsMatrixB;
@@ -57,7 +65,8 @@ namespace MultiplicationMatrix
 
             return array;
         }
-
+        
+        // Лишний пробел
         static int[,] MultiplicateMatrix (int[,] matrixA, int[,] matrixB)
         {
             int[,] matrixC = new int[matrixA.GetLength(0), matrixB.GetLength(1)];
@@ -80,6 +89,7 @@ namespace MultiplicationMatrix
         // Ширину и длину матрицы можно взять прямиком из массива. Length
         // Еще можешь попытаться сделать метод универсальным для любой мерности,
         // то есть если была бы 3х, 4х... размерная матрица.
+        // Лишний пробел
         static void PrintMatrix (int[,] matrix)
         {
             Console.WriteLine("\n Матрица:");
