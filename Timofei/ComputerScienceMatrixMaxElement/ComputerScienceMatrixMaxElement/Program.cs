@@ -36,14 +36,10 @@ namespace ComputerScienceMatrixMaxElement
 
         static void PrintMatrix(int[,] matrix)
         {
-            Random rnd = new Random();
-            
             for (int i = 0; i < sizeLine; i++)
             {
                 for (int j = 0; j < sizeColumn; j++)
                 {
-                    matrix[i, j] = rnd.Next(99);
-                    
                     Console.Write($"{matrix[i, j]} ");
                 }
                 
