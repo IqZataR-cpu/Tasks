@@ -11,11 +11,13 @@ namespace conditionsTask1
         static void Main(string[] args)
         {
             int min = -1;
+            // Логичнее было бы назвать isTimeNotValid
             bool isTimeValid = true;
 
             while (isTimeValid)
             {
                 Console.WriteLine("Введите число");
+                // Пользуемся int.Parse()
                 min = Convert.ToInt32(Console.ReadLine());
 
                 if (min >= 0 && min <= 59)
