@@ -13,6 +13,7 @@ namespace conditionsTask1
             int number;
 
             Console.WriteLine("Введите число");
+            // Лучше пользоваться int.Parse() вместо Convert.ToInt32()
             number = Convert.ToInt32(Console.ReadLine());
 
             if (number == 10)
