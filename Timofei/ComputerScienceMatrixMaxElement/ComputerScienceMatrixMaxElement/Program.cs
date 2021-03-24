@@ -42,7 +42,7 @@ namespace ComputerScienceMatrixMaxElement
             {
                 for (int j = 0; j < sizeColumn; j++)
                 {
-                    matrix[i, j] = rnd.Next(99);
+                    matrix[i, j] = rnd.Next(99); //  ??????????? todo: remove this shit from print
                     
                     Console.Write($"{matrix[i, j]} ");
                 }
@@ -52,6 +52,7 @@ namespace ComputerScienceMatrixMaxElement
         }
 
         // Тут я бы тоже указал, что ищется именно максимальный диагональный элемент.
+        // Сначала идет прилагательное потом существительное, так приятнее читать SearchMaxDiagonalElement
         static void SearchMaxElementDiagonal(int[,] matrix)
         {
             int maxElement = matrix[0, 0];
