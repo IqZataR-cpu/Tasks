@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\79205\\RiderProjects\\Tasks\\Meetings\\21.03.2021\\TeamThree\\TeamThree\\TeamThree.csproj": {}
+    "D:\\gitbs\\Tasks\\Meetings\\21.03.2021\\TeamThree\\TeamThree\\TeamThree.csproj": {}
   },
   "projects": {
-    "C:\\Users\\79205\\RiderProjects\\Tasks\\Meetings\\21.03.2021\\TeamThree\\TeamThree\\TeamThree.csproj": {
+    "D:\\gitbs\\Tasks\\Meetings\\21.03.2021\\TeamThree\\TeamThree\\TeamThree.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\79205\\RiderProjects\\Tasks\\Meetings\\21.03.2021\\TeamThree\\TeamThree\\TeamThree.csproj",
+        "projectUniqueName": "D:\\gitbs\\Tasks\\Meetings\\21.03.2021\\TeamThree\\TeamThree\\TeamThree.csproj",
         "projectName": "TeamThree",
-        "projectPath": "C:\\Users\\79205\\RiderProjects\\Tasks\\Meetings\\21.03.2021\\TeamThree\\TeamThree\\TeamThree.csproj",
-        "packagesPath": "C:\\Users\\79205\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\79205\\RiderProjects\\Tasks\\Meetings\\21.03.2021\\TeamThree\\TeamThree\\obj\\",
+        "projectPath": "D:\\gitbs\\Tasks\\Meetings\\21.03.2021\\TeamThree\\TeamThree\\TeamThree.csproj",
+        "packagesPath": "C:\\Users\\danii\\.nuget\\packages\\",
+        "outputPath": "D:\\gitbs\\Tasks\\Meetings\\21.03.2021\\TeamThree\\TeamThree\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\79205\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\danii\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -26,6 +30,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +42,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Newtonsoft.Json": {
               "target": "Package",
@@ -58,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     }
