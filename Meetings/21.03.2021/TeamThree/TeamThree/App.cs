@@ -15,6 +15,18 @@ namespace TeamThree
 
         private User _currentUser;
 
+        private enum UserChoices
+        {
+            Exit = 1,
+            Login = 2,
+            Registration = 3,
+            InfoAboutCountry = 4,
+            InfoAboutRegion = 5,
+            InfoAboutCity = 6,
+            RandomCountry = 7,
+            TenRandomCites = 8,
+        }
+        
         private bool _isRunning = true;
 
         public void Run()
@@ -23,11 +35,47 @@ namespace TeamThree
 
             while (_isRunning)
             {
-                switch (Console.ReadLine())
+                if (_currentUser == null)
                 {
-                    case "Выход":
-                        Console. WriteLine();
-                        break;
+                    switch ((UserChoices) int.Parse(Console.ReadLine()))
+                    {
+                        case UserChoices.Login:
+                            Console. WriteLine("Введите логин и пароль");
+                            break;
+                        case UserChoices.Exit:
+                            Console. WriteLine("Бывай друже");
+                            _isRunning = false;
+                            break;
+                        case UserChoices.Registration:
+                            Console. WriteLine("Регистрация");
+                            break;
+                    }
+                }
+                else
+                {
+                    switch ((UserChoices) int.Parse(Console.ReadLine()))
+                    {
+                        case UserChoices.InfoAboutCity:
+                            Console. WriteLine("Введите название города");
+                            break;
+                        case UserChoices.InfoAboutRegion:
+                            Console. WriteLine("Введите название региона");
+                            break;
+                        case UserChoices.InfoAboutCountry:
+                            Console. WriteLine("Введите название страны");
+                            break;
+                        case UserChoices.TenRandomCites:
+                            Console. WriteLine("Введите название страны информацию о 10 рандомных городах " +
+                                               "вы хотите получить");
+                            break;
+                        case UserChoices.RandomCountry:
+                            Console. WriteLine("Сиди лучше дома");
+                            break;
+                        case UserChoices.Exit:
+                            Console. WriteLine("Бывай друже");
+                            _isRunning = false;
+                            break;
+                    }
                 }
             }
         }
