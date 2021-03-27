@@ -12,9 +12,19 @@ namespace ComputerScienceConditionTaskThree
             int inputB = int.Parse(Console.ReadLine());
 
             // Вынести в отдельные функции как сравнение, так и функцию просчета уравнения.
-            bool result = inputB == 5 * Math.Pow(inputA, 2) - 7 * inputA + 2;
+            double result = EquationSolution(inputA);
             
-            Console.WriteLine(result);
+            CompareSolution(inputB, result);
+        }
+
+        static void CompareSolution(int inputB, double result)
+        {
+            Console.WriteLine(inputB == result);
+        }
+        
+        static double EquationSolution(int x)
+        {
+            return (5 * Math.Pow(x, 2) - 7 * x + 2);
         }
     }
 }
