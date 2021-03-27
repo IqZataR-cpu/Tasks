@@ -78,7 +78,7 @@ namespace ComputerScienceMatrixMaxElement
             }
 
             // то есть пробелы между знаками в коде мы ставим, а тут нет?
-            Console.WriteLine($"Индекс максимального элемента двух диагоналей:[{indexI}, {indexJ}] = {maxElement}");
+            Console.WriteLine($"Индекс максимального элемента двух диагоналей: [{indexI}, {indexJ}] = {maxElement}");
         }
     }
 }
