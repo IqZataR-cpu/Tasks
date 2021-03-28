@@ -8,8 +8,6 @@ namespace ComputerScienceMartixReverseString
         const int sizeColumn = 4;
         static void Main(string[] args)
         {
-            // int[,] matrix = new int[sizeLine, sizeColumn];
-
             int[,] matrix = new int[sizeLine, sizeColumn];
             
             InsertNumberToMatrix(matrix);
