@@ -23,8 +23,8 @@ namespace ComputerScienceArrayDistance
             
             Console.WriteLine($"Расстояние от (А до В) = {Math.Round(Math.Sqrt(distance))}");
         }
-       // {i + 1} = {arrayA[i]}
-        static double[] InsertToArray(double[] array)
+       
+        private static double[] InsertToArray(double[] array)
         {
             Random rnd = new Random();
 
