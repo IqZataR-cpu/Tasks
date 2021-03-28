@@ -1,8 +1,0 @@
-C:\Users\79205\RiderProjects\Tasks\Meetings\21.03.2021\TeamTwo\TeamTwo\bin\Debug\TeamTwo.exe
-C:\Users\79205\RiderProjects\Tasks\Meetings\21.03.2021\TeamTwo\TeamTwo\bin\Debug\TeamTwo.pdb
-C:\Users\79205\RiderProjects\Tasks\Meetings\21.03.2021\TeamTwo\TeamTwo\bin\Debug\Newtonsoft.Json.dll
-C:\Users\79205\RiderProjects\Tasks\Meetings\21.03.2021\TeamTwo\TeamTwo\bin\Debug\Newtonsoft.Json.xml
-C:\Users\79205\RiderProjects\Tasks\Meetings\21.03.2021\TeamTwo\TeamTwo\obj\Debug\TeamTwo.csprojAssemblyReference.cache
-C:\Users\79205\RiderProjects\Tasks\Meetings\21.03.2021\TeamTwo\TeamTwo\obj\Debug\TeamTwo.csproj.CopyComplete
-C:\Users\79205\RiderProjects\Tasks\Meetings\21.03.2021\TeamTwo\TeamTwo\obj\Debug\TeamTwo.exe
-C:\Users\79205\RiderProjects\Tasks\Meetings\21.03.2021\TeamTwo\TeamTwo\obj\Debug\TeamTwo.pdb
