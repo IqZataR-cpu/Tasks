@@ -27,6 +27,10 @@ namespace ComputerScienceCyclesLinerEquation
                 {
                     for (int k = 0; k < All_SUM / PRICE_ERASER; k++)
                     {
+                        // Поскольку нам заранее известна сумма под которую рассчитываем,
+                        // мы можем перенести расчеты по функциям и назвать их бизнес логическими именами,
+                        // при прочтении которых мы сможем понять смысл текущих выражений в скобках сразу - не думая
+                        // таким образом мы увеличим прозрачность кода.
                         if (All_SUM == PRICE_PENS * i + PRICE_PENSIL * j + PRICE_ERASER * k && ALL_SUBJECT == i + j + k)
                         {
                             Console.WriteLine($"Количество ручек: {i} \n" +
