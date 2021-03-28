@@ -4,7 +4,7 @@ namespace ComputerScienceCyclesLinerEquation
 {
     class Program
     {
-        public const int ALL_SUBJECT = 30;
+        public const int COUNT_OBJECT = 30;
         public const int All_SUM = 100;
         public const int PRICE_PENS = 10;
         public const int PRICE_PENSIL = 5;
@@ -31,7 +31,8 @@ namespace ComputerScienceCyclesLinerEquation
                         // мы можем перенести расчеты по функциям и назвать их бизнес логическими именами,
                         // при прочтении которых мы сможем понять смысл текущих выражений в скобках сразу - не думая
                         // таким образом мы увеличим прозрачность кода.
-                        if (All_SUM == PRICE_PENS * i + PRICE_PENSIL * j + PRICE_ERASER * k && ALL_SUBJECT == i + j + k)
+                        
+                        if (isAmountValid(i, j, k) && isCountObjectValid(i, j, k)) 
                         {
                             Console.WriteLine($"Количество ручек: {i} \n" +
                                               $"Количество карандашей: {j} \n" +
@@ -40,6 +41,16 @@ namespace ComputerScienceCyclesLinerEquation
                     }
                 }
             }
+        }
+        
+        public static bool isAmountValid(int i, int j, int k)
+        {
+            return All_SUM == PRICE_PENS * i + PRICE_PENSIL * j + PRICE_ERASER * k;
+        }
+
+        public static bool isCountObjectValid(int i, int j, int k)
+        {
+            return COUNT_OBJECT == i + j + k;
         }
     }
 }
