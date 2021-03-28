@@ -4,25 +4,21 @@ namespace ComputerScienceMartixReverseString
 {
     class Program
     {
-        const int sizeLine = 4;
-        const int sizeColumn = 4;
-        // Разделяем свойства и методы интером.
+        const int sizeLine = 5;
+        const int sizeColumn = 5;
+        
         static void Main(string[] args)
         {
             int[,] matrix = new int[sizeLine, sizeColumn];
             
-            // Работа с матрицей является одним логическим блоком,
-            // поэтому я думаю можно интер между вызовами методов не ставить. 
-            InsertNumberToMatrix(matrix);
-                
+            FillMatrix(matrix);
             ReverseMatrix(matrix);
         }
         
         static void PrintMatrix(int[,] matrix)
         {
-            // табуляция
-       for (int i = 0; i < sizeLine; i++)
-            {
+            for (int i = 0; i < sizeLine; i++)
+            { 
                 for (int j = 0; j < sizeColumn; j++)
                 {
                     Console.Write($"{matrix[i, j]} ");
@@ -34,22 +30,21 @@ namespace ComputerScienceMartixReverseString
             Console.WriteLine();
         }
         
-        // Более лаконичное название FillMatrix
-        static void InsertNumberToMatrix(int[,] matrix)
+        static void FillMatrix(int[,] matrix)
         {
             Random rnd = new Random();
             
             for (int i = 0; i < sizeLine; i++)
+            { 
+                for (int j = 0; j < sizeColumn; j++)
                 { 
-                    for (int j = 0; j < sizeColumn; j++)
-                    {
-                        matrix[i, j] = rnd.Next(99);
+                    matrix[i, j] = rnd.Next(99);
                     
-                        Console.Write($"{matrix[i, j]} ");
-                    }
+                    Console.Write($"{matrix[i, j]} ");
+                } 
                 
-                    Console.WriteLine();
-                }
+                Console.WriteLine();
+            }
             
             Console.WriteLine();
         }
@@ -59,28 +54,26 @@ namespace ComputerScienceMartixReverseString
             int[] fisrtLine = new int[sizeLine];
             int[] secondLine = new int[sizeLine];
                 
-            // не забываем пробелы между аргументами функции
             matrix = ReverseFirstString(fisrtLine,matrix);
+            
             matrix = ReverseSecondString(secondLine, matrix);
               
             PrintMatrix(matrix);
-            // лишние enter
-                
         }
 
         static int[,] ReverseFirstString(int[] firstLine, int[,] matrix)
         {
             // Ты действительно уверен что эти переменные здесь нужны?
-            int indexJ = 3;
+            int indexJ = sizeLine - 1;
             int indexK = 0;
                 
-            for (int i = 3; i > -1; i--)
+            for (int i = sizeLine - 1; i > -1; i--)
             { 
                 firstLine[i] = matrix[i, indexJ];
                 indexJ--;
             }
                 
-            indexJ = 3;
+            indexJ = sizeLine - 1;
             
             for (int i = 0; i < sizeLine; i++)
             {
@@ -96,7 +89,7 @@ namespace ComputerScienceMartixReverseString
         static int[,] ReverseSecondString(int[] secondLine, int[,] matrix)
         { 
             // Действительно нужна?
-            int indexK = 3;
+            int indexK = sizeLine - 1;
                 
             for (int i = 0; i < sizeLine; i++)
             { 
@@ -104,7 +97,7 @@ namespace ComputerScienceMartixReverseString
                 indexK--;
             }
                 
-            indexK = 3;
+            indexK = sizeLine - 1;
                 
             for (int i = 0; i < sizeLine; i++)
             {
