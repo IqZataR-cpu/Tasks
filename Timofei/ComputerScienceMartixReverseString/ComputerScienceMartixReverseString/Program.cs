@@ -18,9 +18,9 @@ namespace ComputerScienceMartixReverseString
         }
         
         static void PrintMatrix(int[,] matrix)
-        {
-       for (int i = 0; i < sizeLine; i++)
-            {
+        { 
+            for (int i = 0; i < sizeLine; i++) 
+            { 
                 for (int j = 0; j < sizeColumn; j++)
                 {
                     Console.Write($"{matrix[i, j]} ");
@@ -37,16 +37,16 @@ namespace ComputerScienceMartixReverseString
             Random rnd = new Random();
             
             for (int i = 0; i < sizeLine; i++)
+            { 
+                for (int j = 0; j < sizeColumn; j++)
                 { 
-                    for (int j = 0; j < sizeColumn; j++)
-                    {
-                        matrix[i, j] = rnd.Next(99);
+                    matrix[i, j] = rnd.Next(99);
                     
-                        Console.Write($"{matrix[i, j]} ");
-                    }
-                
-                    Console.WriteLine();
+                    Console.Write($"{matrix[i, j]} ");
                 }
+                
+                Console.WriteLine();
+            }
             
             Console.WriteLine();
         }
