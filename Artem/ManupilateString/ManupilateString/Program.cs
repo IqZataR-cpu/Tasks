@@ -30,6 +30,7 @@ namespace ManupilateString
             _input = input;
         }
 
+        // Все гуд, просто для разнообразия можно было сделать _input.ToCharArray().Reverse()
         public void Reverse()
         {
             string reverse = "";
@@ -45,10 +46,14 @@ namespace ManupilateString
         public void ucFirst()
         {
             char[] firstSymbol = _input.ToCharArray();
+            // System здесь не обязятельно указывать,
+            // поскольку он наверху импортируется с помощью using
             firstSymbol[0] = System.Char.ToUpper(firstSymbol[0]);
             _input = new string(firstSymbol);
         }
 
+        // Все гуд, но можно вот так для разнообразия
+        // https://docs.microsoft.com/ru-ru/dotnet/api/system.globalization.textinfo.totitlecase?view=net-5.0
         public void ucWord()
         {
             char[] stringUp = _input.ToCharArray();
@@ -57,6 +62,8 @@ namespace ManupilateString
             {
                 if (i == 0 || stringUp[i] != ' ' && stringUp[i - 1] == ' ')
                 {
+                    // System здесь не обязятельно указывать,
+                    // поскольку он наверху импортируется с помощью using
                     stringUp[i] = System.Char.ToUpper(stringUp[i]);
                 }
             }
