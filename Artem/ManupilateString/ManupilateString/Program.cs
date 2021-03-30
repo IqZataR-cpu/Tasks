@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace ManupilateString
 {
@@ -7,7 +8,10 @@ namespace ManupilateString
         static void Main(string[] args)
         {
             Console.WriteLine("Введите строку: ");
+
+
             StringHelper inputUser = new StringHelper(Console.ReadLine());
+
 
             inputUser.Reverse();
             inputUser.Print();
@@ -21,7 +25,7 @@ namespace ManupilateString
         }
     }
 
-    class StringHelper
+    public class StringHelper
     {
         private string _input;
 
@@ -30,45 +34,26 @@ namespace ManupilateString
             _input = input;
         }
 
-        // Все гуд, просто для разнообразия можно было сделать _input.ToCharArray().Reverse()
-        public void Reverse()
+        public string Reverse()
         {
-            string reverse = "";
+            char[] reverse = _input.ToCharArray();
 
-            for (int i = _input.Length - 1; i >= 0; i--)
-            {
-                reverse += _input[i];
-            }
+            Array.Reverse(reverse);
 
-            _input = reverse;
+            return _input = new string(reverse);
         }
 
         public void ucFirst()
         {
             char[] firstSymbol = _input.ToCharArray();
-            // System здесь не обязятельно указывать,
-            // поскольку он наверху импортируется с помощью using
-            firstSymbol[0] = System.Char.ToUpper(firstSymbol[0]);
+            firstSymbol[0] = Char.ToUpper(firstSymbol[0]);
             _input = new string(firstSymbol);
         }
 
-        // Все гуд, но можно вот так для разнообразия
-        // https://docs.microsoft.com/ru-ru/dotnet/api/system.globalization.textinfo.totitlecase?view=net-5.0
         public void ucWord()
         {
-            char[] stringUp = _input.ToCharArray();
-
-            for (int i = 0; i <= stringUp.Length - 1; i++)
-            {
-                if (i == 0 || stringUp[i] != ' ' && stringUp[i - 1] == ' ')
-                {
-                    // System здесь не обязятельно указывать,
-                    // поскольку он наверху импортируется с помощью using
-                    stringUp[i] = System.Char.ToUpper(stringUp[i]);
-                }
-            }
-
-            _input = new string(stringUp);
+            TextInfo infoText = new CultureInfo("en-US", false).TextInfo;
+            _input = infoText.ToTitleCase(_input);          
         }
 
         public void Print()

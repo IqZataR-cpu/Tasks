@@ -4,18 +4,21 @@ namespace N_rankedSpace
 {
     class Program
     {
+        // Все круто, но было бы интересно увидеть от тебя реализацию класса Dot
+        // По желанию, если его нет, то просто убери лишний интер
         static void Main(string[] args)
         {
             Console.WriteLine("Введите размерность пространства");
             int rankSpace = int.Parse(Console.ReadLine());
 
             int[] dotA = CreateDot(rankSpace);
-            Print(dotA);
+            PrintArray(dotA);
             int[] dotB = CreateDot(rankSpace);
-            Print(dotB);
+            PrintArray(dotB);
 
             double distance = Distance(dotA, dotB);
             Console.WriteLine($"Расстояние в {rankSpace}-пространстве равна {distance}");
+            // Если бы не этот интер черт бы его побрал, было бы идеально.
 
         }
 
@@ -44,13 +47,13 @@ namespace N_rankedSpace
             return Math.Sqrt(distance);
         }
 
-        public static void Print(int[] dot)
-        {
-            
-            foreach (int i in dot)
+        public static void PrintArray(int[] dot)
+        {            
+            foreach (int number in dot)
             {
-                Console.Write(i);
+                Console.Write($"{number} ");
             }
+
             Console.WriteLine();
         }
     }
