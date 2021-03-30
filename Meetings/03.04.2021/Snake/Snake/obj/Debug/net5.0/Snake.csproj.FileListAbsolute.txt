@@ -1,0 +1,16 @@
+/home/iqzatar/RiderProjects/Tasks/Meetings/03.04.2021/Snake/Snake/bin/Debug/net5.0/Snake
+/home/iqzatar/RiderProjects/Tasks/Meetings/03.04.2021/Snake/Snake/bin/Debug/net5.0/Snake.deps.json
+/home/iqzatar/RiderProjects/Tasks/Meetings/03.04.2021/Snake/Snake/bin/Debug/net5.0/Snake.runtimeconfig.json
+/home/iqzatar/RiderProjects/Tasks/Meetings/03.04.2021/Snake/Snake/bin/Debug/net5.0/Snake.runtimeconfig.dev.json
+/home/iqzatar/RiderProjects/Tasks/Meetings/03.04.2021/Snake/Snake/bin/Debug/net5.0/Snake.dll
+/home/iqzatar/RiderProjects/Tasks/Meetings/03.04.2021/Snake/Snake/bin/Debug/net5.0/ref/Snake.dll
+/home/iqzatar/RiderProjects/Tasks/Meetings/03.04.2021/Snake/Snake/bin/Debug/net5.0/Snake.pdb
+/home/iqzatar/RiderProjects/Tasks/Meetings/03.04.2021/Snake/Snake/obj/Debug/net5.0/Snake.csprojAssemblyReference.cache
+/home/iqzatar/RiderProjects/Tasks/Meetings/03.04.2021/Snake/Snake/obj/Debug/net5.0/Snake.GeneratedMSBuildEditorConfig.editorconfig
+/home/iqzatar/RiderProjects/Tasks/Meetings/03.04.2021/Snake/Snake/obj/Debug/net5.0/Snake.AssemblyInfoInputs.cache
+/home/iqzatar/RiderProjects/Tasks/Meetings/03.04.2021/Snake/Snake/obj/Debug/net5.0/Snake.AssemblyInfo.cs
+/home/iqzatar/RiderProjects/Tasks/Meetings/03.04.2021/Snake/Snake/obj/Debug/net5.0/Snake.csproj.CoreCompileInputs.cache
+/home/iqzatar/RiderProjects/Tasks/Meetings/03.04.2021/Snake/Snake/obj/Debug/net5.0/Snake.dll
+/home/iqzatar/RiderProjects/Tasks/Meetings/03.04.2021/Snake/Snake/obj/Debug/net5.0/ref/Snake.dll
+/home/iqzatar/RiderProjects/Tasks/Meetings/03.04.2021/Snake/Snake/obj/Debug/net5.0/Snake.pdb
+/home/iqzatar/RiderProjects/Tasks/Meetings/03.04.2021/Snake/Snake/obj/Debug/net5.0/Snake.genruntimeconfig.cache
