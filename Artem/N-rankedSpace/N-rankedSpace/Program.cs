@@ -4,6 +4,8 @@ namespace N_rankedSpace
 {
     class Program
     {
+        // Все круто, но было бы интересно увидеть от тебя реализацию класса Dot
+        // По желанию, если его нет, то просто убери лишний интер
         static void Main(string[] args)
         {
             Console.WriteLine("Введите размерность пространства");
@@ -16,6 +18,7 @@ namespace N_rankedSpace
 
             double distance = Distance(dotA, dotB);
             Console.WriteLine($"Расстояние в {rankSpace}-пространстве равна {distance}");
+            // Если бы не этот интер черт бы его побрал, было бы идеально.
 
         }
 
