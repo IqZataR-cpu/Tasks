@@ -10,9 +10,9 @@ namespace N_rankedSpace
             int rankSpace = int.Parse(Console.ReadLine());
 
             int[] dotA = CreateDot(rankSpace);
-            Print(dotA);
+            PrintArray(dotA);
             int[] dotB = CreateDot(rankSpace);
-            Print(dotB);
+            PrintArray(dotB);
 
             double distance = Distance(dotA, dotB);
             Console.WriteLine($"Расстояние в {rankSpace}-пространстве равна {distance}");
@@ -44,13 +44,13 @@ namespace N_rankedSpace
             return Math.Sqrt(distance);
         }
 
-        public static void Print(int[] dot)
-        {
-            
-            foreach (int i in dot)
+        public static void PrintArray(int[] dot)
+        {            
+            foreach (int number in dot)
             {
-                Console.Write(i);
+                Console.Write($"{number} ");
             }
+
             Console.WriteLine();
         }
     }
