@@ -16,7 +16,7 @@ namespace TestDefineMaxNumber
         {
             int input = 9123213;
 
-            Assert.AreEqual(9, Program.IsMaxNumber(input));
+            Assert.AreEqual(9, Program.GetMaxNumber(input));
         }
         
         [Test]
@@ -24,7 +24,7 @@ namespace TestDefineMaxNumber
         {
             int input = 9123213;
             
-            Assert.AreEqual(2, Program.IsMaxNumber(input));
+            Assert.AreEqual(2, Program.GetMaxNumber(input));
         }
     }
 }

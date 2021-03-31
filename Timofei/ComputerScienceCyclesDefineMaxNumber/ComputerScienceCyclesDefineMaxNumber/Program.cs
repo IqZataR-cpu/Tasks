@@ -9,12 +9,12 @@ namespace ComputerScienceCyclesDefineMaxNumber
             Console.WriteLine("Введите целое число"); 
             int input = int.Parse(Console.ReadLine());
             
-            input = IsMaxNumber(input);
+            input = GetMaxNumber(input);
            
             Console.WriteLine($"Максимальное число: {input}");
         }
         
-        public static int IsMaxNumber(int input)
+        public static int GetMaxNumber(int input)
         {
             int maxNumber = 0;
 
