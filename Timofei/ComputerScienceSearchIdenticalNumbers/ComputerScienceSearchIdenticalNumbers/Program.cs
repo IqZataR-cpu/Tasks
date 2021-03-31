@@ -42,6 +42,8 @@ namespace ComputerScienceSearchIdenticalNumbers
                 {
                     if (firstArray[i] == secondArray[j])
                     {
+                        // Пустое условие, можно заменить на отрицание,
+                        // !arrayIdenticalNubers.Contains(firstArray[i]) и его не будет
                         if (arrayIdenticalNubers.Contains(firstArray[i]))
                         {
                             
@@ -57,6 +59,9 @@ namespace ComputerScienceSearchIdenticalNumbers
             return arrayIdenticalNubers;
         }
         
+        // Зачем count? Если есть while (inputNumbers > 0)
+        // Определись нужен тебе параметр в виде ссылки на массив или
+        // возвращаемое значение + локальное(внутри функциии) создание массива.
         public static int[] InsertNumberToArray(int inputNubers, int[] array)
         {
             int count = inputNubers.ToString().Length;
