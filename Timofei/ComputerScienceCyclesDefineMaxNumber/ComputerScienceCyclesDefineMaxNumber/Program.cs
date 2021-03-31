@@ -14,6 +14,8 @@ namespace ComputerScienceCyclesDefineMaxNumber
             Console.WriteLine($"Максимальное число: {input}");
         }
         
+        // Префиксы is, can, has... применимы только к булевым типам.
+        // В данном случае GetMaxNumber более звучное и применимое слово.
         public static int IsMaxNumber(int input)
         {
             int maxNumber = 0;
