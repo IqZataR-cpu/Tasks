@@ -9,21 +9,16 @@ namespace ComputerScienceCyclesDefineMaxNumber
             Console.WriteLine("Введите целое число"); 
             int input = int.Parse(Console.ReadLine());
             
-            // Здесь не нужен второй параметр.
-            // Даже если бы он был нужен, то нет смысла вызывать класс Convert,
-            // У многих c# типов по умолчанию есть метод ToString,
-            // То есть можно было просто сделать input.ToString().Length()
-            input = IsMaxNumber(input, Convert.ToString(input).Length);
+            input = IsMaxNumber(input);
            
             Console.WriteLine($"Максимальное число: {input}");
         }
-
-        // Зачем здесь count? почему ты не сделал while input > 0?
-        public static int IsMaxNumber(int input, int count)
+        
+        public static int IsMaxNumber(int input)
         {
             int maxNumber = 0;
-            
-            for (int i = 0; i < count; i++)
+
+            while (input > 0)
             {
                 if (input % 10 > maxNumber)
                 {
