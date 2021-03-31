@@ -10,14 +10,14 @@ namespace ComputerScienceSearchIdenticalNumbers
             Console.Write("Введите первое число: "); 
             int inputFirstNumbers = int.Parse(Console.ReadLine());
             Console.Write("Введите второе число: ");
-            int inputSecondNubers = int.Parse(Console.ReadLine());
+            int inputSecondNumbers = int.Parse(Console.ReadLine());
             
             int[] firstArray = new int[inputFirstNumbers.ToString().Length];
-            int[] secondArray = new int[inputSecondNubers.ToString().Length];
+            int[] secondArray = new int[inputSecondNumbers.ToString().Length];
             List<int> arrayIdenticalNubers = new List<int>();
             
-            firstArray = InsertNumberToArray(inputFirstNumbers, firstArray);
-            secondArray = InsertNumberToArray(inputSecondNubers, secondArray);
+            InsertNumberToArray(inputFirstNumbers, firstArray);
+            InsertNumberToArray(inputSecondNumbers, secondArray);
             
             arrayIdenticalNubers = GetSearchIdenticalNumbers(firstArray, secondArray, arrayIdenticalNubers);
 
@@ -44,11 +44,7 @@ namespace ComputerScienceSearchIdenticalNumbers
                     {
                         // Пустое условие, можно заменить на отрицание,
                         // !arrayIdenticalNubers.Contains(firstArray[i]) и его не будет
-                        if (arrayIdenticalNubers.Contains(firstArray[i]))
-                        {
-                            
-                        }
-                        else
+                        if (!arrayIdenticalNubers.Contains(firstArray[i]))
                         {
                             arrayIdenticalNubers.Add(firstArray[i]);
                         }
@@ -62,17 +58,15 @@ namespace ComputerScienceSearchIdenticalNumbers
         // Зачем count? Если есть while (inputNumbers > 0)
         // Определись нужен тебе параметр в виде ссылки на массив или
         // возвращаемое значение + локальное(внутри функциии) создание массива.
-        public static int[] InsertNumberToArray(int inputNubers, int[] array)
+        public static void InsertNumberToArray(int inputNumbers, int[] array)
         {
-            int count = inputNubers.ToString().Length;
-            
-            for (int i = count - 1; i > -1; i--)
+            int i = 0;
+            while (inputNumbers > 0)
             {
-                array[i] = inputNubers % 10;
-                inputNubers /= 10;
+                array[i] = inputNumbers % 10;
+                inputNumbers /= 10;
+                i++;
             }
-            
-            return array;
         }
     }
 }
