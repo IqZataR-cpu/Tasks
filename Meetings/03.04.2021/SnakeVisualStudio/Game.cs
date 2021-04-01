@@ -5,8 +5,8 @@ namespace Snake
 {
     class Game
     {
-        private const int SizeX = 80;
-        private const int SizeY = 26;
+        private const int SizeX = 180;
+        private const int SizeY = 10;
         private const int GameDelay = 200; // Это не количество кадров в секунду, а скорее задержка между кадрами
 
         private const char WallsSymbol = '#';
@@ -49,6 +49,8 @@ namespace Snake
         
         private void Loop (object obj)
         {
+            return;
+
             if (_walls.IsHitBySnake(_snake.GetHead()) || _snake.IsHitYourSelf(_snake.GetHead()))
             {
                 _timer.Change(0, Timeout.Infinite);

@@ -15,7 +15,7 @@ namespace Snake
         // третий - перезапись оператора проверки "!=", чтобы было легче сравнивать точки между собой.
         public static implicit operator Point((int, int, char) value)
         {
-            return new()
+            return new Point
             {
                 X = value.Item1,
                 Y = value.Item2,
@@ -42,6 +42,7 @@ namespace Snake
         {
             DrawPoint(' ');
         }
+        
         private void DrawPoint(char symbol)
         {
             Console.SetCursorPosition(X, Y);
