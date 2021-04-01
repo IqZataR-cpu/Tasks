@@ -4,57 +4,63 @@ namespace N_rankedSpace
 {
     class Program
     {
-        // Все круто, но было бы интересно увидеть от тебя реализацию класса Dot
-        // По желанию, если его нет, то просто убери лишний интер
         static void Main(string[] args)
         {
             Console.WriteLine("Введите размерность пространства");
             int rankSpace = int.Parse(Console.ReadLine());
 
-            int[] dotA = CreateDot(rankSpace);
-            PrintArray(dotA);
-            int[] dotB = CreateDot(rankSpace);
-            PrintArray(dotB);
+            Dot dotA = new Dot(rankSpace); 
+            dotA.PrintArray();
+            Dot dotB = new Dot(rankSpace);
+            dotB.PrintArray();
 
-            double distance = Distance(dotA, dotB);
-            Console.WriteLine($"Расстояние в {rankSpace}-пространстве равна {distance}");
-            // Если бы не этот интер черт бы его побрал, было бы идеально.
-
+            double distance = dotA.Distance(dotB);
+            Console.WriteLine($"\nРасстояние в {rankSpace}-пространстве равна {distance}");
         }
 
-        public static int [] CreateDot(int countCoordinates)
+        class Dot
         {
-            Random randomNumber = new Random();
-            int[] dot = new int[countCoordinates];
+            private int[] _coordinates;
 
-            for (int i = 0; i <= dot.Length - 1; i++)
+            public int[] Coordinates
             {
-                dot[i] = randomNumber.Next(10);
+                get => _coordinates;
             }
 
-            return dot;
-        }
-
-        public static double Distance(int[] dotA, int[] dotB)
-        {
-            double distance = 0;
-
-            for (int i = 0; i <= dotA.Length - 1; i++)
+            public Dot(int countCoordinates)
             {
-                distance += Math.Pow(dotA[i] - dotB[i], 2);
+                Random randomNumber = new Random();
+                _coordinates = new int[countCoordinates];
+
+                for (int i = 0; i <= countCoordinates - 1; i++)
+                {
+                    _coordinates[i] = randomNumber.Next(10);                   
+                }
             }
 
-            return Math.Sqrt(distance);
-        }
-
-        public static void PrintArray(int[] dot)
-        {            
-            foreach (int number in dot)
+            public double Distance(Dot dot)
             {
-                Console.Write($"{number} ");
+                double distance = 0;
+
+                for (int i = 0; i <= _coordinates.Length - 1; i++)
+                {
+                    distance += Math.Pow(dot.Coordinates[i] - _coordinates[i], 2);
+                }
+
+                return Math.Sqrt(distance);
             }
 
-            Console.WriteLine();
+            public void PrintArray()
+            {
+                Console.WriteLine();
+
+                foreach (int number in _coordinates)
+                {
+                    Console.Write($"{number} ");
+                }
+
+                Console.WriteLine();
+            }
         }
     }
 }
