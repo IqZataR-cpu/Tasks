@@ -5,6 +5,7 @@ namespace ChStructuresDataQueue
 {
     class Program
     {
+        // Указать область видимости методов и класса.
         static void Main(string[] args)
         {
             Queue<string> que = new Queue<string>();
