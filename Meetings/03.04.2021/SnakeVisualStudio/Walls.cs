@@ -6,10 +6,12 @@ namespace Snake
     {
         private readonly char _wallSymbol;
         private List<Point> _wall = new List<Point>();
+        private int _color;
 
-        public Walls(int x, int y, char symbol)
+        public Walls(int x, int y, char symbol, int color)
         {
-            this._wallSymbol = symbol;
+            _wallSymbol = symbol;
+            _color = color;
             DrawHorizontal(x, 0);
             DrawHorizontal(x, y);
             DrawVertical(0, y);
@@ -18,10 +20,10 @@ namespace Snake
 
         private void DrawHorizontal(int x, int y)
         {
-            for (var i = 0; i < x; i++)
+            for (var i = 0; i <= x; i++)
             {
                 Point point = (i, y, _wallSymbol);
-                point.Draw();
+                point.Draw(_color);
                 _wall.Add(point);
             }
         }
@@ -31,14 +33,22 @@ namespace Snake
             for (var i = 0; i < y; i++)
             {
                 Point point = (x, i, _wallSymbol);
-                point.Draw();
+                point.Draw(_color);
                 _wall.Add(point);
             }
         }
 
         public bool IsHitBySnake(Point snakeHead)
         {
-            throw new System.NotImplementedException();
+            foreach (var wallPoint in _wall)
+            {
+                if (snakeHead == wallPoint)
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
     }
 }

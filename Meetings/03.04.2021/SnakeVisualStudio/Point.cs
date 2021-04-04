@@ -33,18 +33,34 @@ namespace Snake
         public static bool operator != (Point a, Point b) => 
             a.X != b.X || a.Y != b.Y;
         
-        public void Draw()
+        public void Draw(int color)
         {
-            DrawPoint(Symbol);
+            DrawPoint(Symbol, color);
         }
         
-        public void Clear()
+        public void Clear(int color)
         {
-            DrawPoint(' ');
+            DrawPoint(' ', color);
         }
         
-        private void DrawPoint(char symbol)
+        private void DrawPoint(char symbol, int color)
         {
+            switch (color)
+            {
+                case 1:
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    break;
+                case 2:
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    break;
+                case 3:
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    break;
+                case 4:
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    break;
+            }
+
             Console.SetCursorPosition(X, Y);
             Console.Write(symbol);
         }

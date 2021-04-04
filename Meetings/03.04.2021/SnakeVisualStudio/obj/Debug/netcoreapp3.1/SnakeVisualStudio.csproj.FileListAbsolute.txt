@@ -11,3 +11,16 @@ C:\Users\79205\RiderProjects\Tasks\Meetings\03.04.2021\SnakeVisualStudio\obj\Deb
 C:\Users\79205\RiderProjects\Tasks\Meetings\03.04.2021\SnakeVisualStudio\obj\Debug\netcoreapp3.1\SnakeVisualStudio.pdb
 C:\Users\79205\RiderProjects\Tasks\Meetings\03.04.2021\SnakeVisualStudio\obj\Debug\netcoreapp3.1\SnakeVisualStudio.csproj.CoreCompileInputs.cache
 C:\Users\79205\RiderProjects\Tasks\Meetings\03.04.2021\SnakeVisualStudio\obj\Debug\netcoreapp3.1\SnakeVisualStudio.genruntimeconfig.cache
+C:\Users\Mikuzen's computer\source\repos\Tasks\Meetings\03.04.2021\SnakeVisualStudio\bin\Debug\netcoreapp3.1\SnakeVisualStudio.exe
+C:\Users\Mikuzen's computer\source\repos\Tasks\Meetings\03.04.2021\SnakeVisualStudio\bin\Debug\netcoreapp3.1\SnakeVisualStudio.deps.json
+C:\Users\Mikuzen's computer\source\repos\Tasks\Meetings\03.04.2021\SnakeVisualStudio\bin\Debug\netcoreapp3.1\SnakeVisualStudio.runtimeconfig.json
+C:\Users\Mikuzen's computer\source\repos\Tasks\Meetings\03.04.2021\SnakeVisualStudio\bin\Debug\netcoreapp3.1\SnakeVisualStudio.runtimeconfig.dev.json
+C:\Users\Mikuzen's computer\source\repos\Tasks\Meetings\03.04.2021\SnakeVisualStudio\bin\Debug\netcoreapp3.1\SnakeVisualStudio.dll
+C:\Users\Mikuzen's computer\source\repos\Tasks\Meetings\03.04.2021\SnakeVisualStudio\bin\Debug\netcoreapp3.1\SnakeVisualStudio.pdb
+C:\Users\Mikuzen's computer\source\repos\Tasks\Meetings\03.04.2021\SnakeVisualStudio\obj\Debug\netcoreapp3.1\SnakeVisualStudio.csprojAssemblyReference.cache
+C:\Users\Mikuzen's computer\source\repos\Tasks\Meetings\03.04.2021\SnakeVisualStudio\obj\Debug\netcoreapp3.1\SnakeVisualStudio.AssemblyInfoInputs.cache
+C:\Users\Mikuzen's computer\source\repos\Tasks\Meetings\03.04.2021\SnakeVisualStudio\obj\Debug\netcoreapp3.1\SnakeVisualStudio.AssemblyInfo.cs
+C:\Users\Mikuzen's computer\source\repos\Tasks\Meetings\03.04.2021\SnakeVisualStudio\obj\Debug\netcoreapp3.1\SnakeVisualStudio.csproj.CoreCompileInputs.cache
+C:\Users\Mikuzen's computer\source\repos\Tasks\Meetings\03.04.2021\SnakeVisualStudio\obj\Debug\netcoreapp3.1\SnakeVisualStudio.dll
+C:\Users\Mikuzen's computer\source\repos\Tasks\Meetings\03.04.2021\SnakeVisualStudio\obj\Debug\netcoreapp3.1\SnakeVisualStudio.pdb
+C:\Users\Mikuzen's computer\source\repos\Tasks\Meetings\03.04.2021\SnakeVisualStudio\obj\Debug\netcoreapp3.1\SnakeVisualStudio.genruntimeconfig.cache

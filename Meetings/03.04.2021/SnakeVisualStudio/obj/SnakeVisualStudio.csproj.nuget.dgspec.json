@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\79205\\RiderProjects\\Tasks\\Meetings\\03.04.2021\\SnakeVisualStudio\\SnakeVisualStudio.csproj": {}
+    "C:\\Users\\Mikuzen's computer\\source\\repos\\Tasks\\Meetings\\03.04.2021\\SnakeVisualStudio\\SnakeVisualStudio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\79205\\RiderProjects\\Tasks\\Meetings\\03.04.2021\\SnakeVisualStudio\\SnakeVisualStudio.csproj": {
+    "C:\\Users\\Mikuzen's computer\\source\\repos\\Tasks\\Meetings\\03.04.2021\\SnakeVisualStudio\\SnakeVisualStudio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\79205\\RiderProjects\\Tasks\\Meetings\\03.04.2021\\SnakeVisualStudio\\SnakeVisualStudio.csproj",
+        "projectUniqueName": "C:\\Users\\Mikuzen's computer\\source\\repos\\Tasks\\Meetings\\03.04.2021\\SnakeVisualStudio\\SnakeVisualStudio.csproj",
         "projectName": "SnakeVisualStudio",
-        "projectPath": "C:\\Users\\79205\\RiderProjects\\Tasks\\Meetings\\03.04.2021\\SnakeVisualStudio\\SnakeVisualStudio.csproj",
-        "packagesPath": "C:\\Users\\79205\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\79205\\RiderProjects\\Tasks\\Meetings\\03.04.2021\\SnakeVisualStudio\\obj\\",
+        "projectPath": "C:\\Users\\Mikuzen's computer\\source\\repos\\Tasks\\Meetings\\03.04.2021\\SnakeVisualStudio\\SnakeVisualStudio.csproj",
+        "packagesPath": "C:\\Users\\Mikuzen's computer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mikuzen's computer\\source\\repos\\Tasks\\Meetings\\03.04.2021\\SnakeVisualStudio\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\79205\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mikuzen's computer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,22 +52,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.13, 3.1.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
