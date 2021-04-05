@@ -1,17 +1,8 @@
-﻿using System;
-
-namespace ComputerScienceClassImplementationWeaponForPlayer
+﻿namespace ComputerScienceClassImplementationWeaponForPlayer
 {
-    public class Knife : Weapon
+    class Knife : Weapon
     {
-        private const int DAMAGE = 35;
-        
-        public static void Print()
-        {
-            Console.WriteLine($"Урон: {DAMAGE} \n");
-        }
-        
-        public Knife(int damage) : base(damage)
+        public Knife(string type, int damage, int ammunition) : base(type, damage, ammunition)
         {
         }
     }

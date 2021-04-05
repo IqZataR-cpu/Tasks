@@ -1,19 +1,26 @@
 ﻿namespace ComputerScienceClassImplementationWeaponForPlayer
 {
-    public abstract class Weapon
+    public class Weapon
     {
+        private string _type;
         private int _damage;
         private int _ammunition;
 
-        protected Weapon(int damage, int ammunition)
+        public string Type => _type;
+
+        public int Damage => _damage;
+
+        public int Ammunition
         {
-            _damage = damage;
-            _ammunition = ammunition;
+            get => _ammunition;
+            set => _ammunition = value;
         }
         
-        protected Weapon(int damage)
+        public Weapon(string type, int damage, int ammunition)
         {
+            _type = type;
             _damage = damage;
+            _ammunition = ammunition;
         }
     }
 }
