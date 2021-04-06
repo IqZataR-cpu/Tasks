@@ -18,12 +18,9 @@ namespace DecNumberInHex
             if (userInput < 0)
             {
                 hexNumber = "-";
-                // можно было в метод отправить -userInput
-                userInput = -userInput;
-                // Вот так переносы строк выглядят более лаконично
                 Console.WriteLine(
                     $"Число {userInput} в шестнадцатиричной системе счисления выглядит " +
-                    $"так - {hexNumber += Translator(userInput)}"
+                    $"так - {hexNumber += Translator(-userInput)}"
                 );
                 return;
             }
@@ -34,7 +31,7 @@ namespace DecNumberInHex
             );
         }
 
-        static string Translator(int number)
+        private static string Translator(int number)
         {
             string hexNumber = null;
             int remains = number % 16;
@@ -52,40 +49,16 @@ namespace DecNumberInHex
             return hexNumber;
         }
 
-        static string HexTranslator(int number)
+        private static string HexTranslator(int number)
         {
-            // Поскольку ключи интовые можно было не делать Dictionary,
-            // ведь обычный массив работает быстрее
-            // и ключи там тоже int в таком же порядке.
-            Dictionary<int, char> hexNumbers = new Dictionary<int, char>
-            {
-                {0, '0'},
-                {1, '1'},
-                {2, '2'},
-                {3, '3'},
-                {4, '4'},
-                {5, '5'},
-                {6, '6'},
-                {7, '7'},
-                {8, '8'},
-                {9, '9'},
-                {10, 'A'},
-                {11, 'B'},
-                {12, 'C'},
-                {13, 'D'},
-                {14, 'E'},
-                {15, 'F'}
-            };
+            char[] hexNumbers = new char[] { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F' };
             string hexNumber = null;
-
-            // I think @hexItem@ better than @numbers@ in this context
-            // But hexNumbers.Contains(number) or smth like that should be better.
-            // exmpl: if "contains" return hexNumbers[number] 
-            foreach (var numbers in hexNumbers)
+                  
+            for (int i = 0; i <= hexNumbers.Length - 1; i++)
             {
-                if (numbers.Key == number)
+                if (i == number)
                 {
-                    hexNumber = numbers.Value.ToString();
+                    hexNumber = hexNumbers[i].ToString();
                 }
             }
 

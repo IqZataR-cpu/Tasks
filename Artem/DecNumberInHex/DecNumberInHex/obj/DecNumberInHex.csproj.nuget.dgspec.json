@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mikuzen's computer\\source\\repos\\Tasks\\Artem\\DecNumberInHex\\DecNumberInHex\\DecNumberInHex.csproj": {}
+    "C:\\Users\\Mikuzen's computer\\source\\repos\\Tasks\\Artem\\DecNumberInHEx\\DecNumberInHex\\DecNumberInHex.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mikuzen's computer\\source\\repos\\Tasks\\Artem\\DecNumberInHex\\DecNumberInHex\\DecNumberInHex.csproj": {
+    "C:\\Users\\Mikuzen's computer\\source\\repos\\Tasks\\Artem\\DecNumberInHEx\\DecNumberInHex\\DecNumberInHex.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mikuzen's computer\\source\\repos\\Tasks\\Artem\\DecNumberInHex\\DecNumberInHex\\DecNumberInHex.csproj",
+        "projectUniqueName": "C:\\Users\\Mikuzen's computer\\source\\repos\\Tasks\\Artem\\DecNumberInHEx\\DecNumberInHex\\DecNumberInHex.csproj",
         "projectName": "DecNumberInHex",
-        "projectPath": "C:\\Users\\Mikuzen's computer\\source\\repos\\Tasks\\Artem\\DecNumberInHex\\DecNumberInHex\\DecNumberInHex.csproj",
+        "projectPath": "C:\\Users\\Mikuzen's computer\\source\\repos\\Tasks\\Artem\\DecNumberInHEx\\DecNumberInHex\\DecNumberInHex.csproj",
         "packagesPath": "C:\\Users\\Mikuzen's computer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mikuzen's computer\\source\\repos\\Tasks\\Artem\\DecNumberInHex\\DecNumberInHex\\obj\\",
+        "outputPath": "C:\\Users\\Mikuzen's computer\\source\\repos\\Tasks\\Artem\\DecNumberInHEx\\DecNumberInHex\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
