@@ -3,6 +3,8 @@ using System.Collections.Generic;
 
 namespace DecNumberInHex
 {
+    // Не забываем везде указывать область видимости, 
+    // даже если работаем в пределах одного класса или метода
     class Program
     {
         static void Main(string[] args)
@@ -16,14 +18,20 @@ namespace DecNumberInHex
             if (userInput < 0)
             {
                 hexNumber = "-";
+                // можно было в метод отправить -userInput
                 userInput = -userInput;
-                Console.WriteLine($"Число {userInput} в шестнадцатиричной системе счисления выглядит " +
-                    $"так - {hexNumber += Translator(userInput)}");
+                // Вот так переносы строк выглядят более лаконично
+                Console.WriteLine(
+                    $"Число {userInput} в шестнадцатиричной системе счисления выглядит " +
+                    $"так - {hexNumber += Translator(userInput)}"
+                );
                 return;
             }
 
-            Console.WriteLine($"Число {userInput} в шестнадцатиричной системе счисления выглядит " +
-                    $"так - {hexNumber += Translator(userInput)}");
+            Console.WriteLine(
+                $"Число {userInput} в шестнадцатиричной системе счисления выглядит " +
+                $"так - {hexNumber += Translator(userInput)}"
+            );
         }
 
         static string Translator(int number)
@@ -36,7 +44,7 @@ namespace DecNumberInHex
                 hexNumber += Translator(number / 16);
                 return hexNumber += HexTranslator(remains);
             }           
-           else
+            else
             {
                 hexNumber += HexTranslator(number);
             }
@@ -46,6 +54,9 @@ namespace DecNumberInHex
 
         static string HexTranslator(int number)
         {
+            // Поскольку ключи интовые можно было не делать Dictionary,
+            // ведь обычный массив работает быстрее
+            // и ключи там тоже int в таком же порядке.
             Dictionary<int, char> hexNumbers = new Dictionary<int, char>
             {
                 {0, '0'},
@@ -67,6 +78,9 @@ namespace DecNumberInHex
             };
             string hexNumber = null;
 
+            // I think @hexItem@ better than @numbers@ in this context
+            // But hexNumbers.Contains(number) or smth like that should be better.
+            // exmpl: if "contains" return hexNumbers[number] 
             foreach (var numbers in hexNumbers)
             {
                 if (numbers.Key == number)
