@@ -1,0 +1,13 @@
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\DecNumberInHex\DecNumberInHex\bin\Debug\netcoreapp3.1\DecNumberInHex.exe
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\DecNumberInHex\DecNumberInHex\bin\Debug\netcoreapp3.1\DecNumberInHex.deps.json
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\DecNumberInHex\DecNumberInHex\bin\Debug\netcoreapp3.1\DecNumberInHex.runtimeconfig.json
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\DecNumberInHex\DecNumberInHex\bin\Debug\netcoreapp3.1\DecNumberInHex.runtimeconfig.dev.json
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\DecNumberInHex\DecNumberInHex\bin\Debug\netcoreapp3.1\DecNumberInHex.dll
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\DecNumberInHex\DecNumberInHex\bin\Debug\netcoreapp3.1\DecNumberInHex.pdb
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\DecNumberInHex\DecNumberInHex\obj\Debug\netcoreapp3.1\DecNumberInHex.csprojAssemblyReference.cache
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\DecNumberInHex\DecNumberInHex\obj\Debug\netcoreapp3.1\DecNumberInHex.AssemblyInfoInputs.cache
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\DecNumberInHex\DecNumberInHex\obj\Debug\netcoreapp3.1\DecNumberInHex.AssemblyInfo.cs
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\DecNumberInHex\DecNumberInHex\obj\Debug\netcoreapp3.1\DecNumberInHex.csproj.CoreCompileInputs.cache
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\DecNumberInHex\DecNumberInHex\obj\Debug\netcoreapp3.1\DecNumberInHex.dll
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\DecNumberInHex\DecNumberInHex\obj\Debug\netcoreapp3.1\DecNumberInHex.pdb
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\DecNumberInHex\DecNumberInHex\obj\Debug\netcoreapp3.1\DecNumberInHex.genruntimeconfig.cache
