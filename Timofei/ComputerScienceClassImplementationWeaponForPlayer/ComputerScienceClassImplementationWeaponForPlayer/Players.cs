@@ -4,6 +4,7 @@
     {
         private string _name;
         private int _health;
+        // Эти свойства дублируются в оружии, следовательно они здесь не нужны
         private string _weapon;
         private int _damage;
         private int _ammunition;
