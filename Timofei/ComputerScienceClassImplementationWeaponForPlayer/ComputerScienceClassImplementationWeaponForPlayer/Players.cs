@@ -4,9 +4,7 @@
     {
         private string _name;
         private int _health;
-        private string _weapon;
-        private int _damage;
-        private int _ammunition;
+        private Weapon _weapon;
 
         public string Name => _name;
 
@@ -16,31 +14,17 @@
             set => _health = value;
         }
 
-        public string Weapon
+        public Weapon Weapon
         {
             get => _weapon;
             set => _weapon = value;
         }
 
-        public int Damage
-        {
-            get => _damage;
-            set => _damage = value;
-        }
-
-        public int Ammunition
-        {
-            get => _ammunition;
-            set => _ammunition = value;
-        }
-
-        protected Players(string name, int health, string weapon, int damage, int ammunition)
+        protected Players(string name, int health, Weapon weapon)
         {
             _name = name;
             _health = health;
             _weapon = weapon;
-            _damage = damage;
-            _ammunition = ammunition;
         }
     }
 }

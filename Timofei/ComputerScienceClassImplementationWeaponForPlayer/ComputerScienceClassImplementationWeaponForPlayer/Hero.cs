@@ -2,7 +2,7 @@
 {
     public class Hero : Players
     {
-        public Hero(string name, int health, string weapon, int damage, int ammunition) : base(name, health, weapon, damage, ammunition)
+        public Hero(string name, int health, Weapon weapon) : base(name, health, weapon)
         {
         }
     }

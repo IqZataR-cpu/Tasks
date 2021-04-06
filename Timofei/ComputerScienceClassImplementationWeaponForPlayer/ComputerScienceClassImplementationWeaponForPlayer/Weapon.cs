@@ -1,6 +1,6 @@
 ﻿namespace ComputerScienceClassImplementationWeaponForPlayer
 {
-    public class Weapon
+    public abstract class Weapon
     {
         private string _type;
         private int _damage;
@@ -22,5 +22,7 @@
             _damage = damage;
             _ammunition = ammunition;
         }
+
+        public abstract void Reload();
     }
 }

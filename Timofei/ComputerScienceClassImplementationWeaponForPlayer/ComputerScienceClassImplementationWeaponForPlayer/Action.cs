@@ -8,19 +8,10 @@ namespace ComputerScienceClassImplementationWeaponForPlayer
         {
             Console.WriteLine($"Name: {player.Name}");
             Console.WriteLine($"Health: {player.Health}");
+            Console.WriteLine($"Weapon: {player.Weapon.Type}");
+            Console.WriteLine($"Damage: {player.Weapon.Damage}");
+            Console.WriteLine($"Ammunition: {player.Weapon.Ammunition} \n");
             
-            if (player.Weapon == "beretta")
-            {
-                Console.WriteLine($"Weapon: {player.Weapon} " +
-                                  $"\nDamage: {player.Damage}" +
-                                  $"\nAmmunition: {player.Ammunition} \n");
-            }
-            else
-            {
-                Console.WriteLine($"Weapon: {player.Weapon} \n" +
-                                  $"Damage: {player.Damage} \n");
-        
-            }
         }
 
         public static void Attack(Players firstTarget, Players secondTarget)
@@ -39,45 +30,34 @@ namespace ComputerScienceClassImplementationWeaponForPlayer
             }
             else
             {
-                if (firstTarget.Weapon == "beretta")
+                if (firstTarget.Weapon is Gun)
                 {
-                    TryApplayDamage(secondTarget, firstTarget.Damage);
-                    firstTarget.Ammunition -= 1;
+                    TryApplyDamage(secondTarget, firstTarget.Weapon.Damage);
+                    firstTarget.Weapon.Ammunition -= 1;
                 }
                 else
                 {
-                    TryApplayDamage(secondTarget, firstTarget.Damage);
+                    TryApplyDamage(secondTarget, firstTarget.Weapon.Damage);
                 }
             }
         }
 
-        public static void TryApplayDamage(Players target, int damage)
+        public static void TryApplyDamage(Players target, int damage)
         {
             target.Health -= damage;
         }
 
         public static void ReloadAmmo(Players target)
         {
-            if (target.Weapon == "beretta")
+            if (target.Weapon is Gun)
             {
-                target.Ammunition = 7;
+                target.Weapon.Reload();
             }
         }
 
-        public static void SwapWeapon(Players target)
+        public static void SwapWeapon(Players target, Weapon weapon)
         {
-            if (target.Weapon == "beretta")
-            {
-                target.Weapon = "karambit";
-                target.Damage = 35;
-                target.Ammunition = 0;
-            }
-            else
-            {
-                target.Weapon = "beretta";
-                target.Damage = 40;
-                target.Ammunition = 7;
-            }
+            target.Weapon = weapon;
         }
     }
 }
