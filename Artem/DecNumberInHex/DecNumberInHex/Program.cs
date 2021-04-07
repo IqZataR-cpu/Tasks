@@ -21,6 +21,7 @@ namespace DecNumberInHex
             {
                 hexNumber = Translator(userInput);
             }
+
             Console.WriteLine(
                     $"Число {userInput} в шестнадцатиричной системе счисления выглядит " +
                     $"так - {hexNumber}"
