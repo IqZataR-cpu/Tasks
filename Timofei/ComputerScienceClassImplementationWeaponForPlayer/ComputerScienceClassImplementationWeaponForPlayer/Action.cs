@@ -18,6 +18,8 @@ namespace ComputerScienceClassImplementationWeaponForPlayer
         {
             if (firstTarget.Health <= 0)
             {
+                // Изменение параметров класс извне влечет за собой большие проблемы,
+                // лучше либо вынести манипуляцию health в отдельные методы
                 firstTarget.Health = 0;
                 
                 Console.WriteLine("Вы мертвы");
@@ -32,6 +34,9 @@ namespace ComputerScienceClassImplementationWeaponForPlayer
             {
                 if (firstTarget.Weapon is Gun)
                 {
+                    // Тоже самое, ты не должен ничего менять из другого класса, 
+                    // У тебя должен быть метод атаки непосредственно в классе оружия,
+                    // Какой то Hit() в котором у огнестрельного оружия вызывается дополнительно ammunation--
                     TryApplyDamage(secondTarget, firstTarget.Weapon.Damage);
                     firstTarget.Weapon.Ammunition -= 1;
                 }
