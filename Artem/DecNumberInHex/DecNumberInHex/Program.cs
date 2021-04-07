@@ -5,8 +5,10 @@ namespace DecNumberInHex
 {
     // Не забываем везде указывать область видимости, 
     // даже если работаем в пределах одного класса или метода
+    // Здесь не указал
     class Program
     {
+        // Здесь не указал
         static void Main(string[] args)
         {
             int userInput;
@@ -17,7 +19,8 @@ namespace DecNumberInHex
 
             if (userInput < 0)
             {
-                hexNumber = "-";
+                hexNumber = "-";\
+                // По сути это дубляж кода, так что исправь
                 Console.WriteLine(
                     $"Число {userInput} в шестнадцатиричной системе счисления выглядит " +
                     $"так - {hexNumber += Translator(-userInput)}"
@@ -56,6 +59,7 @@ namespace DecNumberInHex
                   
             for (int i = 0; i <= hexNumbers.Length - 1; i++)
             {
+                // Находим нужный намбер (1) и все равно продолжаем проверять до конца цикла, но зачем?
                 if (i == number)
                 {
                     hexNumber = hexNumbers[i].ToString();
