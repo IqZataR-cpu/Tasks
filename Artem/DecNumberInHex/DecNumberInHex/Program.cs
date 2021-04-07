@@ -15,10 +15,12 @@ namespace DecNumberInHex
 
             if (userInput < 0)
             {
+                // Дублирование кода (((
                 hexNumber = "-" + Translator(-userInput);
             }
             else
             {
+                // Дублирование кода (((
                 hexNumber = Translator(userInput);
             }
 
