@@ -3,13 +3,9 @@ using System.Collections.Generic;
 
 namespace DecNumberInHex
 {
-    // Не забываем везде указывать область видимости, 
-    // даже если работаем в пределах одного класса или метода
-    // Здесь не указал
-    class Program
+    public class Program
     {
-        // Здесь не указал
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             int userInput;
             string hexNumber = null;
@@ -19,19 +15,12 @@ namespace DecNumberInHex
 
             if (userInput < 0)
             {
-                hexNumber = "-";\
-                // По сути это дубляж кода, так что исправь
-                Console.WriteLine(
-                    $"Число {userInput} в шестнадцатиричной системе счисления выглядит " +
-                    $"так - {hexNumber += Translator(-userInput)}"
-                );
+                hexNumber = "-";
+                PrintMessage(-userInput, hexNumber);
                 return;
             }
 
-            Console.WriteLine(
-                $"Число {userInput} в шестнадцатиричной системе счисления выглядит " +
-                $"так - {hexNumber += Translator(userInput)}"
-            );
+            PrintMessage(userInput, hexNumber);
         }
 
         private static string Translator(int number)
@@ -59,14 +48,22 @@ namespace DecNumberInHex
                   
             for (int i = 0; i <= hexNumbers.Length - 1; i++)
             {
-                // Находим нужный намбер (1) и все равно продолжаем проверять до конца цикла, но зачем?
                 if (i == number)
                 {
-                    hexNumber = hexNumbers[i].ToString();
+                    return hexNumber = hexNumbers[i].ToString();                    
                 }
             }
 
             return hexNumber;
+        }
+
+        private static void PrintMessage(int number, string hexNumber)
+        {
+            Console.WriteLine(
+                    $"Число {number} в шестнадцатиричной системе счисления выглядит " +
+                    $"так - {hexNumber += Translator(number)}"
+                    );
+            return;
         }
     }
 }
