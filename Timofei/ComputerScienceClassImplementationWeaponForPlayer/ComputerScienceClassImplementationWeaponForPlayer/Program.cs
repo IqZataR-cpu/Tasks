@@ -4,31 +4,31 @@
     {
         static void Main(string[] args)
         {
-            Knife knife = new Knife("knife", 35, 0);
-            Gun pistol = new Gun("gun", 40, 7);
-            
-            Hero firstUser = new Hero("Тимофей", 100, knife);
-            Enemy firstEnemy = new Enemy("Hui", 100, pistol);
+            Weapon karabmit = new Karabmit("Керамбит", 35, 0);
+            Weapon beretta = new Beretta("Беретта", 45, 7);
+                
+            Hero firstUser = new Hero("Тимофей", 100, beretta);
+            Enemy firstEnemy = new Enemy("Hui", 100, karabmit);
 
-            Action.PrintPlayer(firstUser);
-            Action.PrintPlayer(firstEnemy);
+            firstUser.Print();
+            firstEnemy.Print();
+
+            firstUser.Hit(firstEnemy);
+            firstUser.Hit(firstEnemy);
+            firstUser.Hit(firstEnemy);
+
+            firstUser.Print();
+            firstEnemy.Print();
             
-            Action.SwapWeapon(firstUser, pistol);
-           
-            Action.PrintPlayer(firstUser);
-            Action.PrintPlayer(firstUser);
+            firstUser.Reload();
             
-            Action.SwapWeapon(firstUser, knife);
+            firstUser.Print();
+            firstEnemy.Print();  
             
-            Action.PrintPlayer(firstUser);
+            firstUser.SwapWeapon(karabmit);
             
-            Action.Attack(firstEnemy, firstUser);
-            
-            Action.PrintPlayer(firstUser);
-            Action.PrintPlayer(firstEnemy);
-            
-            Action.ReloadAmmo(firstEnemy);
-            Action.PrintPlayer(firstEnemy);
+            firstUser.Print();
+            firstEnemy.Print();
         }
     }
 }
