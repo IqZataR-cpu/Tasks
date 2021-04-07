@@ -2,12 +2,12 @@
 /shelf/
 /workspace.xml
 # Rider ignored files
-/.idea.SnakeVisualStudio.iml
 /projectSettingsUpdater.xml
 /contentModel.xml
 /modules.xml
+/.idea.ComputerScienceConditionYear.iml
 # Datasource local storage ignored files
-/../../../../../../../../../../../:\Users\79205\RiderProjects\Tasks\Meetings\03.04.2021\SnakeVisualStudio\.idea\.idea.SnakeVisualStudio\.idea/dataSources/
+/../../../../../../../../:\RiderProjects\project_one\Timofei\ComputerScienceConditionYear\.idea\.idea.ComputerScienceConditionYear\.idea/dataSources/
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/

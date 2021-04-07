@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerScienceConditionYear", "ComputerScienceConditionYear\ComputerScienceConditionYear.csproj", "{40A438BA-EA6F-40D4-B698-C8FDFDC49563}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerScienceConditionYears", "ComputerScienceConditionYears\ComputerScienceConditionYears.csproj", "{B33D4137-916D-484E-96E0-850651C2BE45}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40A438BA-EA6F-40D4-B698-C8FDFDC49563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40A438BA-EA6F-40D4-B698-C8FDFDC49563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40A438BA-EA6F-40D4-B698-C8FDFDC49563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40A438BA-EA6F-40D4-B698-C8FDFDC49563}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B33D4137-916D-484E-96E0-850651C2BE45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B33D4137-916D-484E-96E0-850651C2BE45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B33D4137-916D-484E-96E0-850651C2BE45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B33D4137-916D-484E-96E0-850651C2BE45}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
