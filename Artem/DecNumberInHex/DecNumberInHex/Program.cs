@@ -15,13 +15,16 @@ namespace DecNumberInHex
 
             if (userInput < 0)
             {
-                hexNumber = "-";
-                // Дублирование кода
-                PrintMessage(-userInput, hexNumber);
-                return;
+                hexNumber = "-" + Translator(-userInput);
             }
-            // Дублирование кода
-            PrintMessage(userInput, hexNumber);
+            else
+            {
+                hexNumber = Translator(userInput);
+            }
+            Console.WriteLine(
+                    $"Число {userInput} в шестнадцатиричной системе счисления выглядит " +
+                    $"так - {hexNumber}"
+                    );
         }
 
         private static string Translator(int number)
@@ -56,15 +59,6 @@ namespace DecNumberInHex
             }
 
             return hexNumber;
-        }
-
-        private static void PrintMessage(int number, string hexNumber)
-        {
-            Console.WriteLine(
-                    $"Число {number} в шестнадцатиричной системе счисления выглядит " +
-                    $"так - {hexNumber += Translator(number)}"
-                    );
-            return;
         }
     }
 }
