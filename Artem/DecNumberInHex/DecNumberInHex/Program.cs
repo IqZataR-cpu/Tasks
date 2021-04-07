@@ -16,10 +16,11 @@ namespace DecNumberInHex
             if (userInput < 0)
             {
                 hexNumber = "-";
+                // Дублирование кода
                 PrintMessage(-userInput, hexNumber);
                 return;
             }
-
+            // Дублирование кода
             PrintMessage(userInput, hexNumber);
         }
 
