@@ -13,21 +13,14 @@ namespace DecNumberInHex
             Console.WriteLine("Введите число:");
             userInput = int.Parse(Console.ReadLine());
 
+            Console.Write($"\nЧисло {userInput} в шестнадцатиричной системе счисления выглядит ");
             if (userInput < 0)
             {
-                // Дублирование кода (((
-                hexNumber = "-" + Translator(-userInput);
+                hexNumber = "-";
+                userInput = -userInput;
             }
-            else
-            {
-                // Дублирование кода (((
-                hexNumber = Translator(userInput);
-            }
-
-            Console.WriteLine(
-                    $"Число {userInput} в шестнадцатиричной системе счисления выглядит " +
-                    $"так - {hexNumber}"
-                    );
+            
+            Console.Write($"так - {hexNumber += Translator(userInput)}");
         }
 
         private static string Translator(int number)
