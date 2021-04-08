@@ -18,7 +18,6 @@ namespace QuickSortBySumDigits
             QuickSort(numbers, 0, numbers.Length - 1);
             PrintArray(numbers);
             PrintSumDigits(numbers);
-
         }
 
         private static int[] CreateArray(int numberCount)
