@@ -22,18 +22,18 @@ namespace QueueOperation
 
             PrintQueue(numbers);
 
-            firstElementQueue = numbers.Dequeue();
+            Console.WriteLine($"\nПервый элемент с удалением из очереди - {firstElementQueue = numbers.Dequeue()}");
 
             PrintQueue(numbers);
 
-            firstElementQueue = numbers.Peek();
+            Console.WriteLine($"\nПервый элемент без удаления из очереди - {firstElementQueue = numbers.Peek()}");
 
             PrintQueue(numbers);
         }
 
         private static void PrintQueue(Queue<int> numbers)
         {
-            Console.WriteLine("\nОчередь: ");
+            Console.WriteLine("Очередь: ");
 
             foreach (var numbersItem in numbers)
             {
