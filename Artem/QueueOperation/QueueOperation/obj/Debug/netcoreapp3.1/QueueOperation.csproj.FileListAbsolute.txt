@@ -1,0 +1,13 @@
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\QueueOperation\QueueOperation\bin\Debug\netcoreapp3.1\QueueOperation.exe
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\QueueOperation\QueueOperation\bin\Debug\netcoreapp3.1\QueueOperation.deps.json
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\QueueOperation\QueueOperation\bin\Debug\netcoreapp3.1\QueueOperation.runtimeconfig.json
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\QueueOperation\QueueOperation\bin\Debug\netcoreapp3.1\QueueOperation.runtimeconfig.dev.json
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\QueueOperation\QueueOperation\bin\Debug\netcoreapp3.1\QueueOperation.dll
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\QueueOperation\QueueOperation\bin\Debug\netcoreapp3.1\QueueOperation.pdb
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\QueueOperation\QueueOperation\obj\Debug\netcoreapp3.1\QueueOperation.csprojAssemblyReference.cache
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\QueueOperation\QueueOperation\obj\Debug\netcoreapp3.1\QueueOperation.AssemblyInfoInputs.cache
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\QueueOperation\QueueOperation\obj\Debug\netcoreapp3.1\QueueOperation.AssemblyInfo.cs
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\QueueOperation\QueueOperation\obj\Debug\netcoreapp3.1\QueueOperation.csproj.CoreCompileInputs.cache
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\QueueOperation\QueueOperation\obj\Debug\netcoreapp3.1\QueueOperation.dll
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\QueueOperation\QueueOperation\obj\Debug\netcoreapp3.1\QueueOperation.pdb
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\QueueOperation\QueueOperation\obj\Debug\netcoreapp3.1\QueueOperation.genruntimeconfig.cache
