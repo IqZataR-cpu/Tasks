@@ -1,6 +1,9 @@
 using ComputerScienceConditionYears;
 using NUnit.Framework;
 
+
+// Мои слова о том, как правильно писать методы тестов остались где то в стороне...
+// TestMethod_Should_When вот такая структура написания тестов, примеры ищи в беседе.
 namespace ComputerScienceConditionYear
 {
     public class Tests
