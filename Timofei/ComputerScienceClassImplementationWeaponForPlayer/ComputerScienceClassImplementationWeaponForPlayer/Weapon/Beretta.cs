@@ -9,10 +9,5 @@
         public Beretta(string name, int damage, int ammunition) : base(name, damage, ammunition)
         {
         }
-        
-        public override void ReloadAmmo()
-        {
-            Ammunition = AMMUNITION;
-        }
     }
 }

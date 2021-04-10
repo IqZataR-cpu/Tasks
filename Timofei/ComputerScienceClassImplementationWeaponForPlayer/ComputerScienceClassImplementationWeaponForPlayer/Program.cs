@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Weapon karabmit = new Karabmit("Керамбит", 35, 0);
+            Weapon karabmit = new Karabmit("Керамбит", 35);
             Weapon beretta = new Beretta("Беретта", 45, 7);
                 
             Hero firstUser = new Hero("Тимофей", 100, beretta);
@@ -14,18 +14,8 @@
             firstEnemy.Print();
 
             firstUser.Hit(firstEnemy);
-            firstUser.Hit(firstEnemy);
-            firstUser.Hit(firstEnemy);
-
-            firstUser.Print();
-            firstEnemy.Print();
+            firstEnemy.Hit(firstUser);
             
-            firstUser.Reload();
-            
-            firstUser.Print();
-            firstEnemy.Print();  
-            
-            firstUser.SwapWeapon(karabmit);
             
             firstUser.Print();
             firstEnemy.Print();
