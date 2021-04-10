@@ -12,12 +12,6 @@ namespace ComputerScienceClassImplementationWeaponForPlayer
 
         public string Name => _name;
 
-        public int Health
-        {
-            get => _health;
-            set => _health = value;
-        }
-        
         protected Players(string name, int health, Weapon weapon)
         {
             _name = name;
@@ -27,12 +21,12 @@ namespace ComputerScienceClassImplementationWeaponForPlayer
 
         public void Hit(Players target)
         {
-            _weapon.ToDamage(_weapon, target);
+            _weapon.Hit(target);
         }
 
         public void Reload()
         {
-            _weapon.ReloadAmmo(_weapon);
+            _weapon.ReloadAmmo();
         }
         
         public void SwapWeapon(Weapon weapon)
@@ -40,13 +34,31 @@ namespace ComputerScienceClassImplementationWeaponForPlayer
             _weapon = weapon;
         }
         
+        public void TryApplyDamage(int toDamage)
+        {
+            if (_health < toDamage)
+            {
+                PrintDeadEnemy();
+                
+                _health = MINHEALTH;
+            }
+            else
+            {
+                _health -= toDamage;
+            }
+        }
+
         public void Print()
         {
-            Console.WriteLine($"Name: {Name}");
-            Console.WriteLine($"Health: {Health}");
-            Console.WriteLine($"Weapon: {_weapon.Name}");
-            Console.WriteLine($"Damage: {_weapon.Damage}");
-            Console.WriteLine($"Ammunition: {_weapon.Ammunition} \n");
+            Console.WriteLine($"\nName: {Name}");
+            Console.WriteLine($"Health: {_health}");
+            
+            _weapon.Print();
+        }
+        
+        private static void PrintDeadEnemy()
+        {
+            Console.WriteLine("Враг убит!");
         }
     }
 }
