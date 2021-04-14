@@ -1,16 +1,13 @@
 ﻿using System;
 
-// Я в беседу заливал файл .gitignore,
-// чтобы не грузить лишние файлы в гит его нужно помещать в каждый проект
-// чуть позже сделаю один .gitignore, чтобы этого не делать.
+
 // Файл и решение с тестами названо не по конвенции
 namespace ComputerScienceConditionYears
 {
     // область видимости
-    class Program
+    public class Program
     {
-         // область видимости
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             int inputYear = int.Parse(Console.ReadLine());
             string result = ValidLeapYear.LeepYear(inputYear);
