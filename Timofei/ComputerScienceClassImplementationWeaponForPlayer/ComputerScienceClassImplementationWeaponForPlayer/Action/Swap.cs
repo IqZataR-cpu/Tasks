@@ -1,0 +1,7 @@
+﻿namespace ComputerScienceClassImplementationWeaponForPlayer
+{
+    class Swap
+    {
+        
+    }
+}

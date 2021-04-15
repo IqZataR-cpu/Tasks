@@ -9,19 +9,18 @@ namespace ComputerScienceFunctionTranslite
         public static void Main(string[] args)
         {
             string inputUser = Console.ReadLine();
-
-            User user = new User(inputUser);
+            Translator user = new Translator(inputUser);
             
             user.Print();
         }
     }
 
-    public class User
+    public class Translator
     {
         private readonly string _input;
         private readonly List<string> _inputString = new List<string>();
 
-        public User(string input)
+        public Translator(string input)
         {
             _input = input;
         }
@@ -33,7 +32,7 @@ namespace ComputerScienceFunctionTranslite
                 _inputString.Add(_input.ToCharArray()[i].ToString());
             }
         }
-
+        
         public void Print()
         {
             GetStringCharactersToArray();
@@ -59,13 +58,13 @@ namespace ComputerScienceFunctionTranslite
             {"ё","e"}, {"ж","eh"}, {"з","z"}, {"и","i"}, {"й","y"}, {"к","k"},
             {"л","l"}, {"м","m"}, {"н","n"}, {"о","o"}, {"п","p"}, {"р","r"}, 
             {"с","c"}, {"т","t"}, {"у","u"}, {"ф","f"}, {"х","h"}, {"ц","c"},
-            {"ч","ch"}, {"ш","h"}, {"щ","h"}, {"ь",""}, {"ъ",""}, {"ы","i"},
+            {"ч","ch"}, {"ш","sh"}, {"щ","h"}, {"ь",""}, {"ъ",""}, {"ы","i"},
             {"э","e"}, {"ю","yu"}, {"я","ya"}, {" "," "}, {"А","A"},
             {"Б","B"}, {"В","V"}, {"Г","G"}, {"Д","D"}, {"Е","E"}, {"Ё","E"},
             {"Ж","Eh"}, {"З","Z"}, {"И","I"}, {"Й","Y"}, {"К","K"}, {"Л","L"}, 
             {"М","M"}, {"Н","N"}, {"О","O"}, {"П","P"}, {"Р","R"}, {"С","C"}, 
             {"Т","T"}, {"У","U"}, {"Ф","F"}, {"Х","H"}, {"Ц","C"}, {"Ч","Ch"},
-            {"Ш","H"}, {"Щ","H"}, {"Ь",""}, {"Ъ",""}, {"Ы","I"}, {"Э","E"},
+            {"Ш","Sh"}, {"Щ","H"}, {"Ь",""}, {"Ъ",""}, {"Ы","I"}, {"Э","E"},
             {"Ю","Yu"}, {"Я","Ya"},
         };
     }
