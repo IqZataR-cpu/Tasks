@@ -9,7 +9,7 @@ namespace ComputerScineceFunctionSortArrayASC
             int[] array = new int[5];
             
             Console.Write("Начальный массив: ");
-            GetAnArrayOfNumbers(array);
+            SetAnArrayOfNumbers(array);
             
             Console.WriteLine();
             
@@ -17,7 +17,7 @@ namespace ComputerScineceFunctionSortArrayASC
             GetSortArrayASC(array);
         }
 
-        private static void GetAnArrayOfNumbers(int[] array)
+        private static void SetAnArrayOfNumbers(int[] array)
         {
             Random rnd = new Random();
             
@@ -31,47 +31,47 @@ namespace ComputerScineceFunctionSortArrayASC
 
         private static void GetSortArrayASC(int[] array)
         {
-            int[] AscArray = new int[array.Length];
+            int[] sortArray = new int[array.Length];
             
-            int firstNumber = 0;
-            int secondNumber;
+            int sumDigits = 0;
+            int remainder;
             
             int i = 0;
             
 
-            foreach (int result in array)
+            foreach (int itemInArray in array)
             {
-                secondNumber = result;
+                remainder = itemInArray;
                 
-                while (secondNumber > 0)
+                while (remainder > 0)
                 {
-                    firstNumber += secondNumber % 10;
+                    sumDigits += remainder % 10;
 
-                    secondNumber /= 10;
+                    remainder /= 10;
                 }
 
-                AscArray[i] = firstNumber;
+                sortArray[i] = sumDigits;
 
-                firstNumber = 0;
+                sumDigits = 0;
                 
                 i++;
             }
             
-            for (int j = 0; j < AscArray.Length; j++)
+            for (int j = 0; j < sortArray.Length; j++)
             {
                 i = 0;
                 
-                for (int k = 1; k < AscArray.Length; k++)
+                for (int k = 1; k < sortArray.Length; k++)
                 {
-                    if (AscArray[k] < AscArray[i])
+                    if (sortArray[k] < sortArray[i])
                     {
-                        firstNumber = AscArray[k];
-                        AscArray[k] = AscArray[i];
-                        AscArray[i] = firstNumber; 
+                        sumDigits = sortArray[k];
+                        sortArray[k] = sortArray[i];
+                        sortArray[i] = sumDigits; 
                         
-                        secondNumber = array[k];
+                        remainder = array[k];
                         array[k] = array[i];
-                        array[i] = secondNumber;
+                        array[i] = remainder;
                     }
 
                     i++;
