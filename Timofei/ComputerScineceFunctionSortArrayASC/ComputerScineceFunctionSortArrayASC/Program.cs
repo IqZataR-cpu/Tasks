@@ -38,7 +38,6 @@ namespace ComputerScineceFunctionSortArrayASC
             
             int i = 0;
             
-
             foreach (int itemInArray in array)
             {
                 remainder = itemInArray;
