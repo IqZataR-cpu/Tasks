@@ -16,6 +16,10 @@ namespace ComputerScienceConditionYears
         }
     }
 
+    
+    // Убрать класс, сделать просто метод, 
+    // есть смысл создать класс календарь и там определять что год высокосный
+    // а так как здесь не вижу смысла в этом
     public class ValidLeapYear
     {
         public static string LeepYear(int data)
