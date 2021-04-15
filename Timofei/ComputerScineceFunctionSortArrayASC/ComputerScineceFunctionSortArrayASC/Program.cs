@@ -38,6 +38,8 @@ namespace ComputerScineceFunctionSortArrayASC
             
             int i = 0;
             
+            // Реализовать метод, который получает сумму цифр числа
+            // и сравнивать суммы цифр, без дублирования массивов
             foreach (int itemInArray in array)
             {
                 remainder = itemInArray;
