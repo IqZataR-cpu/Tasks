@@ -28,58 +28,49 @@ namespace ComputerScineceFunctionSortArrayASC
                 Console.Write($" {array[i]}");
             }
         }
-
+        
         private static void GetSortArrayASC(int[] array)
         {
-            int[] sortArray = new int[array.Length];
-            
-            int sumDigits = 0;
-            int remainder;
-            
-            int i = 0;
-            
-            // Реализовать метод, который получает сумму цифр числа
-            // и сравнивать суммы цифр, без дублирования массивов
-            foreach (int itemInArray in array)
-            {
-                remainder = itemInArray;
-                
-                while (remainder > 0)
-                {
-                    sumDigits += remainder % 10;
+            int firstNumber = 0;
+            int nextNumber = 0;
 
-                    remainder /= 10;
-                }
-
-                sortArray[i] = sumDigits;
-
-                sumDigits = 0;
-                
-                i++;
-            }
+            int i;
             
-            for (int j = 0; j < sortArray.Length; j++)
+            for (int j = 0; j < array.Length; j++)
             {
                 i = 0;
                 
-                for (int k = 1; k < sortArray.Length; k++)
+                for (int k = 1; k < array.Length; k++)
                 {
-                    if (sortArray[k] < sortArray[i])
-                    {
-                        sumDigits = sortArray[k];
-                        sortArray[k] = sortArray[i];
-                        sortArray[i] = sumDigits; 
-                        
-                        remainder = array[k];
-                        array[k] = array[i];
-                        array[i] = remainder;
-                    }
+                    firstNumber = GetSumDigits(array[i]);
+                    nextNumber = GetSumDigits(array[k]);
 
+                    if (nextNumber < firstNumber)
+                    {
+                        firstNumber = array[k];
+                        array[k] = array[i];
+                        array[i] = firstNumber;
+                    }
+                    
                     i++;
                 }
             }
-            
+        
             PrintArray(array);
+        }
+        
+        private static int GetSumDigits(int number)
+        {
+            int sumDigits = 0;
+            
+            while (number > 0)
+            {
+                sumDigits += number % 10;
+
+                number /= 10;
+            }
+
+            return sumDigits;
         }
         
         public static void PrintArray(int[] array)
