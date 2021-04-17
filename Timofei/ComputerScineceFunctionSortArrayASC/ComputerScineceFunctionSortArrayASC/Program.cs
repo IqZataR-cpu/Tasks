@@ -9,16 +9,15 @@ namespace ComputerScineceFunctionSortArrayASC
             int[] array = new int[5];
             
             Console.Write("Начальный массив: ");
-            SetAnArrayOfNumbers(array);
+            FillArray(array);
             
             Console.WriteLine();
             
             Console.Write("Отсортированный массив: ");
-            GetSortArrayASC(array);
+            Sort(array);
         }
-
-        // fillArray better name
-        private static void SetAnArrayOfNumbers(int[] array)
+        
+        private static void FillArray(int[] array)
         {
             Random rnd = new Random();
             
@@ -30,36 +29,22 @@ namespace ComputerScineceFunctionSortArrayASC
             }
         }
         
-        // You can write only "sort", dont need to translate all of this actions
-        private static void GetSortArrayASC(int[] array)
+        private static void Sort(int[] array)
         {
             int firstNumber = 0;
-            // really need this variable? We dont need to store summ of digits
-            int nextNumber = 0;
-
-            // really need this variable? look bubble sort algorithm
-            int i;
-            
+      
             for (int j = 0; j < array.Length; j++)
             {
-                // really need this variable?
-                i = 0;
-                
                 for (int k = 1; k < array.Length; k++)
                 {
-                    firstNumber = GetSumDigits(array[i]);
-                    // really need this variable?
-                    nextNumber = GetSumDigits(array[k]);
-
-                    if (nextNumber < firstNumber)
+                    firstNumber = GetSumDigits(array[k - 1]);
+                    
+                    if (GetSumDigits(array[k]) < firstNumber)
                     {
                         firstNumber = array[k];
-                        array[k] = array[i];
-                        array[i] = firstNumber;
+                        array[k] = array[k - 1];
+                        array[k - 1] = firstNumber;
                     }
-                    
-                    // really need this variable?
-                    i++;
                 }
             }
         
