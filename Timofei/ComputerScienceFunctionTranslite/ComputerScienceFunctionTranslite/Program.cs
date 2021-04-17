@@ -49,7 +49,7 @@ namespace ComputerScienceFunctionTranslite
     
     public class KeyDictionary : ITranslatorDict
     {
-        public Dictionary<char, string> Values { get; } = {
+        public Dictionary<char, string> Values { get; } = new Dictionary<char, string>() {
             {'а', "a"}, {'б', "b"}, {'в', "v"}, {'г', "g"}, {'д', "d"}, {'е', "e"},
             {'ё', "e"}, {'ж', "h"}, {'з', "z"}, {'и', "i"}, {'й', "y"}, {'к', "k"},
             {'л', "l"}, {'м', "m"}, {'н', "n"}, {'о', "o"}, {'п', "p"}, {'р', "r"},
