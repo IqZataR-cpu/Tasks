@@ -17,6 +17,7 @@ namespace ComputerScineceFunctionSortArrayASC
             GetSortArrayASC(array);
         }
 
+        // fillArray better name
         private static void SetAnArrayOfNumbers(int[] array)
         {
             Random rnd = new Random();
@@ -29,20 +30,25 @@ namespace ComputerScineceFunctionSortArrayASC
             }
         }
         
+        // You can write only "sort", dont need to translate all of this actions
         private static void GetSortArrayASC(int[] array)
         {
             int firstNumber = 0;
+            // really need this variable? We dont need to store summ of digits
             int nextNumber = 0;
 
+            // really need this variable? look bubble sort algorithm
             int i;
             
             for (int j = 0; j < array.Length; j++)
             {
+                // really need this variable?
                 i = 0;
                 
                 for (int k = 1; k < array.Length; k++)
                 {
                     firstNumber = GetSumDigits(array[i]);
+                    // really need this variable?
                     nextNumber = GetSumDigits(array[k]);
 
                     if (nextNumber < firstNumber)
@@ -52,6 +58,7 @@ namespace ComputerScineceFunctionSortArrayASC
                         array[i] = firstNumber;
                     }
                     
+                    // really need this variable?
                     i++;
                 }
             }
