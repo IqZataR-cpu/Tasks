@@ -6,18 +6,12 @@ namespace ValidationUserInput
     {
         public static void Main(string[] args)
         {
-            // не обязательно всегда писать чей это инпут.
-            // здесь по контексту и так понятно.
-            int userInput;
+            int input;
 
             Console.WriteLine("Введите любое число: ");
-            userInput = int.Parse(Console.ReadLine());
+            input = int.Parse(Console.ReadLine());
 
-            // isNumberEqualsTen более красивое название, но
-            // не стоит такие простейшие условия выносить в методы
-            // выносим только не понятные условия,
-            // здесь для понятности, можно было сделать константу или просто забить. 
-            if (isNumberOfTen(userInput))
+            if (input == 10)
             {
                 Console.WriteLine("Верно");
             }
@@ -25,11 +19,6 @@ namespace ValidationUserInput
             {
                 Console.WriteLine("Неверно");
             }
-        }
-
-        private static bool isNumberOfTen(int number)
-        {
-            return number == 10;
         }
     }
 }
