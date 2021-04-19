@@ -53,9 +53,7 @@ namespace OperationWithStack
 
         private static void PrintStack(Stack<char> stack)
         {
-            // в foreach цикле обязательно указываем тип данных временной переменной.
-            // * char itemStack
-            foreach (var itemStack in stack)
+            foreach (char itemStack in stack)
             {
                 Console.Write($"{itemStack} ");
             }
