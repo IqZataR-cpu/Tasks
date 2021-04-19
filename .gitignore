@@ -4,3 +4,7 @@
 **/**/riderModule.iml
 **/**/_ReSharper.Caches/
 **/**.idea
+**/**/**/bin/
+**/**/**/obj/
+**/**/.vs
+**/**/**/.vs
