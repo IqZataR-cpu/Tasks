@@ -1,0 +1,13 @@
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\ValidationUserInput\ValidationUserInput\bin\Debug\netcoreapp3.1\ValidationUserInput.exe
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\ValidationUserInput\ValidationUserInput\bin\Debug\netcoreapp3.1\ValidationUserInput.deps.json
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\ValidationUserInput\ValidationUserInput\bin\Debug\netcoreapp3.1\ValidationUserInput.runtimeconfig.json
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\ValidationUserInput\ValidationUserInput\bin\Debug\netcoreapp3.1\ValidationUserInput.runtimeconfig.dev.json
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\ValidationUserInput\ValidationUserInput\bin\Debug\netcoreapp3.1\ValidationUserInput.dll
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\ValidationUserInput\ValidationUserInput\bin\Debug\netcoreapp3.1\ValidationUserInput.pdb
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\ValidationUserInput\ValidationUserInput\obj\Debug\netcoreapp3.1\ValidationUserInput.csprojAssemblyReference.cache
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\ValidationUserInput\ValidationUserInput\obj\Debug\netcoreapp3.1\ValidationUserInput.AssemblyInfoInputs.cache
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\ValidationUserInput\ValidationUserInput\obj\Debug\netcoreapp3.1\ValidationUserInput.AssemblyInfo.cs
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\ValidationUserInput\ValidationUserInput\obj\Debug\netcoreapp3.1\ValidationUserInput.csproj.CoreCompileInputs.cache
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\ValidationUserInput\ValidationUserInput\obj\Debug\netcoreapp3.1\ValidationUserInput.dll
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\ValidationUserInput\ValidationUserInput\obj\Debug\netcoreapp3.1\ValidationUserInput.pdb
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\ValidationUserInput\ValidationUserInput\obj\Debug\netcoreapp3.1\ValidationUserInput.genruntimeconfig.cache
