@@ -17,9 +17,7 @@ namespace QuarterHour
             int minute;
             Random random = new Random();
 
-            minute = random.Next(0, 60);
-
-            return minute;
+            return minute = random.Next(0, 60);
         }
 
         private static string QuarterHour(int minute)
