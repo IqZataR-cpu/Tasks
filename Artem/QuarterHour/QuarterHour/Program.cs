@@ -7,8 +7,7 @@ namespace QuarterHour
         public static void Main(string[] args)
         {
             int min;
-            // Это можно не хранить в памяти =)
-            string quarter = null;
+            string quarter;
 
             Console.WriteLine($"Сейчас {min = DefinitionMinute()} минут, {quarter = QuarterHour(min)} четверть часа");
         }
@@ -23,24 +22,21 @@ namespace QuarterHour
 
         private static string QuarterHour(int minute)
         {
-            string quarter = null;
+            string quarter = "первая";
 
             if (minute <= 15)
             {
                 return quarter = "первая";
-            }
-            // первое условие бесполезное
-            else if (minute > 15 && minute <= 30)
+            }            
+            else if (minute <= 30)
             {
                 return quarter = "вторая";
             }
-            // первое условие бесполезное
-            else if (minute > 30 && minute <= 45)
+            else if (minute <= 45)
             {
                 return quarter = "третья";
             }
-            // первое условие бесполезное
-            else if (minute > 45 && minute <= 59)
+            else if (minute <= 59)
             {
                 return quarter = "четвертая";
             }
