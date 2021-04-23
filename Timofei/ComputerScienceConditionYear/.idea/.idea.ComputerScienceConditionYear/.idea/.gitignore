@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/projectSettingsUpdater.xml
+/contentModel.xml
+/modules.xml
+/.idea.ComputerScienceConditionYear.iml
+# Datasource local storage ignored files
+/../../../../../../../../:\RiderProjects\project_one\Timofei\ComputerScienceConditionYear\.idea\.idea.ComputerScienceConditionYear\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

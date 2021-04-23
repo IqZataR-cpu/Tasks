@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Gun.cs" />
+      <Compile Remove="Action.cs" />
+      <Compile Remove="Action\GetStateLive.cs" />
+      <Compile Remove="Action\PrintPlayer.cs" />
+      <Compile Remove="Action\ReloadAmmunition.cs" />
+      <Compile Remove="Action\Swap.cs" />
+      <Compile Remove="Action\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Action\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Action\**" />
+    </ItemGroup>
+
+</Project>

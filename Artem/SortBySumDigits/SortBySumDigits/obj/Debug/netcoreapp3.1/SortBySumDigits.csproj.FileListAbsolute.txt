@@ -1,0 +1,13 @@
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\SortBySumDigits\SortBySumDigits\bin\Debug\netcoreapp3.1\SortBySumDigits.exe
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\SortBySumDigits\SortBySumDigits\bin\Debug\netcoreapp3.1\SortBySumDigits.deps.json
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\SortBySumDigits\SortBySumDigits\bin\Debug\netcoreapp3.1\SortBySumDigits.runtimeconfig.json
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\SortBySumDigits\SortBySumDigits\bin\Debug\netcoreapp3.1\SortBySumDigits.runtimeconfig.dev.json
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\SortBySumDigits\SortBySumDigits\bin\Debug\netcoreapp3.1\SortBySumDigits.dll
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\SortBySumDigits\SortBySumDigits\bin\Debug\netcoreapp3.1\SortBySumDigits.pdb
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\SortBySumDigits\SortBySumDigits\obj\Debug\netcoreapp3.1\SortBySumDigits.csprojAssemblyReference.cache
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\SortBySumDigits\SortBySumDigits\obj\Debug\netcoreapp3.1\SortBySumDigits.AssemblyInfoInputs.cache
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\SortBySumDigits\SortBySumDigits\obj\Debug\netcoreapp3.1\SortBySumDigits.AssemblyInfo.cs
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\SortBySumDigits\SortBySumDigits\obj\Debug\netcoreapp3.1\SortBySumDigits.csproj.CoreCompileInputs.cache
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\SortBySumDigits\SortBySumDigits\obj\Debug\netcoreapp3.1\SortBySumDigits.dll
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\SortBySumDigits\SortBySumDigits\obj\Debug\netcoreapp3.1\SortBySumDigits.pdb
+C:\Users\Mikuzen's computer\source\repos\Tasks\Artem\SortBySumDigits\SortBySumDigits\obj\Debug\netcoreapp3.1\SortBySumDigits.genruntimeconfig.cache
