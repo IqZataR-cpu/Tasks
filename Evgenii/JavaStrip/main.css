@@ -1,7 +1,4 @@
-/* стараемся не писать селекторы на теги, 
-это может повлечь за собой очень плохие последствия, 
-вместо этого используем классы*/
-button 
+.mainButton
 {
     height: 50px;
     display:block;
@@ -9,7 +6,7 @@ button
     margin: auto;
     font-weight: bold;
 }
-/* Не забываем ставить enter между стилями селекторов.*/
+
 .center{
     Height: 100vh;
     Width: 100vw;
