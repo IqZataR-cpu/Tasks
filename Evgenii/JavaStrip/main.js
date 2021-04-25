@@ -1,0 +1,20 @@
+function changeText()/*тут нужен пробел!*/{
+    let centerText = document.getElementById('centerText');
+
+    if (centerText.textContent == 'Hello World')
+    {
+        centerText.textContent = 'JavaStrip';
+        return;
+    }
+        centerText.textContent = 'Hello World';
+}
+/*
+ В задании сказано найти кнопку по идентификатору(id, можно и любой другой)
+ и навесить на него функцию изменяющую текст или сразу просто изменить на старте, как тебе хочется.
+ Важно продемонстрировать навыки поиска элементов на странице по селектору.
+
+
+ Представь, что у тебя нет файла index.html, ты не можешь его открыть.
+ Тебе нужно навесить обработчик события onclick на кнопку с классом mainButton.
+ Твои действия?
+*/
