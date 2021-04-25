@@ -3,16 +3,16 @@ using System.Net.NetworkInformation;
 
 namespace ComputerScienceInterestingTaskPrintNumbers
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             int i = 0;
             
             Print(i);
         }
         
-        static int Print(int i)
+        private static int Print(int i)
         {
             if (i < 100)
             {
