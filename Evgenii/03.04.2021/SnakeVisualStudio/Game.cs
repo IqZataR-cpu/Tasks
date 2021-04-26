@@ -49,8 +49,6 @@ namespace Snake
         
         private void Loop (object obj)
         {
-            return;
-
             if (_walls.IsHitBySnake(_snake.GetHead()) || _snake.IsHitYourSelf(_snake.GetHead()))
             {
                 _timer.Change(0, Timeout.Infinite);
@@ -62,6 +60,8 @@ namespace Snake
             else {
                 _snake.Move();
             }
+
+            return;
         }
     }
 }

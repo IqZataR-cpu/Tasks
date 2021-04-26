@@ -1,0 +1,16 @@
+.mainButton
+{
+    height: 50px;
+    display:block;
+    color: blueviolet;
+    margin: auto;
+    font-weight: bold;
+}
+
+.center{
+    Height: 100vh;
+    Width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
