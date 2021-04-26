@@ -2,9 +2,9 @@
 
 namespace PrintHelloWorld
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
            if (Console.WriteLine("Hello world") is string)
             {
