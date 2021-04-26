@@ -23,6 +23,8 @@ namespace InvertNumber
             Array.Reverse(digits);
 
             return invertNumber = new string(digits);
+            
+            // Для заметки: return new string(number.ToString().ToCharArray().Reverse()) можно было и так, чтобы не хранить лишний раз в памяти значения.)))
         }
     }
 }
