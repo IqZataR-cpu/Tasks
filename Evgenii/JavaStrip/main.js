@@ -1,15 +1,28 @@
-function changeText()/*тут нужен пробел!*/{
-    let centerText = document.getElementById('centerText');
+let mbutton = document.getElementById('mainButton');
 
-    if (centerText.textContent == 'Hello World')
-    {
-        centerText.textContent = 'JavaStrip';
+mbutton.onclick = replaceText;
+
+function replaceText(event) {
+    if (event.target.innerText == 'Hello World') {
+        event.target.innerText = 'JavaStrip';
+
         return;
     }
-        centerText.textContent = 'Hello World';
+
+    event.target.innerText = 'Hello World';
 }
 
 
+
+
+
+
+
+
+
+
+
+/*
 let btn = document.querySelector('.mainButton');
 let centerText = document.getElementById('centerText');
 
