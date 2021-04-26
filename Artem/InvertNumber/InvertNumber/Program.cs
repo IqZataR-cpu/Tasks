@@ -17,13 +17,13 @@ namespace InvertNumber
 
         private static string Inversion(int number)
         {
-            string invertNumber = number.ToString();
-            Char[] digits = invertNumber.ToCharArray();
+            Char[] digits = number.ToString().ToCharArray();
 
             Array.Reverse(digits);
 
-            return invertNumber = new string(digits);
-            
+            return new string(digits);
+
+            // Заметка нерабочая, так как Reverse() принимает аргументы, а их нет, поэтому это не сработает.
             // Для заметки: return new string(number.ToString().ToCharArray().Reverse()) можно было и так, чтобы не хранить лишний раз в памяти значения.)))
         }
     }
