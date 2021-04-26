@@ -24,6 +24,7 @@ namespace InvertNumber
             return new string(digits);
 
             // Заметка нерабочая, так как Reverse() принимает аргументы, а их нет, поэтому это не сработает.
+            // Look at this https://docs.microsoft.com/ru-ru/dotnet/api/system.linq.enumerable.reverse?view=net-5.0#-------
             // Для заметки: return new string(number.ToString().ToCharArray().Reverse()) можно было и так, чтобы не хранить лишний раз в памяти значения.)))
         }
     }
