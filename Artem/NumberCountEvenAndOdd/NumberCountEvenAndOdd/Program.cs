@@ -23,20 +23,17 @@ namespace NumberCountEvenAndOdd
         private static int CountEven(int number)
         {
             int count = 0;
-            
-            while (number > 0)
+
+            if (number <= 0)
             {
-                // не совсем понимаю зачем рекурсия, если сверху цикл,
-                // если бы там было просто условие, тогда ок.
-                // обычно рекурсия заменяет цикл, но в целом идею понял, прикольно.
-                count = CountEven(number / 10);
-
-                if (number % 2 == 0)
-                {
-                    count++;
-                }
-
                 return count;
+            }
+
+            count = CountEven(number / 10);
+
+            if (number % 2 == 0)
+            {
+                    count++;
             }
 
             return count;
@@ -47,19 +44,16 @@ namespace NumberCountEvenAndOdd
         {
             int count = 0;
 
-            while (number > 0)
+            if (number <= 0)
             {
-                // не совсем понимаю зачем рекурсия, если сверху цикл,
-                // если бы там было просто условие, тогда ок.
-                // обычно рекурсия заменяет цикл, но в целом идею понял, прикольно.
-                count = CountOdd(number / 10);
-
-                if (number % 2 == 1)
-                {
-                    count++;
-                }
-
                 return count;
+            }
+
+            count = CountOdd(number / 10);
+
+            if (number % 2 == 1)
+            {
+                count++;
             }
 
             return count;
