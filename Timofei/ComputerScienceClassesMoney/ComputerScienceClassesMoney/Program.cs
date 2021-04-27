@@ -128,6 +128,9 @@ public class Money
         return left;
     } 
     
+    // you crazy?? why you override logic operator return value?? 
+    // logic operator always need to return true or false. YOUR CASE RETURN MONEY! FUCK MOY MOZG!!!
+    // and why you use "|" this symbol, we usually use this "||". 
     public static Money operator |(Money left, Money right)
     {
         return left._rubles > right._rubles ? left : right;
