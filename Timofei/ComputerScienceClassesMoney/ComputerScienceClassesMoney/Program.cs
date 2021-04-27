@@ -11,6 +11,8 @@ namespace ComputerScienceClassesMoney
     }
 }
 
+// Название класса Action настолько же бессмысленное как и Program,
+// поэтому в данном случае можно было все оставить в рамках класса Program.
 public class Action
 {
     public static void OutputActions()
