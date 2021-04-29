@@ -2,6 +2,10 @@
 
 namespace ComputerScienceMatrixMultiply
 {
+    // Программа работает только с матрицами 3х3
+    // Сделать решение более универсальным,
+    // чтобы можно было умножать любые две матрицы
+    // Не забыть проверку ограничений умножения матриц.
     public class Program
     {
         public static void Main(string[] args)
