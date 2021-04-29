@@ -12,9 +12,10 @@
         search,
         all
     }
-    class Program
+   
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Encrypted encrypted = new Encrypted();
             Decrypted decrypted = new Decrypted();
@@ -71,8 +72,10 @@
         }
     }
 }
+ 
  public class Key : Path
  {
+     
      public void AddKey() 
      {
          try
