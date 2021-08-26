@@ -1,27 +1,17 @@
 ﻿ using System;
- using System.Collections.Generic;
  using System.IO;
- using System.Linq;
  using System.Security.Cryptography;
- using TestEncryptedDecriptedTextInFile;
 
  namespace TestEncryptedDecriptedTextInFile
 {
-   public enum ChoiceSearch
+    class Program
     {
-        search,
-        all
-    }
-   
-    public class Program
-    {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             Encrypted encrypted = new Encrypted();
             Decrypted decrypted = new Decrypted();
-            Key key = new Key();
-
-            key.AddKey();
+            
+          
 
             while (true)
             {
@@ -31,7 +21,7 @@
                 switch (choice)
                 {
                     case 1:
-                        decrypted.DecryptedText(ChoiceSearch.search);
+                   
                         break;
                     case 2:
                         Console.Write("Введите наименование: ");
@@ -44,7 +34,7 @@
                         encrypted.EncryptedText(tittle, password, description);
                         break;
                     case 3:
-                        decrypted.DecryptedText(ChoiceSearch.all);
+                        decrypted.DecryptedText();
                         break; 
                     case 4:
                         return;
@@ -72,57 +62,7 @@
         }
     }
 }
- 
- public class Key : Path
- {
-     
-     public void AddKey() 
-     {
-         try
-         {
-             if (!File.Exists(_pathSettings + _nameSettings))
-             {
-                 using (FileStream file = new FileStream(_pathSettings + _nameSettings, FileMode.OpenOrCreate))
-                 {
-                     Console.WriteLine("Введите ключ (16 cимволов): ");
-            
-                     string inputKey =  Console.ReadLine();
-                     char[] ch = inputKey.ToCharArray();
-                         
-                     byte[] key = System.Text.Encoding.UTF8.GetBytes(ch);
-                
-                     file.Write(key, 0, key.Length);
-                 }
-             }
-         }
-         catch (Exception e)
-         {
-             Console.WriteLine($"Ошибка. {e}");
-             throw;
-         }
-     }
 
-     public static byte[] GetKey()
-     {
-         try
-         {
-             using (FileStream file = File.OpenRead(_pathSettings + _nameSettings))
-             {
-                 byte[] array = new byte[file.Length];
-              
-                 file.Read(array, 0, array.Length);
-                 
-                 return array;
-             }
-         }
-         catch (Exception e)
-         {
-             Console.WriteLine($"Ошибка. {e}");
-             throw;
-         }
-     }
- }
- 
  public abstract class Path
  {
      protected static string _path = @"C:\Users\User\Desktop\db\";
@@ -143,20 +83,23 @@
              {
                  using (Aes aes = Aes.Create())
                  {
-                     byte[] key = Key.GetKey();
+                     byte[] key =
+                     {
+                         0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08,
+                         0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16
+                     };
                      aes.Key = key;
 
                      byte[] iv = aes.IV;
-                     
                      fileStream.Write(iv, 0, iv.Length);
 
                      using (CryptoStream cryptoStream = new CryptoStream(fileStream, aes.CreateEncryptor(),CryptoStreamMode.Write))
                      {
                          using (StreamWriter encryptWriter = new StreamWriter(cryptoStream))
                          {
-                             encryptWriter.Write($"{"," + tittle + ","}");
-                             encryptWriter.Write($"{"," + password + ","}");
-                             encryptWriter.Write($"{"," + description + ","}");
+                             encryptWriter.WriteLine($"{tittle}");
+                             encryptWriter.WriteLine($"{password}");
+                             encryptWriter.WriteLine($"{description}");
                          }
                      }
                  }
@@ -169,10 +112,9 @@
          }
      }
  }
- 
  public class Decrypted : Path
  {
-     public void DecryptedText(ChoiceSearch choiceSearch)
+     public void DecryptedText()
      {
          try
          {
@@ -192,7 +134,11 @@
                          numBytesToRead -= n;
                      }
 
-                     byte[] key = Key.GetKey();
+                     byte[] key =
+                     {
+                         0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08,
+                         0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16
+                     };
 
                      using (CryptoStream cryptoStream = new CryptoStream(
                          fileStream,
@@ -202,44 +148,7 @@
                          using (StreamReader decryptReader = new StreamReader(cryptoStream))
                          {
                              string decryptedMessage = decryptReader.ReadToEnd();
-                             
-                             string temp = "";
-                             Char[] separator = new char[]
-                             {
-                                 ',',
-                                 '\r',
-                                 '\n',
-                                 '\0',
-                                 '/',
-                             };
-         
-                             char[] chrArray = new char[decryptedMessage.Length];
-                             List<string> strArray = new List<string>();
-         
-                             chrArray = decryptedMessage.ToCharArray();
-                          
-                             foreach (var p in chrArray)
-                             {
-                                 if (!separator.Contains(p))
-                                 {
-                                     temp += p;
-                                 }
-                                 else 
-                                 {
-                                     strArray.Add(temp);
-         
-                                     temp = "";
-                                 }
-                             }
-
-                             if (choiceSearch == ChoiceSearch.all)
-                             {
-                                 SearchAll(strArray);
-                             }
-                             else if (choiceSearch == ChoiceSearch.search)
-                             {
-                                 SearchByName(strArray);
-                             }
+                             Console.WriteLine($"{decryptedMessage}");
                          }
                      }
                  }
@@ -252,34 +161,5 @@
          
          Console.WriteLine("Нажми на кнопку чтобы продолжить");
          Console.ReadLine();
-     }
-
-     private void SearchAll(List<string> strArray)
-     {
-         foreach (var str in strArray)
-         {
-             if (str != "")
-             {
-                 Console.WriteLine($"{str}");
-             }
-         }
-     }
-     
-     private void SearchByName(List<string> strArray)
-     {
-         Console.Write("Введите наименование: ");
-         string tittle = Console.ReadLine();
-         
-         for (int i = 1; i < strArray.Count; i += 2)
-         {
-             if (strArray[i] == tittle)
-             {
-                 Console.WriteLine(strArray[i]);
-                 Console.WriteLine(strArray[i + 2]);
-                 Console.WriteLine(strArray[i + 4]);
-                 
-                 return;
-             }
-         }
      }
  }

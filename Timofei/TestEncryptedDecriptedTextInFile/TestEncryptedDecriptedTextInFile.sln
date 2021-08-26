@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestEncryptedDecriptedTextInFile", "TestEncryptedDecriptedTextInFile\TestEncryptedDecriptedTextInFile.csproj", "{6B42C9B6-8401-4D90-821A-267849F41000}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B42C9B6-8401-4D90-821A-267849F41000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B42C9B6-8401-4D90-821A-267849F41000}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B42C9B6-8401-4D90-821A-267849F41000}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B42C9B6-8401-4D90-821A-267849F41000}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
