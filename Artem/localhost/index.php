@@ -57,47 +57,60 @@
 
 
 ?>
-
-<form name="Fibonacci" method="GET" action="<?=$_SERVER['PHP_SELF']?>">
+<br/>
+<br/>
+<br/>
+<form name="Human" method="POST" action="human.php">
     Введите ваши персональные данные   <br/>
-    <input type="text" name="FIO" >
-    <input type="text" name="age">
-    <input type="text" name="height">
-    <input type="date" name="birthday">
-    <input type="submit">
+    <input type="text" name="surname" required placeholder="Фамилия">
+    <input type="text" name="name" required placeholder="Имя">
+    <input type="text" name="patronymic" required placeholder="Отчество">
+    <input type="number" name="age" required placeholder="Возраст" max=100>
+    <input type="number" name="height" required placeholder="Рост" max=250>
+    <input type="date" name="birthday" required>
+    <input type="submit" value="Добавить">
+</form>
+<form action="humans.php">
+    <input type="submit" value="Просмотреть все записи">
 </form>
 <?php
 
-    $FIO = isset($_GET['FIO']) ? $_GET['FIO'] : "Зайцев Артем Сергеевич";
+    $surname = isset($_GET['surname']) ? $_GET['surname'] : "Зайцев ";
+    $name = isset($_GET['name']) ? $_GET['name'] : "Артем ";
+    $patronymic = isset($_GET['patronymic']) ? $_GET['patronymic'] : "Сергеевич";
     $age = isset($_GET['age']) ? $_GET['age'] : 21;;
     $height = isset($_GET['height']) ? $_GET['height'] : 178;
     $birthday = isset($_GET['birthday']) ? $_GET['birthday'] : '2021-07-22' ;
 
-    $me = new Human($FIO, $age, $height, $birthday);
+    $me = new Human($surname, $name, $patronymic, $age, $height, $birthday);
 
-    $me->PrintData();
+    $me->PrintOut();
 
     class Human
     {
-        private $FIO;
+        private $surname;
+        private $name;
+        private $patronymic;
         private $age;
         private $height;
         private $birthday;
 
-        public function __construct($fio, $age, $height, $birthday)
+        public function __construct($surname, $name, $patronymic, $age, $height, $birthday)
         {
-            $this->FIO = $fio;
+            $this->surname = $surname;
+            $this->name = $name;
+            $this->patronymic = $patronymic;
             $this->age = $age;
             $this->height = $height;
             $this->birthday = $birthday;
         }
 
-        public function PrintData()
+        public function PrintOut()
         {
-            echo 'My name is ' . $this->FIO
-                . '<br/>Age: ' . $this->age
-                . '<br/>Height: ' . $this->height
-                . '<br/>Birthday: ' . $this->birthday;
+            echo 'My name is ' . $this->surname . $this->name . $this->patronymic .
+                 '<br/>Age: ' . $this->age .
+                 '<br/>Height: ' . $this->height .
+                 '<br/>Birthday: ' . $this->birthday;
         }
     }
 
