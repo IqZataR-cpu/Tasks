@@ -14,36 +14,30 @@
 
     while ($row = mysqli_fetch_array($result))
     {
-        $human = new Human($row);
-        $humans[$i] = $human;
+        $humans[$i] = new Human($row);
         $i++;
     }
 
-    foreach ($humans as $h)
+    foreach ($humans as $human)
     {
-        $human = $h;
         $human->PrintOut();
     }
-
 
     class HumanRepository
     {
         private $db;
-        private $query;
-        private $result;
 
         function __construct($db)
         {
-            $this->db= $db;
+            $this->db = $db;
         }
 
         public function all($db_table)
         {
-            $this->query = "SELECT * FROM " . $db_table;
+            $query = "SELECT * FROM " . $db_table;
 
-            return $this->result = $this->db->query($this->query);
+            return $result = $this->db->query($query);
         }
-
     }
 
     class Human

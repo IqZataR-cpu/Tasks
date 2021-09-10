@@ -60,7 +60,7 @@
 <br/>
 <br/>
 <br/>
-<form name="Human" method="POST" action="human.php">
+<form name="Human" method="GET" action="human.php">
     Введите ваши персональные данные   <br/>
     <input type="text" name="surname" required placeholder="Фамилия">
     <input type="text" name="name" required placeholder="Имя">
